@@ -1,0 +1,136 @@
+UCLA nets 1.0
+# Created  :  Mar 14 2020
+# User     :  Mansoor, Abdullah,  (abdullahmansoor@gmail.com)
+NumNets : 35
+NumPins : 0
+NetDegree : 2 d0
+    X0 I : 0 0
+    X7 I : 0 0
+NetDegree : 2 d1
+    X0 I : 0 0
+    X1 I : 0 0
+NetDegree : 2 d2
+    X1 I : 0 0
+    X2 I : 0 0
+NetDegree : 2 d3
+    X2 I : 0 0
+    X3 I : 0 0
+NetDegree : 2 d4
+    X3 I : 0 0
+    X4 I : 0 0
+NetDegree : 2 d5
+    X4 I : 0 0
+    X5 I : 0 0
+NetDegree : 2 d6
+    X5 I : 0 0
+    X6 I : 0 0
+NetDegree : 2 d7
+    X6 I : 0 0
+    X7 I : 0 0
+NetDegree : 1 o0l0
+    X16 I : 0 0
+NetDegree : 3 o0l1
+    X8 I : 0 0
+    X16 I : 0 0
+    X20 I : 0 0
+NetDegree : 3 o0l2
+    X0 I : 0 0
+    X8 I : 0 0
+    X14 I : 0 0
+NetDegree : 1 o1l0
+    X17 I : 0 0
+NetDegree : 3 o1l1
+    X9 I : 0 0
+    X17 I : 0 0
+    X21 I : 0 0
+NetDegree : 3 o1l2
+    X1 I : 0 0
+    X9 I : 0 0
+    X15 I : 0 0
+NetDegree : 1 o2l0
+    X18 I : 0 0
+NetDegree : 3 o2l1
+    X10 I : 0 0
+    X18 I : 0 0
+    X22 I : 0 0
+NetDegree : 3 o2l2
+    X2 I : 0 0
+    X8 I : 0 0
+    X10 I : 0 0
+NetDegree : 1 o3l0
+    X19 I : 0 0
+NetDegree : 3 o3l1
+    X11 I : 0 0
+    X19 I : 0 0
+    X23 I : 0 0
+NetDegree : 3 o3l2
+    X3 I : 0 0
+    X9 I : 0 0
+    X11 I : 0 0
+NetDegree : 1 o4l0
+    X20 I : 0 0
+NetDegree : 3 o4l1
+    X12 I : 0 0
+    X16 I : 0 0
+    X20 I : 0 0
+NetDegree : 3 o4l2
+    X4 I : 0 0
+    X10 I : 0 0
+    X12 I : 0 0
+NetDegree : 1 o5l0
+    X21 I : 0 0
+NetDegree : 3 o5l1
+    X13 I : 0 0
+    X17 I : 0 0
+    X21 I : 0 0
+NetDegree : 3 o5l2
+    X5 I : 0 0
+    X11 I : 0 0
+    X13 I : 0 0
+NetDegree : 1 o6l0
+    X22 I : 0 0
+NetDegree : 3 o6l1
+    X14 I : 0 0
+    X18 I : 0 0
+    X22 I : 0 0
+NetDegree : 3 o6l2
+    X6 I : 0 0
+    X12 I : 0 0
+    X14 I : 0 0
+NetDegree : 1 o7l0
+    X23 I : 0 0
+NetDegree : 3 o7l1
+    X15 I : 0 0
+    X19 I : 0 0
+    X23 I : 0 0
+NetDegree : 3 o7l2
+    X7 I : 0 0
+    X13 I : 0 0
+    X15 I : 0 0
+NetDegree : 8 s0
+    X16 I : 0 0
+    X17 I : 0 0
+    X18 I : 0 0
+    X19 I : 0 0
+    X20 I : 0 0
+    X21 I : 0 0
+    X22 I : 0 0
+    X23 I : 0 0
+NetDegree : 8 s1
+    X8 I : 0 0
+    X9 I : 0 0
+    X10 I : 0 0
+    X11 I : 0 0
+    X12 I : 0 0
+    X13 I : 0 0
+    X14 I : 0 0
+    X15 I : 0 0
+NetDegree : 8 s2
+    X0 I : 0 0
+    X1 I : 0 0
+    X2 I : 0 0
+    X3 I : 0 0
+    X4 I : 0 0
+    X5 I : 0 0
+    X6 I : 0 0
+    X7 I : 0 0

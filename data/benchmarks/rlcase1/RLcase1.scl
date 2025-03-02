@@ -1,0 +1,87 @@
+UCLA scl 1.0
+# Created  :  Sep 17 2012
+# User     :  Natarajan Viswanathan, IBM Corporation, Austin (nviswan@us.ibm.com)
+
+NumRows  :  9
+
+CoreRow Horizontal
+   Coordinate     :  18        
+   Height         :  9         
+   Sitewidth      :  1
+   Sitespacing    :  1
+   Siteorient     :  N
+   Sitesymmetry   :  Y
+   SubrowOrigin   :  18           NumSites  :  9     
+End
+CoreRow Horizontal
+   Coordinate     :  27        
+   Height         :  9         
+   Sitewidth      :  1
+   Sitespacing    :  1
+   Siteorient     :  N
+   Sitesymmetry   :  Y
+   SubrowOrigin   :  18           NumSites  :  9     
+End
+CoreRow Horizontal
+   Coordinate     :  36        
+   Height         :  9         
+   Sitewidth      :  1
+   Sitespacing    :  1
+   Siteorient     :  N
+   Sitesymmetry   :  Y
+   SubrowOrigin   :  18           NumSites  :  9     
+End
+CoreRow Horizontal
+   Coordinate     :  45        
+   Height         :  9         
+   Sitewidth      :  1
+   Sitespacing    :  1
+   Siteorient     :  N
+   Sitesymmetry   :  Y
+   SubrowOrigin   :  18           NumSites  :  9     
+End
+CoreRow Horizontal
+   Coordinate     :  54        
+   Height         :  9         
+   Sitewidth      :  1
+   Sitespacing    :  1
+   Siteorient     :  N
+   Sitesymmetry   :  Y
+   SubrowOrigin   :  18           NumSites  :  9     
+End
+CoreRow Horizontal
+   Coordinate     :  63        
+   Height         :  9         
+   Sitewidth      :  1
+   Sitespacing    :  1
+   Siteorient     :  N
+   Sitesymmetry   :  Y
+   SubrowOrigin   :  18           NumSites  :  9     
+End
+CoreRow Horizontal
+   Coordinate     :  72        
+   Height         :  9         
+   Sitewidth      :  1
+   Sitespacing    :  1
+   Siteorient     :  N
+   Sitesymmetry   :  Y
+   SubrowOrigin   :  18           NumSites  :  9     
+End
+CoreRow Horizontal
+   Coordinate     :  81        
+   Height         :  9         
+   Sitewidth      :  1
+   Sitespacing    :  1
+   Siteorient     :  N
+   Sitesymmetry   :  Y
+   SubrowOrigin   :  18           NumSites  :  9     
+End
+CoreRow Horizontal
+   Coordinate     :  90        
+   Height         :  9         
+   Sitewidth      :  1
+   Sitespacing    :  1
+   Siteorient     :  N
+   Sitesymmetry   :  Y
+   SubrowOrigin   :  18           NumSites  :  9     
+End

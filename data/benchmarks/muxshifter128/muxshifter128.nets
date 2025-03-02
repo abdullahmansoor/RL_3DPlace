@@ -1,0 +1,4620 @@
+UCLA nets 1.0
+# Created  :  Mar 14 2020
+# User     :  Mansoor, Abdullah,  (abdullahmansoor@gmail.com)
+NumNets : 1031
+NumPins : 0
+NetDegree : 2 d0
+    X0 I : 0 0
+    X126 I : 0 0
+NetDegree : 3 d1
+    X0 I : 0 0
+    X1 I : 0 0
+    X127 I : 0 0
+NetDegree : 2 d10
+    X9 I : 0 0
+    X10 I : 0 0
+NetDegree : 2 d100
+    X99 I : 0 0
+    X100 I : 0 0
+NetDegree : 2 d101
+    X100 I : 0 0
+    X101 I : 0 0
+NetDegree : 2 d102
+    X101 I : 0 0
+    X102 I : 0 0
+NetDegree : 2 d103
+    X102 I : 0 0
+    X103 I : 0 0
+NetDegree : 2 d104
+    X103 I : 0 0
+    X104 I : 0 0
+NetDegree : 2 d105
+    X104 I : 0 0
+    X105 I : 0 0
+NetDegree : 2 d106
+    X105 I : 0 0
+    X106 I : 0 0
+NetDegree : 2 d107
+    X106 I : 0 0
+    X107 I : 0 0
+NetDegree : 2 d108
+    X107 I : 0 0
+    X108 I : 0 0
+NetDegree : 2 d109
+    X108 I : 0 0
+    X109 I : 0 0
+NetDegree : 2 d11
+    X10 I : 0 0
+    X11 I : 0 0
+NetDegree : 2 d110
+    X109 I : 0 0
+    X110 I : 0 0
+NetDegree : 2 d111
+    X110 I : 0 0
+    X111 I : 0 0
+NetDegree : 2 d112
+    X111 I : 0 0
+    X112 I : 0 0
+NetDegree : 2 d113
+    X112 I : 0 0
+    X113 I : 0 0
+NetDegree : 2 d114
+    X113 I : 0 0
+    X114 I : 0 0
+NetDegree : 2 d115
+    X114 I : 0 0
+    X115 I : 0 0
+NetDegree : 2 d116
+    X115 I : 0 0
+    X116 I : 0 0
+NetDegree : 2 d117
+    X116 I : 0 0
+    X117 I : 0 0
+NetDegree : 2 d118
+    X117 I : 0 0
+    X118 I : 0 0
+NetDegree : 2 d119
+    X118 I : 0 0
+    X119 I : 0 0
+NetDegree : 2 d12
+    X11 I : 0 0
+    X12 I : 0 0
+NetDegree : 2 d120
+    X119 I : 0 0
+    X120 I : 0 0
+NetDegree : 2 d121
+    X120 I : 0 0
+    X121 I : 0 0
+NetDegree : 2 d122
+    X121 I : 0 0
+    X122 I : 0 0
+NetDegree : 2 d123
+    X122 I : 0 0
+    X123 I : 0 0
+NetDegree : 2 d124
+    X123 I : 0 0
+    X124 I : 0 0
+NetDegree : 2 d125
+    X124 I : 0 0
+    X125 I : 0 0
+NetDegree : 2 d126
+    X125 I : 0 0
+    X126 I : 0 0
+NetDegree : 1 d127
+    X127 I : 0 0
+NetDegree : 2 d13
+    X12 I : 0 0
+    X13 I : 0 0
+NetDegree : 2 d14
+    X13 I : 0 0
+    X14 I : 0 0
+NetDegree : 2 d15
+    X14 I : 0 0
+    X15 I : 0 0
+NetDegree : 2 d16
+    X15 I : 0 0
+    X16 I : 0 0
+NetDegree : 2 d17
+    X16 I : 0 0
+    X17 I : 0 0
+NetDegree : 2 d18
+    X17 I : 0 0
+    X18 I : 0 0
+NetDegree : 2 d19
+    X18 I : 0 0
+    X19 I : 0 0
+NetDegree : 2 d2
+    X1 I : 0 0
+    X2 I : 0 0
+NetDegree : 2 d20
+    X19 I : 0 0
+    X20 I : 0 0
+NetDegree : 2 d21
+    X20 I : 0 0
+    X21 I : 0 0
+NetDegree : 2 d22
+    X21 I : 0 0
+    X22 I : 0 0
+NetDegree : 2 d23
+    X22 I : 0 0
+    X23 I : 0 0
+NetDegree : 2 d24
+    X23 I : 0 0
+    X24 I : 0 0
+NetDegree : 2 d25
+    X24 I : 0 0
+    X25 I : 0 0
+NetDegree : 2 d26
+    X25 I : 0 0
+    X26 I : 0 0
+NetDegree : 2 d27
+    X26 I : 0 0
+    X27 I : 0 0
+NetDegree : 2 d28
+    X27 I : 0 0
+    X28 I : 0 0
+NetDegree : 2 d29
+    X28 I : 0 0
+    X29 I : 0 0
+NetDegree : 2 d3
+    X2 I : 0 0
+    X3 I : 0 0
+NetDegree : 2 d30
+    X29 I : 0 0
+    X30 I : 0 0
+NetDegree : 2 d31
+    X30 I : 0 0
+    X31 I : 0 0
+NetDegree : 2 d32
+    X31 I : 0 0
+    X32 I : 0 0
+NetDegree : 2 d33
+    X32 I : 0 0
+    X33 I : 0 0
+NetDegree : 2 d34
+    X33 I : 0 0
+    X34 I : 0 0
+NetDegree : 2 d35
+    X34 I : 0 0
+    X35 I : 0 0
+NetDegree : 2 d36
+    X35 I : 0 0
+    X36 I : 0 0
+NetDegree : 2 d37
+    X36 I : 0 0
+    X37 I : 0 0
+NetDegree : 2 d38
+    X37 I : 0 0
+    X38 I : 0 0
+NetDegree : 2 d39
+    X38 I : 0 0
+    X39 I : 0 0
+NetDegree : 2 d4
+    X3 I : 0 0
+    X4 I : 0 0
+NetDegree : 2 d40
+    X39 I : 0 0
+    X40 I : 0 0
+NetDegree : 2 d41
+    X40 I : 0 0
+    X41 I : 0 0
+NetDegree : 2 d42
+    X41 I : 0 0
+    X42 I : 0 0
+NetDegree : 2 d43
+    X42 I : 0 0
+    X43 I : 0 0
+NetDegree : 2 d44
+    X43 I : 0 0
+    X44 I : 0 0
+NetDegree : 2 d45
+    X44 I : 0 0
+    X45 I : 0 0
+NetDegree : 2 d46
+    X45 I : 0 0
+    X46 I : 0 0
+NetDegree : 2 d47
+    X46 I : 0 0
+    X47 I : 0 0
+NetDegree : 2 d48
+    X47 I : 0 0
+    X48 I : 0 0
+NetDegree : 2 d49
+    X48 I : 0 0
+    X49 I : 0 0
+NetDegree : 2 d5
+    X4 I : 0 0
+    X5 I : 0 0
+NetDegree : 2 d50
+    X49 I : 0 0
+    X50 I : 0 0
+NetDegree : 2 d51
+    X50 I : 0 0
+    X51 I : 0 0
+NetDegree : 2 d52
+    X51 I : 0 0
+    X52 I : 0 0
+NetDegree : 2 d53
+    X52 I : 0 0
+    X53 I : 0 0
+NetDegree : 2 d54
+    X53 I : 0 0
+    X54 I : 0 0
+NetDegree : 2 d55
+    X54 I : 0 0
+    X55 I : 0 0
+NetDegree : 2 d56
+    X55 I : 0 0
+    X56 I : 0 0
+NetDegree : 2 d57
+    X56 I : 0 0
+    X57 I : 0 0
+NetDegree : 2 d58
+    X57 I : 0 0
+    X58 I : 0 0
+NetDegree : 2 d59
+    X58 I : 0 0
+    X59 I : 0 0
+NetDegree : 2 d6
+    X5 I : 0 0
+    X6 I : 0 0
+NetDegree : 2 d60
+    X59 I : 0 0
+    X60 I : 0 0
+NetDegree : 2 d61
+    X60 I : 0 0
+    X61 I : 0 0
+NetDegree : 2 d62
+    X61 I : 0 0
+    X62 I : 0 0
+NetDegree : 2 d63
+    X62 I : 0 0
+    X63 I : 0 0
+NetDegree : 2 d64
+    X63 I : 0 0
+    X64 I : 0 0
+NetDegree : 2 d65
+    X64 I : 0 0
+    X65 I : 0 0
+NetDegree : 2 d66
+    X65 I : 0 0
+    X66 I : 0 0
+NetDegree : 2 d67
+    X66 I : 0 0
+    X67 I : 0 0
+NetDegree : 2 d68
+    X67 I : 0 0
+    X68 I : 0 0
+NetDegree : 2 d69
+    X68 I : 0 0
+    X69 I : 0 0
+NetDegree : 2 d7
+    X6 I : 0 0
+    X7 I : 0 0
+NetDegree : 2 d70
+    X69 I : 0 0
+    X70 I : 0 0
+NetDegree : 2 d71
+    X70 I : 0 0
+    X71 I : 0 0
+NetDegree : 2 d72
+    X71 I : 0 0
+    X72 I : 0 0
+NetDegree : 2 d73
+    X72 I : 0 0
+    X73 I : 0 0
+NetDegree : 2 d74
+    X73 I : 0 0
+    X74 I : 0 0
+NetDegree : 2 d75
+    X74 I : 0 0
+    X75 I : 0 0
+NetDegree : 2 d76
+    X75 I : 0 0
+    X76 I : 0 0
+NetDegree : 2 d77
+    X76 I : 0 0
+    X77 I : 0 0
+NetDegree : 2 d78
+    X77 I : 0 0
+    X78 I : 0 0
+NetDegree : 2 d79
+    X78 I : 0 0
+    X79 I : 0 0
+NetDegree : 2 d8
+    X7 I : 0 0
+    X8 I : 0 0
+NetDegree : 2 d80
+    X79 I : 0 0
+    X80 I : 0 0
+NetDegree : 2 d81
+    X80 I : 0 0
+    X81 I : 0 0
+NetDegree : 2 d82
+    X81 I : 0 0
+    X82 I : 0 0
+NetDegree : 2 d83
+    X82 I : 0 0
+    X83 I : 0 0
+NetDegree : 2 d84
+    X83 I : 0 0
+    X84 I : 0 0
+NetDegree : 2 d85
+    X84 I : 0 0
+    X85 I : 0 0
+NetDegree : 2 d86
+    X85 I : 0 0
+    X86 I : 0 0
+NetDegree : 2 d87
+    X86 I : 0 0
+    X87 I : 0 0
+NetDegree : 2 d88
+    X87 I : 0 0
+    X88 I : 0 0
+NetDegree : 2 d89
+    X88 I : 0 0
+    X89 I : 0 0
+NetDegree : 2 d9
+    X8 I : 0 0
+    X9 I : 0 0
+NetDegree : 2 d90
+    X89 I : 0 0
+    X90 I : 0 0
+NetDegree : 2 d91
+    X90 I : 0 0
+    X91 I : 0 0
+NetDegree : 2 d92
+    X91 I : 0 0
+    X92 I : 0 0
+NetDegree : 2 d93
+    X92 I : 0 0
+    X93 I : 0 0
+NetDegree : 2 d94
+    X93 I : 0 0
+    X94 I : 0 0
+NetDegree : 2 d95
+    X94 I : 0 0
+    X95 I : 0 0
+NetDegree : 2 d96
+    X95 I : 0 0
+    X96 I : 0 0
+NetDegree : 2 d97
+    X96 I : 0 0
+    X97 I : 0 0
+NetDegree : 2 d98
+    X97 I : 0 0
+    X98 I : 0 0
+NetDegree : 2 d99
+    X98 I : 0 0
+    X99 I : 0 0
+NetDegree : 3 o0l0
+    X0 I : 0 0
+    X128 I : 0 0
+    X253 I : 0 0
+NetDegree : 3 o0l1
+    X128 I : 0 0
+    X256 I : 0 0
+    X380 I : 0 0
+NetDegree : 3 o0l2
+    X256 I : 0 0
+    X384 I : 0 0
+    X507 I : 0 0
+NetDegree : 3 o0l3
+    X384 I : 0 0
+    X512 I : 0 0
+    X634 I : 0 0
+NetDegree : 3 o0l4
+    X512 I : 0 0
+    X640 I : 0 0
+    X761 I : 0 0
+NetDegree : 3 o0l5
+    X640 I : 0 0
+    X768 I : 0 0
+    X888 I : 0 0
+NetDegree : 3 o100l0
+    X100 I : 0 0
+    X226 I : 0 0
+    X228 I : 0 0
+NetDegree : 3 o100l1
+    X228 I : 0 0
+    X353 I : 0 0
+    X356 I : 0 0
+NetDegree : 3 o100l2
+    X356 I : 0 0
+    X480 I : 0 0
+    X484 I : 0 0
+NetDegree : 3 o100l3
+    X484 I : 0 0
+    X607 I : 0 0
+    X612 I : 0 0
+NetDegree : 3 o100l4
+    X612 I : 0 0
+    X734 I : 0 0
+    X740 I : 0 0
+NetDegree : 3 o100l5
+    X740 I : 0 0
+    X861 I : 0 0
+    X868 I : 0 0
+NetDegree : 3 o101l0
+    X101 I : 0 0
+    X227 I : 0 0
+    X229 I : 0 0
+NetDegree : 3 o101l1
+    X229 I : 0 0
+    X354 I : 0 0
+    X357 I : 0 0
+NetDegree : 3 o101l2
+    X357 I : 0 0
+    X481 I : 0 0
+    X485 I : 0 0
+NetDegree : 3 o101l3
+    X485 I : 0 0
+    X608 I : 0 0
+    X613 I : 0 0
+NetDegree : 3 o101l4
+    X613 I : 0 0
+    X735 I : 0 0
+    X741 I : 0 0
+NetDegree : 3 o101l5
+    X741 I : 0 0
+    X862 I : 0 0
+    X869 I : 0 0
+NetDegree : 3 o102l0
+    X102 I : 0 0
+    X228 I : 0 0
+    X230 I : 0 0
+NetDegree : 3 o102l1
+    X230 I : 0 0
+    X355 I : 0 0
+    X358 I : 0 0
+NetDegree : 3 o102l2
+    X358 I : 0 0
+    X482 I : 0 0
+    X486 I : 0 0
+NetDegree : 3 o102l3
+    X486 I : 0 0
+    X609 I : 0 0
+    X614 I : 0 0
+NetDegree : 3 o102l4
+    X614 I : 0 0
+    X736 I : 0 0
+    X742 I : 0 0
+NetDegree : 3 o102l5
+    X742 I : 0 0
+    X863 I : 0 0
+    X870 I : 0 0
+NetDegree : 3 o103l0
+    X103 I : 0 0
+    X229 I : 0 0
+    X231 I : 0 0
+NetDegree : 3 o103l1
+    X231 I : 0 0
+    X356 I : 0 0
+    X359 I : 0 0
+NetDegree : 3 o103l2
+    X359 I : 0 0
+    X483 I : 0 0
+    X487 I : 0 0
+NetDegree : 3 o103l3
+    X487 I : 0 0
+    X610 I : 0 0
+    X615 I : 0 0
+NetDegree : 3 o103l4
+    X615 I : 0 0
+    X737 I : 0 0
+    X743 I : 0 0
+NetDegree : 3 o103l5
+    X743 I : 0 0
+    X864 I : 0 0
+    X871 I : 0 0
+NetDegree : 3 o104l0
+    X104 I : 0 0
+    X230 I : 0 0
+    X232 I : 0 0
+NetDegree : 3 o104l1
+    X232 I : 0 0
+    X357 I : 0 0
+    X360 I : 0 0
+NetDegree : 3 o104l2
+    X360 I : 0 0
+    X484 I : 0 0
+    X488 I : 0 0
+NetDegree : 3 o104l3
+    X488 I : 0 0
+    X611 I : 0 0
+    X616 I : 0 0
+NetDegree : 3 o104l4
+    X616 I : 0 0
+    X738 I : 0 0
+    X744 I : 0 0
+NetDegree : 3 o104l5
+    X744 I : 0 0
+    X865 I : 0 0
+    X872 I : 0 0
+NetDegree : 3 o105l0
+    X105 I : 0 0
+    X231 I : 0 0
+    X233 I : 0 0
+NetDegree : 3 o105l1
+    X233 I : 0 0
+    X358 I : 0 0
+    X361 I : 0 0
+NetDegree : 3 o105l2
+    X361 I : 0 0
+    X485 I : 0 0
+    X489 I : 0 0
+NetDegree : 3 o105l3
+    X489 I : 0 0
+    X612 I : 0 0
+    X617 I : 0 0
+NetDegree : 3 o105l4
+    X617 I : 0 0
+    X739 I : 0 0
+    X745 I : 0 0
+NetDegree : 3 o105l5
+    X745 I : 0 0
+    X866 I : 0 0
+    X873 I : 0 0
+NetDegree : 3 o106l0
+    X106 I : 0 0
+    X232 I : 0 0
+    X234 I : 0 0
+NetDegree : 3 o106l1
+    X234 I : 0 0
+    X359 I : 0 0
+    X362 I : 0 0
+NetDegree : 3 o106l2
+    X362 I : 0 0
+    X486 I : 0 0
+    X490 I : 0 0
+NetDegree : 3 o106l3
+    X490 I : 0 0
+    X613 I : 0 0
+    X618 I : 0 0
+NetDegree : 3 o106l4
+    X618 I : 0 0
+    X740 I : 0 0
+    X746 I : 0 0
+NetDegree : 3 o106l5
+    X746 I : 0 0
+    X867 I : 0 0
+    X874 I : 0 0
+NetDegree : 3 o107l0
+    X107 I : 0 0
+    X233 I : 0 0
+    X235 I : 0 0
+NetDegree : 3 o107l1
+    X235 I : 0 0
+    X360 I : 0 0
+    X363 I : 0 0
+NetDegree : 3 o107l2
+    X363 I : 0 0
+    X487 I : 0 0
+    X491 I : 0 0
+NetDegree : 3 o107l3
+    X491 I : 0 0
+    X614 I : 0 0
+    X619 I : 0 0
+NetDegree : 3 o107l4
+    X619 I : 0 0
+    X741 I : 0 0
+    X747 I : 0 0
+NetDegree : 3 o107l5
+    X747 I : 0 0
+    X868 I : 0 0
+    X875 I : 0 0
+NetDegree : 3 o108l0
+    X108 I : 0 0
+    X234 I : 0 0
+    X236 I : 0 0
+NetDegree : 3 o108l1
+    X236 I : 0 0
+    X361 I : 0 0
+    X364 I : 0 0
+NetDegree : 3 o108l2
+    X364 I : 0 0
+    X488 I : 0 0
+    X492 I : 0 0
+NetDegree : 3 o108l3
+    X492 I : 0 0
+    X615 I : 0 0
+    X620 I : 0 0
+NetDegree : 3 o108l4
+    X620 I : 0 0
+    X742 I : 0 0
+    X748 I : 0 0
+NetDegree : 3 o108l5
+    X748 I : 0 0
+    X869 I : 0 0
+    X876 I : 0 0
+NetDegree : 3 o109l0
+    X109 I : 0 0
+    X235 I : 0 0
+    X237 I : 0 0
+NetDegree : 3 o109l1
+    X237 I : 0 0
+    X362 I : 0 0
+    X365 I : 0 0
+NetDegree : 3 o109l2
+    X365 I : 0 0
+    X489 I : 0 0
+    X493 I : 0 0
+NetDegree : 3 o109l3
+    X493 I : 0 0
+    X616 I : 0 0
+    X621 I : 0 0
+NetDegree : 3 o109l4
+    X621 I : 0 0
+    X743 I : 0 0
+    X749 I : 0 0
+NetDegree : 3 o109l5
+    X749 I : 0 0
+    X870 I : 0 0
+    X877 I : 0 0
+NetDegree : 3 o10l0
+    X10 I : 0 0
+    X136 I : 0 0
+    X138 I : 0 0
+NetDegree : 3 o10l1
+    X138 I : 0 0
+    X263 I : 0 0
+    X266 I : 0 0
+NetDegree : 3 o10l2
+    X266 I : 0 0
+    X390 I : 0 0
+    X394 I : 0 0
+NetDegree : 3 o10l3
+    X394 I : 0 0
+    X517 I : 0 0
+    X522 I : 0 0
+NetDegree : 3 o10l4
+    X522 I : 0 0
+    X644 I : 0 0
+    X650 I : 0 0
+NetDegree : 3 o10l5
+    X650 I : 0 0
+    X771 I : 0 0
+    X778 I : 0 0
+NetDegree : 3 o110l0
+    X110 I : 0 0
+    X236 I : 0 0
+    X238 I : 0 0
+NetDegree : 3 o110l1
+    X238 I : 0 0
+    X363 I : 0 0
+    X366 I : 0 0
+NetDegree : 3 o110l2
+    X366 I : 0 0
+    X490 I : 0 0
+    X494 I : 0 0
+NetDegree : 3 o110l3
+    X494 I : 0 0
+    X617 I : 0 0
+    X622 I : 0 0
+NetDegree : 3 o110l4
+    X622 I : 0 0
+    X744 I : 0 0
+    X750 I : 0 0
+NetDegree : 3 o110l5
+    X750 I : 0 0
+    X871 I : 0 0
+    X878 I : 0 0
+NetDegree : 3 o111l0
+    X111 I : 0 0
+    X237 I : 0 0
+    X239 I : 0 0
+NetDegree : 3 o111l1
+    X239 I : 0 0
+    X364 I : 0 0
+    X367 I : 0 0
+NetDegree : 3 o111l2
+    X367 I : 0 0
+    X491 I : 0 0
+    X495 I : 0 0
+NetDegree : 3 o111l3
+    X495 I : 0 0
+    X618 I : 0 0
+    X623 I : 0 0
+NetDegree : 3 o111l4
+    X623 I : 0 0
+    X745 I : 0 0
+    X751 I : 0 0
+NetDegree : 3 o111l5
+    X751 I : 0 0
+    X872 I : 0 0
+    X879 I : 0 0
+NetDegree : 3 o112l0
+    X112 I : 0 0
+    X238 I : 0 0
+    X240 I : 0 0
+NetDegree : 3 o112l1
+    X240 I : 0 0
+    X365 I : 0 0
+    X368 I : 0 0
+NetDegree : 3 o112l2
+    X368 I : 0 0
+    X492 I : 0 0
+    X496 I : 0 0
+NetDegree : 3 o112l3
+    X496 I : 0 0
+    X619 I : 0 0
+    X624 I : 0 0
+NetDegree : 3 o112l4
+    X624 I : 0 0
+    X746 I : 0 0
+    X752 I : 0 0
+NetDegree : 3 o112l5
+    X752 I : 0 0
+    X873 I : 0 0
+    X880 I : 0 0
+NetDegree : 3 o113l0
+    X113 I : 0 0
+    X239 I : 0 0
+    X241 I : 0 0
+NetDegree : 3 o113l1
+    X241 I : 0 0
+    X366 I : 0 0
+    X369 I : 0 0
+NetDegree : 3 o113l2
+    X369 I : 0 0
+    X493 I : 0 0
+    X497 I : 0 0
+NetDegree : 3 o113l3
+    X497 I : 0 0
+    X620 I : 0 0
+    X625 I : 0 0
+NetDegree : 3 o113l4
+    X625 I : 0 0
+    X747 I : 0 0
+    X753 I : 0 0
+NetDegree : 3 o113l5
+    X753 I : 0 0
+    X874 I : 0 0
+    X881 I : 0 0
+NetDegree : 3 o114l0
+    X114 I : 0 0
+    X240 I : 0 0
+    X242 I : 0 0
+NetDegree : 3 o114l1
+    X242 I : 0 0
+    X367 I : 0 0
+    X370 I : 0 0
+NetDegree : 3 o114l2
+    X370 I : 0 0
+    X494 I : 0 0
+    X498 I : 0 0
+NetDegree : 3 o114l3
+    X498 I : 0 0
+    X621 I : 0 0
+    X626 I : 0 0
+NetDegree : 3 o114l4
+    X626 I : 0 0
+    X748 I : 0 0
+    X754 I : 0 0
+NetDegree : 3 o114l5
+    X754 I : 0 0
+    X875 I : 0 0
+    X882 I : 0 0
+NetDegree : 3 o115l0
+    X115 I : 0 0
+    X241 I : 0 0
+    X243 I : 0 0
+NetDegree : 3 o115l1
+    X243 I : 0 0
+    X368 I : 0 0
+    X371 I : 0 0
+NetDegree : 3 o115l2
+    X371 I : 0 0
+    X495 I : 0 0
+    X499 I : 0 0
+NetDegree : 3 o115l3
+    X499 I : 0 0
+    X622 I : 0 0
+    X627 I : 0 0
+NetDegree : 3 o115l4
+    X627 I : 0 0
+    X749 I : 0 0
+    X755 I : 0 0
+NetDegree : 3 o115l5
+    X755 I : 0 0
+    X876 I : 0 0
+    X883 I : 0 0
+NetDegree : 3 o116l0
+    X116 I : 0 0
+    X242 I : 0 0
+    X244 I : 0 0
+NetDegree : 3 o116l1
+    X244 I : 0 0
+    X369 I : 0 0
+    X372 I : 0 0
+NetDegree : 3 o116l2
+    X372 I : 0 0
+    X496 I : 0 0
+    X500 I : 0 0
+NetDegree : 3 o116l3
+    X500 I : 0 0
+    X623 I : 0 0
+    X628 I : 0 0
+NetDegree : 3 o116l4
+    X628 I : 0 0
+    X750 I : 0 0
+    X756 I : 0 0
+NetDegree : 3 o116l5
+    X756 I : 0 0
+    X877 I : 0 0
+    X884 I : 0 0
+NetDegree : 3 o117l0
+    X117 I : 0 0
+    X243 I : 0 0
+    X245 I : 0 0
+NetDegree : 3 o117l1
+    X245 I : 0 0
+    X370 I : 0 0
+    X373 I : 0 0
+NetDegree : 3 o117l2
+    X373 I : 0 0
+    X497 I : 0 0
+    X501 I : 0 0
+NetDegree : 3 o117l3
+    X501 I : 0 0
+    X624 I : 0 0
+    X629 I : 0 0
+NetDegree : 3 o117l4
+    X629 I : 0 0
+    X751 I : 0 0
+    X757 I : 0 0
+NetDegree : 3 o117l5
+    X757 I : 0 0
+    X878 I : 0 0
+    X885 I : 0 0
+NetDegree : 3 o118l0
+    X118 I : 0 0
+    X244 I : 0 0
+    X246 I : 0 0
+NetDegree : 3 o118l1
+    X246 I : 0 0
+    X371 I : 0 0
+    X374 I : 0 0
+NetDegree : 3 o118l2
+    X374 I : 0 0
+    X498 I : 0 0
+    X502 I : 0 0
+NetDegree : 3 o118l3
+    X502 I : 0 0
+    X625 I : 0 0
+    X630 I : 0 0
+NetDegree : 3 o118l4
+    X630 I : 0 0
+    X752 I : 0 0
+    X758 I : 0 0
+NetDegree : 3 o118l5
+    X758 I : 0 0
+    X879 I : 0 0
+    X886 I : 0 0
+NetDegree : 3 o119l0
+    X119 I : 0 0
+    X245 I : 0 0
+    X247 I : 0 0
+NetDegree : 3 o119l1
+    X247 I : 0 0
+    X372 I : 0 0
+    X375 I : 0 0
+NetDegree : 3 o119l2
+    X375 I : 0 0
+    X499 I : 0 0
+    X503 I : 0 0
+NetDegree : 3 o119l3
+    X503 I : 0 0
+    X626 I : 0 0
+    X631 I : 0 0
+NetDegree : 3 o119l4
+    X631 I : 0 0
+    X753 I : 0 0
+    X759 I : 0 0
+NetDegree : 3 o119l5
+    X759 I : 0 0
+    X880 I : 0 0
+    X887 I : 0 0
+NetDegree : 3 o11l0
+    X11 I : 0 0
+    X137 I : 0 0
+    X139 I : 0 0
+NetDegree : 3 o11l1
+    X139 I : 0 0
+    X264 I : 0 0
+    X267 I : 0 0
+NetDegree : 3 o11l2
+    X267 I : 0 0
+    X391 I : 0 0
+    X395 I : 0 0
+NetDegree : 3 o11l3
+    X395 I : 0 0
+    X518 I : 0 0
+    X523 I : 0 0
+NetDegree : 3 o11l4
+    X523 I : 0 0
+    X645 I : 0 0
+    X651 I : 0 0
+NetDegree : 3 o11l5
+    X651 I : 0 0
+    X772 I : 0 0
+    X779 I : 0 0
+NetDegree : 3 o120l0
+    X120 I : 0 0
+    X246 I : 0 0
+    X248 I : 0 0
+NetDegree : 3 o120l1
+    X248 I : 0 0
+    X373 I : 0 0
+    X376 I : 0 0
+NetDegree : 3 o120l2
+    X376 I : 0 0
+    X500 I : 0 0
+    X504 I : 0 0
+NetDegree : 3 o120l3
+    X504 I : 0 0
+    X627 I : 0 0
+    X632 I : 0 0
+NetDegree : 3 o120l4
+    X632 I : 0 0
+    X754 I : 0 0
+    X760 I : 0 0
+NetDegree : 3 o120l5
+    X760 I : 0 0
+    X881 I : 0 0
+    X888 I : 0 0
+NetDegree : 3 o121l0
+    X121 I : 0 0
+    X247 I : 0 0
+    X249 I : 0 0
+NetDegree : 3 o121l1
+    X249 I : 0 0
+    X374 I : 0 0
+    X377 I : 0 0
+NetDegree : 3 o121l2
+    X377 I : 0 0
+    X501 I : 0 0
+    X505 I : 0 0
+NetDegree : 3 o121l3
+    X505 I : 0 0
+    X628 I : 0 0
+    X633 I : 0 0
+NetDegree : 3 o121l4
+    X633 I : 0 0
+    X755 I : 0 0
+    X761 I : 0 0
+NetDegree : 3 o121l5
+    X761 I : 0 0
+    X882 I : 0 0
+    X889 I : 0 0
+NetDegree : 3 o122l0
+    X122 I : 0 0
+    X248 I : 0 0
+    X250 I : 0 0
+NetDegree : 3 o122l1
+    X250 I : 0 0
+    X375 I : 0 0
+    X378 I : 0 0
+NetDegree : 3 o122l2
+    X378 I : 0 0
+    X502 I : 0 0
+    X506 I : 0 0
+NetDegree : 3 o122l3
+    X506 I : 0 0
+    X629 I : 0 0
+    X634 I : 0 0
+NetDegree : 3 o122l4
+    X634 I : 0 0
+    X756 I : 0 0
+    X762 I : 0 0
+NetDegree : 3 o122l5
+    X762 I : 0 0
+    X883 I : 0 0
+    X890 I : 0 0
+NetDegree : 3 o123l0
+    X123 I : 0 0
+    X249 I : 0 0
+    X251 I : 0 0
+NetDegree : 3 o123l1
+    X251 I : 0 0
+    X376 I : 0 0
+    X379 I : 0 0
+NetDegree : 3 o123l2
+    X379 I : 0 0
+    X503 I : 0 0
+    X507 I : 0 0
+NetDegree : 3 o123l3
+    X507 I : 0 0
+    X630 I : 0 0
+    X635 I : 0 0
+NetDegree : 3 o123l4
+    X635 I : 0 0
+    X757 I : 0 0
+    X763 I : 0 0
+NetDegree : 3 o123l5
+    X763 I : 0 0
+    X884 I : 0 0
+    X891 I : 0 0
+NetDegree : 3 o124l0
+    X124 I : 0 0
+    X250 I : 0 0
+    X252 I : 0 0
+NetDegree : 3 o124l1
+    X252 I : 0 0
+    X377 I : 0 0
+    X380 I : 0 0
+NetDegree : 3 o124l2
+    X380 I : 0 0
+    X504 I : 0 0
+    X508 I : 0 0
+NetDegree : 3 o124l3
+    X508 I : 0 0
+    X631 I : 0 0
+    X636 I : 0 0
+NetDegree : 3 o124l4
+    X636 I : 0 0
+    X758 I : 0 0
+    X764 I : 0 0
+NetDegree : 3 o124l5
+    X764 I : 0 0
+    X885 I : 0 0
+    X892 I : 0 0
+NetDegree : 3 o125l0
+    X125 I : 0 0
+    X251 I : 0 0
+    X253 I : 0 0
+NetDegree : 3 o125l1
+    X253 I : 0 0
+    X378 I : 0 0
+    X381 I : 0 0
+NetDegree : 3 o125l2
+    X381 I : 0 0
+    X505 I : 0 0
+    X509 I : 0 0
+NetDegree : 3 o125l3
+    X509 I : 0 0
+    X632 I : 0 0
+    X637 I : 0 0
+NetDegree : 3 o125l4
+    X637 I : 0 0
+    X759 I : 0 0
+    X765 I : 0 0
+NetDegree : 3 o125l5
+    X765 I : 0 0
+    X886 I : 0 0
+    X893 I : 0 0
+NetDegree : 3 o126l0
+    X126 I : 0 0
+    X252 I : 0 0
+    X254 I : 0 0
+NetDegree : 3 o126l1
+    X254 I : 0 0
+    X379 I : 0 0
+    X382 I : 0 0
+NetDegree : 3 o126l2
+    X382 I : 0 0
+    X506 I : 0 0
+    X510 I : 0 0
+NetDegree : 3 o126l3
+    X510 I : 0 0
+    X633 I : 0 0
+    X638 I : 0 0
+NetDegree : 3 o126l4
+    X638 I : 0 0
+    X760 I : 0 0
+    X766 I : 0 0
+NetDegree : 3 o126l5
+    X766 I : 0 0
+    X887 I : 0 0
+    X894 I : 0 0
+NetDegree : 2 o127l0
+    X127 I : 0 0
+    X255 I : 0 0
+NetDegree : 2 o127l1
+    X255 I : 0 0
+    X383 I : 0 0
+NetDegree : 2 o127l2
+    X383 I : 0 0
+    X511 I : 0 0
+NetDegree : 2 o127l3
+    X511 I : 0 0
+    X639 I : 0 0
+NetDegree : 2 o127l4
+    X639 I : 0 0
+    X767 I : 0 0
+NetDegree : 2 o127l5
+    X767 I : 0 0
+    X895 I : 0 0
+NetDegree : 3 o12l0
+    X12 I : 0 0
+    X138 I : 0 0
+    X140 I : 0 0
+NetDegree : 3 o12l1
+    X140 I : 0 0
+    X265 I : 0 0
+    X268 I : 0 0
+NetDegree : 3 o12l2
+    X268 I : 0 0
+    X392 I : 0 0
+    X396 I : 0 0
+NetDegree : 3 o12l3
+    X396 I : 0 0
+    X519 I : 0 0
+    X524 I : 0 0
+NetDegree : 3 o12l4
+    X524 I : 0 0
+    X646 I : 0 0
+    X652 I : 0 0
+NetDegree : 3 o12l5
+    X652 I : 0 0
+    X773 I : 0 0
+    X780 I : 0 0
+NetDegree : 3 o13l0
+    X13 I : 0 0
+    X139 I : 0 0
+    X141 I : 0 0
+NetDegree : 3 o13l1
+    X141 I : 0 0
+    X266 I : 0 0
+    X269 I : 0 0
+NetDegree : 3 o13l2
+    X269 I : 0 0
+    X393 I : 0 0
+    X397 I : 0 0
+NetDegree : 3 o13l3
+    X397 I : 0 0
+    X520 I : 0 0
+    X525 I : 0 0
+NetDegree : 3 o13l4
+    X525 I : 0 0
+    X647 I : 0 0
+    X653 I : 0 0
+NetDegree : 3 o13l5
+    X653 I : 0 0
+    X774 I : 0 0
+    X781 I : 0 0
+NetDegree : 3 o14l0
+    X14 I : 0 0
+    X140 I : 0 0
+    X142 I : 0 0
+NetDegree : 3 o14l1
+    X142 I : 0 0
+    X267 I : 0 0
+    X270 I : 0 0
+NetDegree : 3 o14l2
+    X270 I : 0 0
+    X394 I : 0 0
+    X398 I : 0 0
+NetDegree : 3 o14l3
+    X398 I : 0 0
+    X521 I : 0 0
+    X526 I : 0 0
+NetDegree : 3 o14l4
+    X526 I : 0 0
+    X648 I : 0 0
+    X654 I : 0 0
+NetDegree : 3 o14l5
+    X654 I : 0 0
+    X775 I : 0 0
+    X782 I : 0 0
+NetDegree : 3 o15l0
+    X15 I : 0 0
+    X141 I : 0 0
+    X143 I : 0 0
+NetDegree : 3 o15l1
+    X143 I : 0 0
+    X268 I : 0 0
+    X271 I : 0 0
+NetDegree : 3 o15l2
+    X271 I : 0 0
+    X395 I : 0 0
+    X399 I : 0 0
+NetDegree : 3 o15l3
+    X399 I : 0 0
+    X522 I : 0 0
+    X527 I : 0 0
+NetDegree : 3 o15l4
+    X527 I : 0 0
+    X649 I : 0 0
+    X655 I : 0 0
+NetDegree : 3 o15l5
+    X655 I : 0 0
+    X776 I : 0 0
+    X783 I : 0 0
+NetDegree : 3 o16l0
+    X16 I : 0 0
+    X142 I : 0 0
+    X144 I : 0 0
+NetDegree : 3 o16l1
+    X144 I : 0 0
+    X269 I : 0 0
+    X272 I : 0 0
+NetDegree : 3 o16l2
+    X272 I : 0 0
+    X396 I : 0 0
+    X400 I : 0 0
+NetDegree : 3 o16l3
+    X400 I : 0 0
+    X523 I : 0 0
+    X528 I : 0 0
+NetDegree : 3 o16l4
+    X528 I : 0 0
+    X650 I : 0 0
+    X656 I : 0 0
+NetDegree : 3 o16l5
+    X656 I : 0 0
+    X777 I : 0 0
+    X784 I : 0 0
+NetDegree : 3 o17l0
+    X17 I : 0 0
+    X143 I : 0 0
+    X145 I : 0 0
+NetDegree : 3 o17l1
+    X145 I : 0 0
+    X270 I : 0 0
+    X273 I : 0 0
+NetDegree : 3 o17l2
+    X273 I : 0 0
+    X397 I : 0 0
+    X401 I : 0 0
+NetDegree : 3 o17l3
+    X401 I : 0 0
+    X524 I : 0 0
+    X529 I : 0 0
+NetDegree : 3 o17l4
+    X529 I : 0 0
+    X651 I : 0 0
+    X657 I : 0 0
+NetDegree : 3 o17l5
+    X657 I : 0 0
+    X778 I : 0 0
+    X785 I : 0 0
+NetDegree : 3 o18l0
+    X18 I : 0 0
+    X144 I : 0 0
+    X146 I : 0 0
+NetDegree : 3 o18l1
+    X146 I : 0 0
+    X271 I : 0 0
+    X274 I : 0 0
+NetDegree : 3 o18l2
+    X274 I : 0 0
+    X398 I : 0 0
+    X402 I : 0 0
+NetDegree : 3 o18l3
+    X402 I : 0 0
+    X525 I : 0 0
+    X530 I : 0 0
+NetDegree : 3 o18l4
+    X530 I : 0 0
+    X652 I : 0 0
+    X658 I : 0 0
+NetDegree : 3 o18l5
+    X658 I : 0 0
+    X779 I : 0 0
+    X786 I : 0 0
+NetDegree : 3 o19l0
+    X19 I : 0 0
+    X145 I : 0 0
+    X147 I : 0 0
+NetDegree : 3 o19l1
+    X147 I : 0 0
+    X272 I : 0 0
+    X275 I : 0 0
+NetDegree : 3 o19l2
+    X275 I : 0 0
+    X399 I : 0 0
+    X403 I : 0 0
+NetDegree : 3 o19l3
+    X403 I : 0 0
+    X526 I : 0 0
+    X531 I : 0 0
+NetDegree : 3 o19l4
+    X531 I : 0 0
+    X653 I : 0 0
+    X659 I : 0 0
+NetDegree : 3 o19l5
+    X659 I : 0 0
+    X780 I : 0 0
+    X787 I : 0 0
+NetDegree : 3 o1l0
+    X1 I : 0 0
+    X129 I : 0 0
+    X254 I : 0 0
+NetDegree : 3 o1l1
+    X129 I : 0 0
+    X257 I : 0 0
+    X381 I : 0 0
+NetDegree : 3 o1l2
+    X257 I : 0 0
+    X385 I : 0 0
+    X508 I : 0 0
+NetDegree : 3 o1l3
+    X385 I : 0 0
+    X513 I : 0 0
+    X635 I : 0 0
+NetDegree : 3 o1l4
+    X513 I : 0 0
+    X641 I : 0 0
+    X762 I : 0 0
+NetDegree : 3 o1l5
+    X641 I : 0 0
+    X769 I : 0 0
+    X889 I : 0 0
+NetDegree : 3 o20l0
+    X20 I : 0 0
+    X146 I : 0 0
+    X148 I : 0 0
+NetDegree : 3 o20l1
+    X148 I : 0 0
+    X273 I : 0 0
+    X276 I : 0 0
+NetDegree : 3 o20l2
+    X276 I : 0 0
+    X400 I : 0 0
+    X404 I : 0 0
+NetDegree : 3 o20l3
+    X404 I : 0 0
+    X527 I : 0 0
+    X532 I : 0 0
+NetDegree : 3 o20l4
+    X532 I : 0 0
+    X654 I : 0 0
+    X660 I : 0 0
+NetDegree : 3 o20l5
+    X660 I : 0 0
+    X781 I : 0 0
+    X788 I : 0 0
+NetDegree : 3 o21l0
+    X21 I : 0 0
+    X147 I : 0 0
+    X149 I : 0 0
+NetDegree : 3 o21l1
+    X149 I : 0 0
+    X274 I : 0 0
+    X277 I : 0 0
+NetDegree : 3 o21l2
+    X277 I : 0 0
+    X401 I : 0 0
+    X405 I : 0 0
+NetDegree : 3 o21l3
+    X405 I : 0 0
+    X528 I : 0 0
+    X533 I : 0 0
+NetDegree : 3 o21l4
+    X533 I : 0 0
+    X655 I : 0 0
+    X661 I : 0 0
+NetDegree : 3 o21l5
+    X661 I : 0 0
+    X782 I : 0 0
+    X789 I : 0 0
+NetDegree : 3 o22l0
+    X22 I : 0 0
+    X148 I : 0 0
+    X150 I : 0 0
+NetDegree : 3 o22l1
+    X150 I : 0 0
+    X275 I : 0 0
+    X278 I : 0 0
+NetDegree : 3 o22l2
+    X278 I : 0 0
+    X402 I : 0 0
+    X406 I : 0 0
+NetDegree : 3 o22l3
+    X406 I : 0 0
+    X529 I : 0 0
+    X534 I : 0 0
+NetDegree : 3 o22l4
+    X534 I : 0 0
+    X656 I : 0 0
+    X662 I : 0 0
+NetDegree : 3 o22l5
+    X662 I : 0 0
+    X783 I : 0 0
+    X790 I : 0 0
+NetDegree : 3 o23l0
+    X23 I : 0 0
+    X149 I : 0 0
+    X151 I : 0 0
+NetDegree : 3 o23l1
+    X151 I : 0 0
+    X276 I : 0 0
+    X279 I : 0 0
+NetDegree : 3 o23l2
+    X279 I : 0 0
+    X403 I : 0 0
+    X407 I : 0 0
+NetDegree : 3 o23l3
+    X407 I : 0 0
+    X530 I : 0 0
+    X535 I : 0 0
+NetDegree : 3 o23l4
+    X535 I : 0 0
+    X657 I : 0 0
+    X663 I : 0 0
+NetDegree : 3 o23l5
+    X663 I : 0 0
+    X784 I : 0 0
+    X791 I : 0 0
+NetDegree : 3 o24l0
+    X24 I : 0 0
+    X150 I : 0 0
+    X152 I : 0 0
+NetDegree : 3 o24l1
+    X152 I : 0 0
+    X277 I : 0 0
+    X280 I : 0 0
+NetDegree : 3 o24l2
+    X280 I : 0 0
+    X404 I : 0 0
+    X408 I : 0 0
+NetDegree : 3 o24l3
+    X408 I : 0 0
+    X531 I : 0 0
+    X536 I : 0 0
+NetDegree : 3 o24l4
+    X536 I : 0 0
+    X658 I : 0 0
+    X664 I : 0 0
+NetDegree : 3 o24l5
+    X664 I : 0 0
+    X785 I : 0 0
+    X792 I : 0 0
+NetDegree : 3 o25l0
+    X25 I : 0 0
+    X151 I : 0 0
+    X153 I : 0 0
+NetDegree : 3 o25l1
+    X153 I : 0 0
+    X278 I : 0 0
+    X281 I : 0 0
+NetDegree : 3 o25l2
+    X281 I : 0 0
+    X405 I : 0 0
+    X409 I : 0 0
+NetDegree : 3 o25l3
+    X409 I : 0 0
+    X532 I : 0 0
+    X537 I : 0 0
+NetDegree : 3 o25l4
+    X537 I : 0 0
+    X659 I : 0 0
+    X665 I : 0 0
+NetDegree : 3 o25l5
+    X665 I : 0 0
+    X786 I : 0 0
+    X793 I : 0 0
+NetDegree : 3 o26l0
+    X26 I : 0 0
+    X152 I : 0 0
+    X154 I : 0 0
+NetDegree : 3 o26l1
+    X154 I : 0 0
+    X279 I : 0 0
+    X282 I : 0 0
+NetDegree : 3 o26l2
+    X282 I : 0 0
+    X406 I : 0 0
+    X410 I : 0 0
+NetDegree : 3 o26l3
+    X410 I : 0 0
+    X533 I : 0 0
+    X538 I : 0 0
+NetDegree : 3 o26l4
+    X538 I : 0 0
+    X660 I : 0 0
+    X666 I : 0 0
+NetDegree : 3 o26l5
+    X666 I : 0 0
+    X787 I : 0 0
+    X794 I : 0 0
+NetDegree : 3 o27l0
+    X27 I : 0 0
+    X153 I : 0 0
+    X155 I : 0 0
+NetDegree : 3 o27l1
+    X155 I : 0 0
+    X280 I : 0 0
+    X283 I : 0 0
+NetDegree : 3 o27l2
+    X283 I : 0 0
+    X407 I : 0 0
+    X411 I : 0 0
+NetDegree : 3 o27l3
+    X411 I : 0 0
+    X534 I : 0 0
+    X539 I : 0 0
+NetDegree : 3 o27l4
+    X539 I : 0 0
+    X661 I : 0 0
+    X667 I : 0 0
+NetDegree : 3 o27l5
+    X667 I : 0 0
+    X788 I : 0 0
+    X795 I : 0 0
+NetDegree : 3 o28l0
+    X28 I : 0 0
+    X154 I : 0 0
+    X156 I : 0 0
+NetDegree : 3 o28l1
+    X156 I : 0 0
+    X281 I : 0 0
+    X284 I : 0 0
+NetDegree : 3 o28l2
+    X284 I : 0 0
+    X408 I : 0 0
+    X412 I : 0 0
+NetDegree : 3 o28l3
+    X412 I : 0 0
+    X535 I : 0 0
+    X540 I : 0 0
+NetDegree : 3 o28l4
+    X540 I : 0 0
+    X662 I : 0 0
+    X668 I : 0 0
+NetDegree : 3 o28l5
+    X668 I : 0 0
+    X789 I : 0 0
+    X796 I : 0 0
+NetDegree : 3 o29l0
+    X29 I : 0 0
+    X155 I : 0 0
+    X157 I : 0 0
+NetDegree : 3 o29l1
+    X157 I : 0 0
+    X282 I : 0 0
+    X285 I : 0 0
+NetDegree : 3 o29l2
+    X285 I : 0 0
+    X409 I : 0 0
+    X413 I : 0 0
+NetDegree : 3 o29l3
+    X413 I : 0 0
+    X536 I : 0 0
+    X541 I : 0 0
+NetDegree : 3 o29l4
+    X541 I : 0 0
+    X663 I : 0 0
+    X669 I : 0 0
+NetDegree : 3 o29l5
+    X669 I : 0 0
+    X790 I : 0 0
+    X797 I : 0 0
+NetDegree : 4 o2l0
+    X2 I : 0 0
+    X128 I : 0 0
+    X130 I : 0 0
+    X255 I : 0 0
+NetDegree : 3 o2l1
+    X130 I : 0 0
+    X258 I : 0 0
+    X382 I : 0 0
+NetDegree : 3 o2l2
+    X258 I : 0 0
+    X386 I : 0 0
+    X509 I : 0 0
+NetDegree : 3 o2l3
+    X386 I : 0 0
+    X514 I : 0 0
+    X636 I : 0 0
+NetDegree : 3 o2l4
+    X514 I : 0 0
+    X642 I : 0 0
+    X763 I : 0 0
+NetDegree : 3 o2l5
+    X642 I : 0 0
+    X770 I : 0 0
+    X890 I : 0 0
+NetDegree : 3 o30l0
+    X30 I : 0 0
+    X156 I : 0 0
+    X158 I : 0 0
+NetDegree : 3 o30l1
+    X158 I : 0 0
+    X283 I : 0 0
+    X286 I : 0 0
+NetDegree : 3 o30l2
+    X286 I : 0 0
+    X410 I : 0 0
+    X414 I : 0 0
+NetDegree : 3 o30l3
+    X414 I : 0 0
+    X537 I : 0 0
+    X542 I : 0 0
+NetDegree : 3 o30l4
+    X542 I : 0 0
+    X664 I : 0 0
+    X670 I : 0 0
+NetDegree : 3 o30l5
+    X670 I : 0 0
+    X791 I : 0 0
+    X798 I : 0 0
+NetDegree : 3 o31l0
+    X31 I : 0 0
+    X157 I : 0 0
+    X159 I : 0 0
+NetDegree : 3 o31l1
+    X159 I : 0 0
+    X284 I : 0 0
+    X287 I : 0 0
+NetDegree : 3 o31l2
+    X287 I : 0 0
+    X411 I : 0 0
+    X415 I : 0 0
+NetDegree : 3 o31l3
+    X415 I : 0 0
+    X538 I : 0 0
+    X543 I : 0 0
+NetDegree : 3 o31l4
+    X543 I : 0 0
+    X665 I : 0 0
+    X671 I : 0 0
+NetDegree : 3 o31l5
+    X671 I : 0 0
+    X792 I : 0 0
+    X799 I : 0 0
+NetDegree : 3 o32l0
+    X32 I : 0 0
+    X158 I : 0 0
+    X160 I : 0 0
+NetDegree : 3 o32l1
+    X160 I : 0 0
+    X285 I : 0 0
+    X288 I : 0 0
+NetDegree : 3 o32l2
+    X288 I : 0 0
+    X412 I : 0 0
+    X416 I : 0 0
+NetDegree : 3 o32l3
+    X416 I : 0 0
+    X539 I : 0 0
+    X544 I : 0 0
+NetDegree : 3 o32l4
+    X544 I : 0 0
+    X666 I : 0 0
+    X672 I : 0 0
+NetDegree : 3 o32l5
+    X672 I : 0 0
+    X793 I : 0 0
+    X800 I : 0 0
+NetDegree : 3 o33l0
+    X33 I : 0 0
+    X159 I : 0 0
+    X161 I : 0 0
+NetDegree : 3 o33l1
+    X161 I : 0 0
+    X286 I : 0 0
+    X289 I : 0 0
+NetDegree : 3 o33l2
+    X289 I : 0 0
+    X413 I : 0 0
+    X417 I : 0 0
+NetDegree : 3 o33l3
+    X417 I : 0 0
+    X540 I : 0 0
+    X545 I : 0 0
+NetDegree : 3 o33l4
+    X545 I : 0 0
+    X667 I : 0 0
+    X673 I : 0 0
+NetDegree : 3 o33l5
+    X673 I : 0 0
+    X794 I : 0 0
+    X801 I : 0 0
+NetDegree : 3 o34l0
+    X34 I : 0 0
+    X160 I : 0 0
+    X162 I : 0 0
+NetDegree : 3 o34l1
+    X162 I : 0 0
+    X287 I : 0 0
+    X290 I : 0 0
+NetDegree : 3 o34l2
+    X290 I : 0 0
+    X414 I : 0 0
+    X418 I : 0 0
+NetDegree : 3 o34l3
+    X418 I : 0 0
+    X541 I : 0 0
+    X546 I : 0 0
+NetDegree : 3 o34l4
+    X546 I : 0 0
+    X668 I : 0 0
+    X674 I : 0 0
+NetDegree : 3 o34l5
+    X674 I : 0 0
+    X795 I : 0 0
+    X802 I : 0 0
+NetDegree : 3 o35l0
+    X35 I : 0 0
+    X161 I : 0 0
+    X163 I : 0 0
+NetDegree : 3 o35l1
+    X163 I : 0 0
+    X288 I : 0 0
+    X291 I : 0 0
+NetDegree : 3 o35l2
+    X291 I : 0 0
+    X415 I : 0 0
+    X419 I : 0 0
+NetDegree : 3 o35l3
+    X419 I : 0 0
+    X542 I : 0 0
+    X547 I : 0 0
+NetDegree : 3 o35l4
+    X547 I : 0 0
+    X669 I : 0 0
+    X675 I : 0 0
+NetDegree : 3 o35l5
+    X675 I : 0 0
+    X796 I : 0 0
+    X803 I : 0 0
+NetDegree : 3 o36l0
+    X36 I : 0 0
+    X162 I : 0 0
+    X164 I : 0 0
+NetDegree : 3 o36l1
+    X164 I : 0 0
+    X289 I : 0 0
+    X292 I : 0 0
+NetDegree : 3 o36l2
+    X292 I : 0 0
+    X416 I : 0 0
+    X420 I : 0 0
+NetDegree : 3 o36l3
+    X420 I : 0 0
+    X543 I : 0 0
+    X548 I : 0 0
+NetDegree : 3 o36l4
+    X548 I : 0 0
+    X670 I : 0 0
+    X676 I : 0 0
+NetDegree : 3 o36l5
+    X676 I : 0 0
+    X797 I : 0 0
+    X804 I : 0 0
+NetDegree : 3 o37l0
+    X37 I : 0 0
+    X163 I : 0 0
+    X165 I : 0 0
+NetDegree : 3 o37l1
+    X165 I : 0 0
+    X290 I : 0 0
+    X293 I : 0 0
+NetDegree : 3 o37l2
+    X293 I : 0 0
+    X417 I : 0 0
+    X421 I : 0 0
+NetDegree : 3 o37l3
+    X421 I : 0 0
+    X544 I : 0 0
+    X549 I : 0 0
+NetDegree : 3 o37l4
+    X549 I : 0 0
+    X671 I : 0 0
+    X677 I : 0 0
+NetDegree : 3 o37l5
+    X677 I : 0 0
+    X798 I : 0 0
+    X805 I : 0 0
+NetDegree : 3 o38l0
+    X38 I : 0 0
+    X164 I : 0 0
+    X166 I : 0 0
+NetDegree : 3 o38l1
+    X166 I : 0 0
+    X291 I : 0 0
+    X294 I : 0 0
+NetDegree : 3 o38l2
+    X294 I : 0 0
+    X418 I : 0 0
+    X422 I : 0 0
+NetDegree : 3 o38l3
+    X422 I : 0 0
+    X545 I : 0 0
+    X550 I : 0 0
+NetDegree : 3 o38l4
+    X550 I : 0 0
+    X672 I : 0 0
+    X678 I : 0 0
+NetDegree : 3 o38l5
+    X678 I : 0 0
+    X799 I : 0 0
+    X806 I : 0 0
+NetDegree : 3 o39l0
+    X39 I : 0 0
+    X165 I : 0 0
+    X167 I : 0 0
+NetDegree : 3 o39l1
+    X167 I : 0 0
+    X292 I : 0 0
+    X295 I : 0 0
+NetDegree : 3 o39l2
+    X295 I : 0 0
+    X419 I : 0 0
+    X423 I : 0 0
+NetDegree : 3 o39l3
+    X423 I : 0 0
+    X546 I : 0 0
+    X551 I : 0 0
+NetDegree : 3 o39l4
+    X551 I : 0 0
+    X673 I : 0 0
+    X679 I : 0 0
+NetDegree : 3 o39l5
+    X679 I : 0 0
+    X800 I : 0 0
+    X807 I : 0 0
+NetDegree : 3 o3l0
+    X3 I : 0 0
+    X129 I : 0 0
+    X131 I : 0 0
+NetDegree : 4 o3l1
+    X131 I : 0 0
+    X256 I : 0 0
+    X259 I : 0 0
+    X383 I : 0 0
+NetDegree : 3 o3l2
+    X259 I : 0 0
+    X387 I : 0 0
+    X510 I : 0 0
+NetDegree : 3 o3l3
+    X387 I : 0 0
+    X515 I : 0 0
+    X637 I : 0 0
+NetDegree : 3 o3l4
+    X515 I : 0 0
+    X643 I : 0 0
+    X764 I : 0 0
+NetDegree : 3 o3l5
+    X643 I : 0 0
+    X771 I : 0 0
+    X891 I : 0 0
+NetDegree : 3 o40l0
+    X40 I : 0 0
+    X166 I : 0 0
+    X168 I : 0 0
+NetDegree : 3 o40l1
+    X168 I : 0 0
+    X293 I : 0 0
+    X296 I : 0 0
+NetDegree : 3 o40l2
+    X296 I : 0 0
+    X420 I : 0 0
+    X424 I : 0 0
+NetDegree : 3 o40l3
+    X424 I : 0 0
+    X547 I : 0 0
+    X552 I : 0 0
+NetDegree : 3 o40l4
+    X552 I : 0 0
+    X674 I : 0 0
+    X680 I : 0 0
+NetDegree : 3 o40l5
+    X680 I : 0 0
+    X801 I : 0 0
+    X808 I : 0 0
+NetDegree : 3 o41l0
+    X41 I : 0 0
+    X167 I : 0 0
+    X169 I : 0 0
+NetDegree : 3 o41l1
+    X169 I : 0 0
+    X294 I : 0 0
+    X297 I : 0 0
+NetDegree : 3 o41l2
+    X297 I : 0 0
+    X421 I : 0 0
+    X425 I : 0 0
+NetDegree : 3 o41l3
+    X425 I : 0 0
+    X548 I : 0 0
+    X553 I : 0 0
+NetDegree : 3 o41l4
+    X553 I : 0 0
+    X675 I : 0 0
+    X681 I : 0 0
+NetDegree : 3 o41l5
+    X681 I : 0 0
+    X802 I : 0 0
+    X809 I : 0 0
+NetDegree : 3 o42l0
+    X42 I : 0 0
+    X168 I : 0 0
+    X170 I : 0 0
+NetDegree : 3 o42l1
+    X170 I : 0 0
+    X295 I : 0 0
+    X298 I : 0 0
+NetDegree : 3 o42l2
+    X298 I : 0 0
+    X422 I : 0 0
+    X426 I : 0 0
+NetDegree : 3 o42l3
+    X426 I : 0 0
+    X549 I : 0 0
+    X554 I : 0 0
+NetDegree : 3 o42l4
+    X554 I : 0 0
+    X676 I : 0 0
+    X682 I : 0 0
+NetDegree : 3 o42l5
+    X682 I : 0 0
+    X803 I : 0 0
+    X810 I : 0 0
+NetDegree : 3 o43l0
+    X43 I : 0 0
+    X169 I : 0 0
+    X171 I : 0 0
+NetDegree : 3 o43l1
+    X171 I : 0 0
+    X296 I : 0 0
+    X299 I : 0 0
+NetDegree : 3 o43l2
+    X299 I : 0 0
+    X423 I : 0 0
+    X427 I : 0 0
+NetDegree : 3 o43l3
+    X427 I : 0 0
+    X550 I : 0 0
+    X555 I : 0 0
+NetDegree : 3 o43l4
+    X555 I : 0 0
+    X677 I : 0 0
+    X683 I : 0 0
+NetDegree : 3 o43l5
+    X683 I : 0 0
+    X804 I : 0 0
+    X811 I : 0 0
+NetDegree : 3 o44l0
+    X44 I : 0 0
+    X170 I : 0 0
+    X172 I : 0 0
+NetDegree : 3 o44l1
+    X172 I : 0 0
+    X297 I : 0 0
+    X300 I : 0 0
+NetDegree : 3 o44l2
+    X300 I : 0 0
+    X424 I : 0 0
+    X428 I : 0 0
+NetDegree : 3 o44l3
+    X428 I : 0 0
+    X551 I : 0 0
+    X556 I : 0 0
+NetDegree : 3 o44l4
+    X556 I : 0 0
+    X678 I : 0 0
+    X684 I : 0 0
+NetDegree : 3 o44l5
+    X684 I : 0 0
+    X805 I : 0 0
+    X812 I : 0 0
+NetDegree : 3 o45l0
+    X45 I : 0 0
+    X171 I : 0 0
+    X173 I : 0 0
+NetDegree : 3 o45l1
+    X173 I : 0 0
+    X298 I : 0 0
+    X301 I : 0 0
+NetDegree : 3 o45l2
+    X301 I : 0 0
+    X425 I : 0 0
+    X429 I : 0 0
+NetDegree : 3 o45l3
+    X429 I : 0 0
+    X552 I : 0 0
+    X557 I : 0 0
+NetDegree : 3 o45l4
+    X557 I : 0 0
+    X679 I : 0 0
+    X685 I : 0 0
+NetDegree : 3 o45l5
+    X685 I : 0 0
+    X806 I : 0 0
+    X813 I : 0 0
+NetDegree : 3 o46l0
+    X46 I : 0 0
+    X172 I : 0 0
+    X174 I : 0 0
+NetDegree : 3 o46l1
+    X174 I : 0 0
+    X299 I : 0 0
+    X302 I : 0 0
+NetDegree : 3 o46l2
+    X302 I : 0 0
+    X426 I : 0 0
+    X430 I : 0 0
+NetDegree : 3 o46l3
+    X430 I : 0 0
+    X553 I : 0 0
+    X558 I : 0 0
+NetDegree : 3 o46l4
+    X558 I : 0 0
+    X680 I : 0 0
+    X686 I : 0 0
+NetDegree : 3 o46l5
+    X686 I : 0 0
+    X807 I : 0 0
+    X814 I : 0 0
+NetDegree : 3 o47l0
+    X47 I : 0 0
+    X173 I : 0 0
+    X175 I : 0 0
+NetDegree : 3 o47l1
+    X175 I : 0 0
+    X300 I : 0 0
+    X303 I : 0 0
+NetDegree : 3 o47l2
+    X303 I : 0 0
+    X427 I : 0 0
+    X431 I : 0 0
+NetDegree : 3 o47l3
+    X431 I : 0 0
+    X554 I : 0 0
+    X559 I : 0 0
+NetDegree : 3 o47l4
+    X559 I : 0 0
+    X681 I : 0 0
+    X687 I : 0 0
+NetDegree : 3 o47l5
+    X687 I : 0 0
+    X808 I : 0 0
+    X815 I : 0 0
+NetDegree : 3 o48l0
+    X48 I : 0 0
+    X174 I : 0 0
+    X176 I : 0 0
+NetDegree : 3 o48l1
+    X176 I : 0 0
+    X301 I : 0 0
+    X304 I : 0 0
+NetDegree : 3 o48l2
+    X304 I : 0 0
+    X428 I : 0 0
+    X432 I : 0 0
+NetDegree : 3 o48l3
+    X432 I : 0 0
+    X555 I : 0 0
+    X560 I : 0 0
+NetDegree : 3 o48l4
+    X560 I : 0 0
+    X682 I : 0 0
+    X688 I : 0 0
+NetDegree : 3 o48l5
+    X688 I : 0 0
+    X809 I : 0 0
+    X816 I : 0 0
+NetDegree : 3 o49l0
+    X49 I : 0 0
+    X175 I : 0 0
+    X177 I : 0 0
+NetDegree : 3 o49l1
+    X177 I : 0 0
+    X302 I : 0 0
+    X305 I : 0 0
+NetDegree : 3 o49l2
+    X305 I : 0 0
+    X429 I : 0 0
+    X433 I : 0 0
+NetDegree : 3 o49l3
+    X433 I : 0 0
+    X556 I : 0 0
+    X561 I : 0 0
+NetDegree : 3 o49l4
+    X561 I : 0 0
+    X683 I : 0 0
+    X689 I : 0 0
+NetDegree : 3 o49l5
+    X689 I : 0 0
+    X810 I : 0 0
+    X817 I : 0 0
+NetDegree : 3 o4l0
+    X4 I : 0 0
+    X130 I : 0 0
+    X132 I : 0 0
+NetDegree : 3 o4l1
+    X132 I : 0 0
+    X257 I : 0 0
+    X260 I : 0 0
+NetDegree : 4 o4l2
+    X260 I : 0 0
+    X384 I : 0 0
+    X388 I : 0 0
+    X511 I : 0 0
+NetDegree : 3 o4l3
+    X388 I : 0 0
+    X516 I : 0 0
+    X638 I : 0 0
+NetDegree : 3 o4l4
+    X516 I : 0 0
+    X644 I : 0 0
+    X765 I : 0 0
+NetDegree : 3 o4l5
+    X644 I : 0 0
+    X772 I : 0 0
+    X892 I : 0 0
+NetDegree : 3 o50l0
+    X50 I : 0 0
+    X176 I : 0 0
+    X178 I : 0 0
+NetDegree : 3 o50l1
+    X178 I : 0 0
+    X303 I : 0 0
+    X306 I : 0 0
+NetDegree : 3 o50l2
+    X306 I : 0 0
+    X430 I : 0 0
+    X434 I : 0 0
+NetDegree : 3 o50l3
+    X434 I : 0 0
+    X557 I : 0 0
+    X562 I : 0 0
+NetDegree : 3 o50l4
+    X562 I : 0 0
+    X684 I : 0 0
+    X690 I : 0 0
+NetDegree : 3 o50l5
+    X690 I : 0 0
+    X811 I : 0 0
+    X818 I : 0 0
+NetDegree : 3 o51l0
+    X51 I : 0 0
+    X177 I : 0 0
+    X179 I : 0 0
+NetDegree : 3 o51l1
+    X179 I : 0 0
+    X304 I : 0 0
+    X307 I : 0 0
+NetDegree : 3 o51l2
+    X307 I : 0 0
+    X431 I : 0 0
+    X435 I : 0 0
+NetDegree : 3 o51l3
+    X435 I : 0 0
+    X558 I : 0 0
+    X563 I : 0 0
+NetDegree : 3 o51l4
+    X563 I : 0 0
+    X685 I : 0 0
+    X691 I : 0 0
+NetDegree : 3 o51l5
+    X691 I : 0 0
+    X812 I : 0 0
+    X819 I : 0 0
+NetDegree : 3 o52l0
+    X52 I : 0 0
+    X178 I : 0 0
+    X180 I : 0 0
+NetDegree : 3 o52l1
+    X180 I : 0 0
+    X305 I : 0 0
+    X308 I : 0 0
+NetDegree : 3 o52l2
+    X308 I : 0 0
+    X432 I : 0 0
+    X436 I : 0 0
+NetDegree : 3 o52l3
+    X436 I : 0 0
+    X559 I : 0 0
+    X564 I : 0 0
+NetDegree : 3 o52l4
+    X564 I : 0 0
+    X686 I : 0 0
+    X692 I : 0 0
+NetDegree : 3 o52l5
+    X692 I : 0 0
+    X813 I : 0 0
+    X820 I : 0 0
+NetDegree : 3 o53l0
+    X53 I : 0 0
+    X179 I : 0 0
+    X181 I : 0 0
+NetDegree : 3 o53l1
+    X181 I : 0 0
+    X306 I : 0 0
+    X309 I : 0 0
+NetDegree : 3 o53l2
+    X309 I : 0 0
+    X433 I : 0 0
+    X437 I : 0 0
+NetDegree : 3 o53l3
+    X437 I : 0 0
+    X560 I : 0 0
+    X565 I : 0 0
+NetDegree : 3 o53l4
+    X565 I : 0 0
+    X687 I : 0 0
+    X693 I : 0 0
+NetDegree : 3 o53l5
+    X693 I : 0 0
+    X814 I : 0 0
+    X821 I : 0 0
+NetDegree : 3 o54l0
+    X54 I : 0 0
+    X180 I : 0 0
+    X182 I : 0 0
+NetDegree : 3 o54l1
+    X182 I : 0 0
+    X307 I : 0 0
+    X310 I : 0 0
+NetDegree : 3 o54l2
+    X310 I : 0 0
+    X434 I : 0 0
+    X438 I : 0 0
+NetDegree : 3 o54l3
+    X438 I : 0 0
+    X561 I : 0 0
+    X566 I : 0 0
+NetDegree : 3 o54l4
+    X566 I : 0 0
+    X688 I : 0 0
+    X694 I : 0 0
+NetDegree : 3 o54l5
+    X694 I : 0 0
+    X815 I : 0 0
+    X822 I : 0 0
+NetDegree : 3 o55l0
+    X55 I : 0 0
+    X181 I : 0 0
+    X183 I : 0 0
+NetDegree : 3 o55l1
+    X183 I : 0 0
+    X308 I : 0 0
+    X311 I : 0 0
+NetDegree : 3 o55l2
+    X311 I : 0 0
+    X435 I : 0 0
+    X439 I : 0 0
+NetDegree : 3 o55l3
+    X439 I : 0 0
+    X562 I : 0 0
+    X567 I : 0 0
+NetDegree : 3 o55l4
+    X567 I : 0 0
+    X689 I : 0 0
+    X695 I : 0 0
+NetDegree : 3 o55l5
+    X695 I : 0 0
+    X816 I : 0 0
+    X823 I : 0 0
+NetDegree : 3 o56l0
+    X56 I : 0 0
+    X182 I : 0 0
+    X184 I : 0 0
+NetDegree : 3 o56l1
+    X184 I : 0 0
+    X309 I : 0 0
+    X312 I : 0 0
+NetDegree : 3 o56l2
+    X312 I : 0 0
+    X436 I : 0 0
+    X440 I : 0 0
+NetDegree : 3 o56l3
+    X440 I : 0 0
+    X563 I : 0 0
+    X568 I : 0 0
+NetDegree : 3 o56l4
+    X568 I : 0 0
+    X690 I : 0 0
+    X696 I : 0 0
+NetDegree : 3 o56l5
+    X696 I : 0 0
+    X817 I : 0 0
+    X824 I : 0 0
+NetDegree : 3 o57l0
+    X57 I : 0 0
+    X183 I : 0 0
+    X185 I : 0 0
+NetDegree : 3 o57l1
+    X185 I : 0 0
+    X310 I : 0 0
+    X313 I : 0 0
+NetDegree : 3 o57l2
+    X313 I : 0 0
+    X437 I : 0 0
+    X441 I : 0 0
+NetDegree : 3 o57l3
+    X441 I : 0 0
+    X564 I : 0 0
+    X569 I : 0 0
+NetDegree : 3 o57l4
+    X569 I : 0 0
+    X691 I : 0 0
+    X697 I : 0 0
+NetDegree : 3 o57l5
+    X697 I : 0 0
+    X818 I : 0 0
+    X825 I : 0 0
+NetDegree : 3 o58l0
+    X58 I : 0 0
+    X184 I : 0 0
+    X186 I : 0 0
+NetDegree : 3 o58l1
+    X186 I : 0 0
+    X311 I : 0 0
+    X314 I : 0 0
+NetDegree : 3 o58l2
+    X314 I : 0 0
+    X438 I : 0 0
+    X442 I : 0 0
+NetDegree : 3 o58l3
+    X442 I : 0 0
+    X565 I : 0 0
+    X570 I : 0 0
+NetDegree : 3 o58l4
+    X570 I : 0 0
+    X692 I : 0 0
+    X698 I : 0 0
+NetDegree : 3 o58l5
+    X698 I : 0 0
+    X819 I : 0 0
+    X826 I : 0 0
+NetDegree : 3 o59l0
+    X59 I : 0 0
+    X185 I : 0 0
+    X187 I : 0 0
+NetDegree : 3 o59l1
+    X187 I : 0 0
+    X312 I : 0 0
+    X315 I : 0 0
+NetDegree : 3 o59l2
+    X315 I : 0 0
+    X439 I : 0 0
+    X443 I : 0 0
+NetDegree : 3 o59l3
+    X443 I : 0 0
+    X566 I : 0 0
+    X571 I : 0 0
+NetDegree : 3 o59l4
+    X571 I : 0 0
+    X693 I : 0 0
+    X699 I : 0 0
+NetDegree : 3 o59l5
+    X699 I : 0 0
+    X820 I : 0 0
+    X827 I : 0 0
+NetDegree : 3 o5l0
+    X5 I : 0 0
+    X131 I : 0 0
+    X133 I : 0 0
+NetDegree : 3 o5l1
+    X133 I : 0 0
+    X258 I : 0 0
+    X261 I : 0 0
+NetDegree : 3 o5l2
+    X261 I : 0 0
+    X385 I : 0 0
+    X389 I : 0 0
+NetDegree : 4 o5l3
+    X389 I : 0 0
+    X512 I : 0 0
+    X517 I : 0 0
+    X639 I : 0 0
+NetDegree : 3 o5l4
+    X517 I : 0 0
+    X645 I : 0 0
+    X766 I : 0 0
+NetDegree : 3 o5l5
+    X645 I : 0 0
+    X773 I : 0 0
+    X893 I : 0 0
+NetDegree : 3 o60l0
+    X60 I : 0 0
+    X186 I : 0 0
+    X188 I : 0 0
+NetDegree : 3 o60l1
+    X188 I : 0 0
+    X313 I : 0 0
+    X316 I : 0 0
+NetDegree : 3 o60l2
+    X316 I : 0 0
+    X440 I : 0 0
+    X444 I : 0 0
+NetDegree : 3 o60l3
+    X444 I : 0 0
+    X567 I : 0 0
+    X572 I : 0 0
+NetDegree : 3 o60l4
+    X572 I : 0 0
+    X694 I : 0 0
+    X700 I : 0 0
+NetDegree : 3 o60l5
+    X700 I : 0 0
+    X821 I : 0 0
+    X828 I : 0 0
+NetDegree : 3 o61l0
+    X61 I : 0 0
+    X187 I : 0 0
+    X189 I : 0 0
+NetDegree : 3 o61l1
+    X189 I : 0 0
+    X314 I : 0 0
+    X317 I : 0 0
+NetDegree : 3 o61l2
+    X317 I : 0 0
+    X441 I : 0 0
+    X445 I : 0 0
+NetDegree : 3 o61l3
+    X445 I : 0 0
+    X568 I : 0 0
+    X573 I : 0 0
+NetDegree : 3 o61l4
+    X573 I : 0 0
+    X695 I : 0 0
+    X701 I : 0 0
+NetDegree : 3 o61l5
+    X701 I : 0 0
+    X822 I : 0 0
+    X829 I : 0 0
+NetDegree : 3 o62l0
+    X62 I : 0 0
+    X188 I : 0 0
+    X190 I : 0 0
+NetDegree : 3 o62l1
+    X190 I : 0 0
+    X315 I : 0 0
+    X318 I : 0 0
+NetDegree : 3 o62l2
+    X318 I : 0 0
+    X442 I : 0 0
+    X446 I : 0 0
+NetDegree : 3 o62l3
+    X446 I : 0 0
+    X569 I : 0 0
+    X574 I : 0 0
+NetDegree : 3 o62l4
+    X574 I : 0 0
+    X696 I : 0 0
+    X702 I : 0 0
+NetDegree : 3 o62l5
+    X702 I : 0 0
+    X823 I : 0 0
+    X830 I : 0 0
+NetDegree : 3 o63l0
+    X63 I : 0 0
+    X189 I : 0 0
+    X191 I : 0 0
+NetDegree : 3 o63l1
+    X191 I : 0 0
+    X316 I : 0 0
+    X319 I : 0 0
+NetDegree : 3 o63l2
+    X319 I : 0 0
+    X443 I : 0 0
+    X447 I : 0 0
+NetDegree : 3 o63l3
+    X447 I : 0 0
+    X570 I : 0 0
+    X575 I : 0 0
+NetDegree : 3 o63l4
+    X575 I : 0 0
+    X697 I : 0 0
+    X703 I : 0 0
+NetDegree : 3 o63l5
+    X703 I : 0 0
+    X824 I : 0 0
+    X831 I : 0 0
+NetDegree : 3 o64l0
+    X64 I : 0 0
+    X190 I : 0 0
+    X192 I : 0 0
+NetDegree : 3 o64l1
+    X192 I : 0 0
+    X317 I : 0 0
+    X320 I : 0 0
+NetDegree : 3 o64l2
+    X320 I : 0 0
+    X444 I : 0 0
+    X448 I : 0 0
+NetDegree : 3 o64l3
+    X448 I : 0 0
+    X571 I : 0 0
+    X576 I : 0 0
+NetDegree : 3 o64l4
+    X576 I : 0 0
+    X698 I : 0 0
+    X704 I : 0 0
+NetDegree : 3 o64l5
+    X704 I : 0 0
+    X825 I : 0 0
+    X832 I : 0 0
+NetDegree : 3 o65l0
+    X65 I : 0 0
+    X191 I : 0 0
+    X193 I : 0 0
+NetDegree : 3 o65l1
+    X193 I : 0 0
+    X318 I : 0 0
+    X321 I : 0 0
+NetDegree : 3 o65l2
+    X321 I : 0 0
+    X445 I : 0 0
+    X449 I : 0 0
+NetDegree : 3 o65l3
+    X449 I : 0 0
+    X572 I : 0 0
+    X577 I : 0 0
+NetDegree : 3 o65l4
+    X577 I : 0 0
+    X699 I : 0 0
+    X705 I : 0 0
+NetDegree : 3 o65l5
+    X705 I : 0 0
+    X826 I : 0 0
+    X833 I : 0 0
+NetDegree : 3 o66l0
+    X66 I : 0 0
+    X192 I : 0 0
+    X194 I : 0 0
+NetDegree : 3 o66l1
+    X194 I : 0 0
+    X319 I : 0 0
+    X322 I : 0 0
+NetDegree : 3 o66l2
+    X322 I : 0 0
+    X446 I : 0 0
+    X450 I : 0 0
+NetDegree : 3 o66l3
+    X450 I : 0 0
+    X573 I : 0 0
+    X578 I : 0 0
+NetDegree : 3 o66l4
+    X578 I : 0 0
+    X700 I : 0 0
+    X706 I : 0 0
+NetDegree : 3 o66l5
+    X706 I : 0 0
+    X827 I : 0 0
+    X834 I : 0 0
+NetDegree : 3 o67l0
+    X67 I : 0 0
+    X193 I : 0 0
+    X195 I : 0 0
+NetDegree : 3 o67l1
+    X195 I : 0 0
+    X320 I : 0 0
+    X323 I : 0 0
+NetDegree : 3 o67l2
+    X323 I : 0 0
+    X447 I : 0 0
+    X451 I : 0 0
+NetDegree : 3 o67l3
+    X451 I : 0 0
+    X574 I : 0 0
+    X579 I : 0 0
+NetDegree : 3 o67l4
+    X579 I : 0 0
+    X701 I : 0 0
+    X707 I : 0 0
+NetDegree : 3 o67l5
+    X707 I : 0 0
+    X828 I : 0 0
+    X835 I : 0 0
+NetDegree : 3 o68l0
+    X68 I : 0 0
+    X194 I : 0 0
+    X196 I : 0 0
+NetDegree : 3 o68l1
+    X196 I : 0 0
+    X321 I : 0 0
+    X324 I : 0 0
+NetDegree : 3 o68l2
+    X324 I : 0 0
+    X448 I : 0 0
+    X452 I : 0 0
+NetDegree : 3 o68l3
+    X452 I : 0 0
+    X575 I : 0 0
+    X580 I : 0 0
+NetDegree : 3 o68l4
+    X580 I : 0 0
+    X702 I : 0 0
+    X708 I : 0 0
+NetDegree : 3 o68l5
+    X708 I : 0 0
+    X829 I : 0 0
+    X836 I : 0 0
+NetDegree : 3 o69l0
+    X69 I : 0 0
+    X195 I : 0 0
+    X197 I : 0 0
+NetDegree : 3 o69l1
+    X197 I : 0 0
+    X322 I : 0 0
+    X325 I : 0 0
+NetDegree : 3 o69l2
+    X325 I : 0 0
+    X449 I : 0 0
+    X453 I : 0 0
+NetDegree : 3 o69l3
+    X453 I : 0 0
+    X576 I : 0 0
+    X581 I : 0 0
+NetDegree : 3 o69l4
+    X581 I : 0 0
+    X703 I : 0 0
+    X709 I : 0 0
+NetDegree : 3 o69l5
+    X709 I : 0 0
+    X830 I : 0 0
+    X837 I : 0 0
+NetDegree : 3 o6l0
+    X6 I : 0 0
+    X132 I : 0 0
+    X134 I : 0 0
+NetDegree : 3 o6l1
+    X134 I : 0 0
+    X259 I : 0 0
+    X262 I : 0 0
+NetDegree : 3 o6l2
+    X262 I : 0 0
+    X386 I : 0 0
+    X390 I : 0 0
+NetDegree : 3 o6l3
+    X390 I : 0 0
+    X513 I : 0 0
+    X518 I : 0 0
+NetDegree : 4 o6l4
+    X518 I : 0 0
+    X640 I : 0 0
+    X646 I : 0 0
+    X767 I : 0 0
+NetDegree : 3 o6l5
+    X646 I : 0 0
+    X774 I : 0 0
+    X894 I : 0 0
+NetDegree : 3 o70l0
+    X70 I : 0 0
+    X196 I : 0 0
+    X198 I : 0 0
+NetDegree : 3 o70l1
+    X198 I : 0 0
+    X323 I : 0 0
+    X326 I : 0 0
+NetDegree : 3 o70l2
+    X326 I : 0 0
+    X450 I : 0 0
+    X454 I : 0 0
+NetDegree : 3 o70l3
+    X454 I : 0 0
+    X577 I : 0 0
+    X582 I : 0 0
+NetDegree : 3 o70l4
+    X582 I : 0 0
+    X704 I : 0 0
+    X710 I : 0 0
+NetDegree : 3 o70l5
+    X710 I : 0 0
+    X831 I : 0 0
+    X838 I : 0 0
+NetDegree : 3 o71l0
+    X71 I : 0 0
+    X197 I : 0 0
+    X199 I : 0 0
+NetDegree : 3 o71l1
+    X199 I : 0 0
+    X324 I : 0 0
+    X327 I : 0 0
+NetDegree : 3 o71l2
+    X327 I : 0 0
+    X451 I : 0 0
+    X455 I : 0 0
+NetDegree : 3 o71l3
+    X455 I : 0 0
+    X578 I : 0 0
+    X583 I : 0 0
+NetDegree : 3 o71l4
+    X583 I : 0 0
+    X705 I : 0 0
+    X711 I : 0 0
+NetDegree : 3 o71l5
+    X711 I : 0 0
+    X832 I : 0 0
+    X839 I : 0 0
+NetDegree : 3 o72l0
+    X72 I : 0 0
+    X198 I : 0 0
+    X200 I : 0 0
+NetDegree : 3 o72l1
+    X200 I : 0 0
+    X325 I : 0 0
+    X328 I : 0 0
+NetDegree : 3 o72l2
+    X328 I : 0 0
+    X452 I : 0 0
+    X456 I : 0 0
+NetDegree : 3 o72l3
+    X456 I : 0 0
+    X579 I : 0 0
+    X584 I : 0 0
+NetDegree : 3 o72l4
+    X584 I : 0 0
+    X706 I : 0 0
+    X712 I : 0 0
+NetDegree : 3 o72l5
+    X712 I : 0 0
+    X833 I : 0 0
+    X840 I : 0 0
+NetDegree : 3 o73l0
+    X73 I : 0 0
+    X199 I : 0 0
+    X201 I : 0 0
+NetDegree : 3 o73l1
+    X201 I : 0 0
+    X326 I : 0 0
+    X329 I : 0 0
+NetDegree : 3 o73l2
+    X329 I : 0 0
+    X453 I : 0 0
+    X457 I : 0 0
+NetDegree : 3 o73l3
+    X457 I : 0 0
+    X580 I : 0 0
+    X585 I : 0 0
+NetDegree : 3 o73l4
+    X585 I : 0 0
+    X707 I : 0 0
+    X713 I : 0 0
+NetDegree : 3 o73l5
+    X713 I : 0 0
+    X834 I : 0 0
+    X841 I : 0 0
+NetDegree : 3 o74l0
+    X74 I : 0 0
+    X200 I : 0 0
+    X202 I : 0 0
+NetDegree : 3 o74l1
+    X202 I : 0 0
+    X327 I : 0 0
+    X330 I : 0 0
+NetDegree : 3 o74l2
+    X330 I : 0 0
+    X454 I : 0 0
+    X458 I : 0 0
+NetDegree : 3 o74l3
+    X458 I : 0 0
+    X581 I : 0 0
+    X586 I : 0 0
+NetDegree : 3 o74l4
+    X586 I : 0 0
+    X708 I : 0 0
+    X714 I : 0 0
+NetDegree : 3 o74l5
+    X714 I : 0 0
+    X835 I : 0 0
+    X842 I : 0 0
+NetDegree : 3 o75l0
+    X75 I : 0 0
+    X201 I : 0 0
+    X203 I : 0 0
+NetDegree : 3 o75l1
+    X203 I : 0 0
+    X328 I : 0 0
+    X331 I : 0 0
+NetDegree : 3 o75l2
+    X331 I : 0 0
+    X455 I : 0 0
+    X459 I : 0 0
+NetDegree : 3 o75l3
+    X459 I : 0 0
+    X582 I : 0 0
+    X587 I : 0 0
+NetDegree : 3 o75l4
+    X587 I : 0 0
+    X709 I : 0 0
+    X715 I : 0 0
+NetDegree : 3 o75l5
+    X715 I : 0 0
+    X836 I : 0 0
+    X843 I : 0 0
+NetDegree : 3 o76l0
+    X76 I : 0 0
+    X202 I : 0 0
+    X204 I : 0 0
+NetDegree : 3 o76l1
+    X204 I : 0 0
+    X329 I : 0 0
+    X332 I : 0 0
+NetDegree : 3 o76l2
+    X332 I : 0 0
+    X456 I : 0 0
+    X460 I : 0 0
+NetDegree : 3 o76l3
+    X460 I : 0 0
+    X583 I : 0 0
+    X588 I : 0 0
+NetDegree : 3 o76l4
+    X588 I : 0 0
+    X710 I : 0 0
+    X716 I : 0 0
+NetDegree : 3 o76l5
+    X716 I : 0 0
+    X837 I : 0 0
+    X844 I : 0 0
+NetDegree : 3 o77l0
+    X77 I : 0 0
+    X203 I : 0 0
+    X205 I : 0 0
+NetDegree : 3 o77l1
+    X205 I : 0 0
+    X330 I : 0 0
+    X333 I : 0 0
+NetDegree : 3 o77l2
+    X333 I : 0 0
+    X457 I : 0 0
+    X461 I : 0 0
+NetDegree : 3 o77l3
+    X461 I : 0 0
+    X584 I : 0 0
+    X589 I : 0 0
+NetDegree : 3 o77l4
+    X589 I : 0 0
+    X711 I : 0 0
+    X717 I : 0 0
+NetDegree : 3 o77l5
+    X717 I : 0 0
+    X838 I : 0 0
+    X845 I : 0 0
+NetDegree : 3 o78l0
+    X78 I : 0 0
+    X204 I : 0 0
+    X206 I : 0 0
+NetDegree : 3 o78l1
+    X206 I : 0 0
+    X331 I : 0 0
+    X334 I : 0 0
+NetDegree : 3 o78l2
+    X334 I : 0 0
+    X458 I : 0 0
+    X462 I : 0 0
+NetDegree : 3 o78l3
+    X462 I : 0 0
+    X585 I : 0 0
+    X590 I : 0 0
+NetDegree : 3 o78l4
+    X590 I : 0 0
+    X712 I : 0 0
+    X718 I : 0 0
+NetDegree : 3 o78l5
+    X718 I : 0 0
+    X839 I : 0 0
+    X846 I : 0 0
+NetDegree : 3 o79l0
+    X79 I : 0 0
+    X205 I : 0 0
+    X207 I : 0 0
+NetDegree : 3 o79l1
+    X207 I : 0 0
+    X332 I : 0 0
+    X335 I : 0 0
+NetDegree : 3 o79l2
+    X335 I : 0 0
+    X459 I : 0 0
+    X463 I : 0 0
+NetDegree : 3 o79l3
+    X463 I : 0 0
+    X586 I : 0 0
+    X591 I : 0 0
+NetDegree : 3 o79l4
+    X591 I : 0 0
+    X713 I : 0 0
+    X719 I : 0 0
+NetDegree : 3 o79l5
+    X719 I : 0 0
+    X840 I : 0 0
+    X847 I : 0 0
+NetDegree : 3 o7l0
+    X7 I : 0 0
+    X133 I : 0 0
+    X135 I : 0 0
+NetDegree : 3 o7l1
+    X135 I : 0 0
+    X260 I : 0 0
+    X263 I : 0 0
+NetDegree : 3 o7l2
+    X263 I : 0 0
+    X387 I : 0 0
+    X391 I : 0 0
+NetDegree : 3 o7l3
+    X391 I : 0 0
+    X514 I : 0 0
+    X519 I : 0 0
+NetDegree : 3 o7l4
+    X519 I : 0 0
+    X641 I : 0 0
+    X647 I : 0 0
+NetDegree : 4 o7l5
+    X647 I : 0 0
+    X768 I : 0 0
+    X775 I : 0 0
+    X895 I : 0 0
+NetDegree : 3 o80l0
+    X80 I : 0 0
+    X206 I : 0 0
+    X208 I : 0 0
+NetDegree : 3 o80l1
+    X208 I : 0 0
+    X333 I : 0 0
+    X336 I : 0 0
+NetDegree : 3 o80l2
+    X336 I : 0 0
+    X460 I : 0 0
+    X464 I : 0 0
+NetDegree : 3 o80l3
+    X464 I : 0 0
+    X587 I : 0 0
+    X592 I : 0 0
+NetDegree : 3 o80l4
+    X592 I : 0 0
+    X714 I : 0 0
+    X720 I : 0 0
+NetDegree : 3 o80l5
+    X720 I : 0 0
+    X841 I : 0 0
+    X848 I : 0 0
+NetDegree : 3 o81l0
+    X81 I : 0 0
+    X207 I : 0 0
+    X209 I : 0 0
+NetDegree : 3 o81l1
+    X209 I : 0 0
+    X334 I : 0 0
+    X337 I : 0 0
+NetDegree : 3 o81l2
+    X337 I : 0 0
+    X461 I : 0 0
+    X465 I : 0 0
+NetDegree : 3 o81l3
+    X465 I : 0 0
+    X588 I : 0 0
+    X593 I : 0 0
+NetDegree : 3 o81l4
+    X593 I : 0 0
+    X715 I : 0 0
+    X721 I : 0 0
+NetDegree : 3 o81l5
+    X721 I : 0 0
+    X842 I : 0 0
+    X849 I : 0 0
+NetDegree : 3 o82l0
+    X82 I : 0 0
+    X208 I : 0 0
+    X210 I : 0 0
+NetDegree : 3 o82l1
+    X210 I : 0 0
+    X335 I : 0 0
+    X338 I : 0 0
+NetDegree : 3 o82l2
+    X338 I : 0 0
+    X462 I : 0 0
+    X466 I : 0 0
+NetDegree : 3 o82l3
+    X466 I : 0 0
+    X589 I : 0 0
+    X594 I : 0 0
+NetDegree : 3 o82l4
+    X594 I : 0 0
+    X716 I : 0 0
+    X722 I : 0 0
+NetDegree : 3 o82l5
+    X722 I : 0 0
+    X843 I : 0 0
+    X850 I : 0 0
+NetDegree : 3 o83l0
+    X83 I : 0 0
+    X209 I : 0 0
+    X211 I : 0 0
+NetDegree : 3 o83l1
+    X211 I : 0 0
+    X336 I : 0 0
+    X339 I : 0 0
+NetDegree : 3 o83l2
+    X339 I : 0 0
+    X463 I : 0 0
+    X467 I : 0 0
+NetDegree : 3 o83l3
+    X467 I : 0 0
+    X590 I : 0 0
+    X595 I : 0 0
+NetDegree : 3 o83l4
+    X595 I : 0 0
+    X717 I : 0 0
+    X723 I : 0 0
+NetDegree : 3 o83l5
+    X723 I : 0 0
+    X844 I : 0 0
+    X851 I : 0 0
+NetDegree : 3 o84l0
+    X84 I : 0 0
+    X210 I : 0 0
+    X212 I : 0 0
+NetDegree : 3 o84l1
+    X212 I : 0 0
+    X337 I : 0 0
+    X340 I : 0 0
+NetDegree : 3 o84l2
+    X340 I : 0 0
+    X464 I : 0 0
+    X468 I : 0 0
+NetDegree : 3 o84l3
+    X468 I : 0 0
+    X591 I : 0 0
+    X596 I : 0 0
+NetDegree : 3 o84l4
+    X596 I : 0 0
+    X718 I : 0 0
+    X724 I : 0 0
+NetDegree : 3 o84l5
+    X724 I : 0 0
+    X845 I : 0 0
+    X852 I : 0 0
+NetDegree : 3 o85l0
+    X85 I : 0 0
+    X211 I : 0 0
+    X213 I : 0 0
+NetDegree : 3 o85l1
+    X213 I : 0 0
+    X338 I : 0 0
+    X341 I : 0 0
+NetDegree : 3 o85l2
+    X341 I : 0 0
+    X465 I : 0 0
+    X469 I : 0 0
+NetDegree : 3 o85l3
+    X469 I : 0 0
+    X592 I : 0 0
+    X597 I : 0 0
+NetDegree : 3 o85l4
+    X597 I : 0 0
+    X719 I : 0 0
+    X725 I : 0 0
+NetDegree : 3 o85l5
+    X725 I : 0 0
+    X846 I : 0 0
+    X853 I : 0 0
+NetDegree : 3 o86l0
+    X86 I : 0 0
+    X212 I : 0 0
+    X214 I : 0 0
+NetDegree : 3 o86l1
+    X214 I : 0 0
+    X339 I : 0 0
+    X342 I : 0 0
+NetDegree : 3 o86l2
+    X342 I : 0 0
+    X466 I : 0 0
+    X470 I : 0 0
+NetDegree : 3 o86l3
+    X470 I : 0 0
+    X593 I : 0 0
+    X598 I : 0 0
+NetDegree : 3 o86l4
+    X598 I : 0 0
+    X720 I : 0 0
+    X726 I : 0 0
+NetDegree : 3 o86l5
+    X726 I : 0 0
+    X847 I : 0 0
+    X854 I : 0 0
+NetDegree : 3 o87l0
+    X87 I : 0 0
+    X213 I : 0 0
+    X215 I : 0 0
+NetDegree : 3 o87l1
+    X215 I : 0 0
+    X340 I : 0 0
+    X343 I : 0 0
+NetDegree : 3 o87l2
+    X343 I : 0 0
+    X467 I : 0 0
+    X471 I : 0 0
+NetDegree : 3 o87l3
+    X471 I : 0 0
+    X594 I : 0 0
+    X599 I : 0 0
+NetDegree : 3 o87l4
+    X599 I : 0 0
+    X721 I : 0 0
+    X727 I : 0 0
+NetDegree : 3 o87l5
+    X727 I : 0 0
+    X848 I : 0 0
+    X855 I : 0 0
+NetDegree : 3 o88l0
+    X88 I : 0 0
+    X214 I : 0 0
+    X216 I : 0 0
+NetDegree : 3 o88l1
+    X216 I : 0 0
+    X341 I : 0 0
+    X344 I : 0 0
+NetDegree : 3 o88l2
+    X344 I : 0 0
+    X468 I : 0 0
+    X472 I : 0 0
+NetDegree : 3 o88l3
+    X472 I : 0 0
+    X595 I : 0 0
+    X600 I : 0 0
+NetDegree : 3 o88l4
+    X600 I : 0 0
+    X722 I : 0 0
+    X728 I : 0 0
+NetDegree : 3 o88l5
+    X728 I : 0 0
+    X849 I : 0 0
+    X856 I : 0 0
+NetDegree : 3 o89l0
+    X89 I : 0 0
+    X215 I : 0 0
+    X217 I : 0 0
+NetDegree : 3 o89l1
+    X217 I : 0 0
+    X342 I : 0 0
+    X345 I : 0 0
+NetDegree : 3 o89l2
+    X345 I : 0 0
+    X469 I : 0 0
+    X473 I : 0 0
+NetDegree : 3 o89l3
+    X473 I : 0 0
+    X596 I : 0 0
+    X601 I : 0 0
+NetDegree : 3 o89l4
+    X601 I : 0 0
+    X723 I : 0 0
+    X729 I : 0 0
+NetDegree : 3 o89l5
+    X729 I : 0 0
+    X850 I : 0 0
+    X857 I : 0 0
+NetDegree : 3 o8l0
+    X8 I : 0 0
+    X134 I : 0 0
+    X136 I : 0 0
+NetDegree : 3 o8l1
+    X136 I : 0 0
+    X261 I : 0 0
+    X264 I : 0 0
+NetDegree : 3 o8l2
+    X264 I : 0 0
+    X388 I : 0 0
+    X392 I : 0 0
+NetDegree : 3 o8l3
+    X392 I : 0 0
+    X515 I : 0 0
+    X520 I : 0 0
+NetDegree : 3 o8l4
+    X520 I : 0 0
+    X642 I : 0 0
+    X648 I : 0 0
+NetDegree : 3 o8l5
+    X648 I : 0 0
+    X769 I : 0 0
+    X776 I : 0 0
+NetDegree : 3 o90l0
+    X90 I : 0 0
+    X216 I : 0 0
+    X218 I : 0 0
+NetDegree : 3 o90l1
+    X218 I : 0 0
+    X343 I : 0 0
+    X346 I : 0 0
+NetDegree : 3 o90l2
+    X346 I : 0 0
+    X470 I : 0 0
+    X474 I : 0 0
+NetDegree : 3 o90l3
+    X474 I : 0 0
+    X597 I : 0 0
+    X602 I : 0 0
+NetDegree : 3 o90l4
+    X602 I : 0 0
+    X724 I : 0 0
+    X730 I : 0 0
+NetDegree : 3 o90l5
+    X730 I : 0 0
+    X851 I : 0 0
+    X858 I : 0 0
+NetDegree : 3 o91l0
+    X91 I : 0 0
+    X217 I : 0 0
+    X219 I : 0 0
+NetDegree : 3 o91l1
+    X219 I : 0 0
+    X344 I : 0 0
+    X347 I : 0 0
+NetDegree : 3 o91l2
+    X347 I : 0 0
+    X471 I : 0 0
+    X475 I : 0 0
+NetDegree : 3 o91l3
+    X475 I : 0 0
+    X598 I : 0 0
+    X603 I : 0 0
+NetDegree : 3 o91l4
+    X603 I : 0 0
+    X725 I : 0 0
+    X731 I : 0 0
+NetDegree : 3 o91l5
+    X731 I : 0 0
+    X852 I : 0 0
+    X859 I : 0 0
+NetDegree : 3 o92l0
+    X92 I : 0 0
+    X218 I : 0 0
+    X220 I : 0 0
+NetDegree : 3 o92l1
+    X220 I : 0 0
+    X345 I : 0 0
+    X348 I : 0 0
+NetDegree : 3 o92l2
+    X348 I : 0 0
+    X472 I : 0 0
+    X476 I : 0 0
+NetDegree : 3 o92l3
+    X476 I : 0 0
+    X599 I : 0 0
+    X604 I : 0 0
+NetDegree : 3 o92l4
+    X604 I : 0 0
+    X726 I : 0 0
+    X732 I : 0 0
+NetDegree : 3 o92l5
+    X732 I : 0 0
+    X853 I : 0 0
+    X860 I : 0 0
+NetDegree : 3 o93l0
+    X93 I : 0 0
+    X219 I : 0 0
+    X221 I : 0 0
+NetDegree : 3 o93l1
+    X221 I : 0 0
+    X346 I : 0 0
+    X349 I : 0 0
+NetDegree : 3 o93l2
+    X349 I : 0 0
+    X473 I : 0 0
+    X477 I : 0 0
+NetDegree : 3 o93l3
+    X477 I : 0 0
+    X600 I : 0 0
+    X605 I : 0 0
+NetDegree : 3 o93l4
+    X605 I : 0 0
+    X727 I : 0 0
+    X733 I : 0 0
+NetDegree : 3 o93l5
+    X733 I : 0 0
+    X854 I : 0 0
+    X861 I : 0 0
+NetDegree : 3 o94l0
+    X94 I : 0 0
+    X220 I : 0 0
+    X222 I : 0 0
+NetDegree : 3 o94l1
+    X222 I : 0 0
+    X347 I : 0 0
+    X350 I : 0 0
+NetDegree : 3 o94l2
+    X350 I : 0 0
+    X474 I : 0 0
+    X478 I : 0 0
+NetDegree : 3 o94l3
+    X478 I : 0 0
+    X601 I : 0 0
+    X606 I : 0 0
+NetDegree : 3 o94l4
+    X606 I : 0 0
+    X728 I : 0 0
+    X734 I : 0 0
+NetDegree : 3 o94l5
+    X734 I : 0 0
+    X855 I : 0 0
+    X862 I : 0 0
+NetDegree : 3 o95l0
+    X95 I : 0 0
+    X221 I : 0 0
+    X223 I : 0 0
+NetDegree : 3 o95l1
+    X223 I : 0 0
+    X348 I : 0 0
+    X351 I : 0 0
+NetDegree : 3 o95l2
+    X351 I : 0 0
+    X475 I : 0 0
+    X479 I : 0 0
+NetDegree : 3 o95l3
+    X479 I : 0 0
+    X602 I : 0 0
+    X607 I : 0 0
+NetDegree : 3 o95l4
+    X607 I : 0 0
+    X729 I : 0 0
+    X735 I : 0 0
+NetDegree : 3 o95l5
+    X735 I : 0 0
+    X856 I : 0 0
+    X863 I : 0 0
+NetDegree : 3 o96l0
+    X96 I : 0 0
+    X222 I : 0 0
+    X224 I : 0 0
+NetDegree : 3 o96l1
+    X224 I : 0 0
+    X349 I : 0 0
+    X352 I : 0 0
+NetDegree : 3 o96l2
+    X352 I : 0 0
+    X476 I : 0 0
+    X480 I : 0 0
+NetDegree : 3 o96l3
+    X480 I : 0 0
+    X603 I : 0 0
+    X608 I : 0 0
+NetDegree : 3 o96l4
+    X608 I : 0 0
+    X730 I : 0 0
+    X736 I : 0 0
+NetDegree : 3 o96l5
+    X736 I : 0 0
+    X857 I : 0 0
+    X864 I : 0 0
+NetDegree : 3 o97l0
+    X97 I : 0 0
+    X223 I : 0 0
+    X225 I : 0 0
+NetDegree : 3 o97l1
+    X225 I : 0 0
+    X350 I : 0 0
+    X353 I : 0 0
+NetDegree : 3 o97l2
+    X353 I : 0 0
+    X477 I : 0 0
+    X481 I : 0 0
+NetDegree : 3 o97l3
+    X481 I : 0 0
+    X604 I : 0 0
+    X609 I : 0 0
+NetDegree : 3 o97l4
+    X609 I : 0 0
+    X731 I : 0 0
+    X737 I : 0 0
+NetDegree : 3 o97l5
+    X737 I : 0 0
+    X858 I : 0 0
+    X865 I : 0 0
+NetDegree : 3 o98l0
+    X98 I : 0 0
+    X224 I : 0 0
+    X226 I : 0 0
+NetDegree : 3 o98l1
+    X226 I : 0 0
+    X351 I : 0 0
+    X354 I : 0 0
+NetDegree : 3 o98l2
+    X354 I : 0 0
+    X478 I : 0 0
+    X482 I : 0 0
+NetDegree : 3 o98l3
+    X482 I : 0 0
+    X605 I : 0 0
+    X610 I : 0 0
+NetDegree : 3 o98l4
+    X610 I : 0 0
+    X732 I : 0 0
+    X738 I : 0 0
+NetDegree : 3 o98l5
+    X738 I : 0 0
+    X859 I : 0 0
+    X866 I : 0 0
+NetDegree : 3 o99l0
+    X99 I : 0 0
+    X225 I : 0 0
+    X227 I : 0 0
+NetDegree : 3 o99l1
+    X227 I : 0 0
+    X352 I : 0 0
+    X355 I : 0 0
+NetDegree : 3 o99l2
+    X355 I : 0 0
+    X479 I : 0 0
+    X483 I : 0 0
+NetDegree : 3 o99l3
+    X483 I : 0 0
+    X606 I : 0 0
+    X611 I : 0 0
+NetDegree : 3 o99l4
+    X611 I : 0 0
+    X733 I : 0 0
+    X739 I : 0 0
+NetDegree : 3 o99l5
+    X739 I : 0 0
+    X860 I : 0 0
+    X867 I : 0 0
+NetDegree : 3 o9l0
+    X9 I : 0 0
+    X135 I : 0 0
+    X137 I : 0 0
+NetDegree : 3 o9l1
+    X137 I : 0 0
+    X262 I : 0 0
+    X265 I : 0 0
+NetDegree : 3 o9l2
+    X265 I : 0 0
+    X389 I : 0 0
+    X393 I : 0 0
+NetDegree : 3 o9l3
+    X393 I : 0 0
+    X516 I : 0 0
+    X521 I : 0 0
+NetDegree : 3 o9l4
+    X521 I : 0 0
+    X643 I : 0 0
+    X649 I : 0 0
+NetDegree : 3 o9l5
+    X649 I : 0 0
+    X770 I : 0 0
+    X777 I : 0 0
+NetDegree : 128 s0
+    X0 I : 0 0
+    X1 I : 0 0
+    X2 I : 0 0
+    X3 I : 0 0
+    X4 I : 0 0
+    X5 I : 0 0
+    X6 I : 0 0
+    X7 I : 0 0
+    X8 I : 0 0
+    X9 I : 0 0
+    X10 I : 0 0
+    X11 I : 0 0
+    X12 I : 0 0
+    X13 I : 0 0
+    X14 I : 0 0
+    X15 I : 0 0
+    X16 I : 0 0
+    X17 I : 0 0
+    X18 I : 0 0
+    X19 I : 0 0
+    X20 I : 0 0
+    X21 I : 0 0
+    X22 I : 0 0
+    X23 I : 0 0
+    X24 I : 0 0
+    X25 I : 0 0
+    X26 I : 0 0
+    X27 I : 0 0
+    X28 I : 0 0
+    X29 I : 0 0
+    X30 I : 0 0
+    X31 I : 0 0
+    X32 I : 0 0
+    X33 I : 0 0
+    X34 I : 0 0
+    X35 I : 0 0
+    X36 I : 0 0
+    X37 I : 0 0
+    X38 I : 0 0
+    X39 I : 0 0
+    X40 I : 0 0
+    X41 I : 0 0
+    X42 I : 0 0
+    X43 I : 0 0
+    X44 I : 0 0
+    X45 I : 0 0
+    X46 I : 0 0
+    X47 I : 0 0
+    X48 I : 0 0
+    X49 I : 0 0
+    X50 I : 0 0
+    X51 I : 0 0
+    X52 I : 0 0
+    X53 I : 0 0
+    X54 I : 0 0
+    X55 I : 0 0
+    X56 I : 0 0
+    X57 I : 0 0
+    X58 I : 0 0
+    X59 I : 0 0
+    X60 I : 0 0
+    X61 I : 0 0
+    X62 I : 0 0
+    X63 I : 0 0
+    X64 I : 0 0
+    X65 I : 0 0
+    X66 I : 0 0
+    X67 I : 0 0
+    X68 I : 0 0
+    X69 I : 0 0
+    X70 I : 0 0
+    X71 I : 0 0
+    X72 I : 0 0
+    X73 I : 0 0
+    X74 I : 0 0
+    X75 I : 0 0
+    X76 I : 0 0
+    X77 I : 0 0
+    X78 I : 0 0
+    X79 I : 0 0
+    X80 I : 0 0
+    X81 I : 0 0
+    X82 I : 0 0
+    X83 I : 0 0
+    X84 I : 0 0
+    X85 I : 0 0
+    X86 I : 0 0
+    X87 I : 0 0
+    X88 I : 0 0
+    X89 I : 0 0
+    X90 I : 0 0
+    X91 I : 0 0
+    X92 I : 0 0
+    X93 I : 0 0
+    X94 I : 0 0
+    X95 I : 0 0
+    X96 I : 0 0
+    X97 I : 0 0
+    X98 I : 0 0
+    X99 I : 0 0
+    X100 I : 0 0
+    X101 I : 0 0
+    X102 I : 0 0
+    X103 I : 0 0
+    X104 I : 0 0
+    X105 I : 0 0
+    X106 I : 0 0
+    X107 I : 0 0
+    X108 I : 0 0
+    X109 I : 0 0
+    X110 I : 0 0
+    X111 I : 0 0
+    X112 I : 0 0
+    X113 I : 0 0
+    X114 I : 0 0
+    X115 I : 0 0
+    X116 I : 0 0
+    X117 I : 0 0
+    X118 I : 0 0
+    X119 I : 0 0
+    X120 I : 0 0
+    X121 I : 0 0
+    X122 I : 0 0
+    X123 I : 0 0
+    X124 I : 0 0
+    X125 I : 0 0
+    X126 I : 0 0
+    X127 I : 0 0
+NetDegree : 128 s1
+    X128 I : 0 0
+    X129 I : 0 0
+    X130 I : 0 0
+    X131 I : 0 0
+    X132 I : 0 0
+    X133 I : 0 0
+    X134 I : 0 0
+    X135 I : 0 0
+    X136 I : 0 0
+    X137 I : 0 0
+    X138 I : 0 0
+    X139 I : 0 0
+    X140 I : 0 0
+    X141 I : 0 0
+    X142 I : 0 0
+    X143 I : 0 0
+    X144 I : 0 0
+    X145 I : 0 0
+    X146 I : 0 0
+    X147 I : 0 0
+    X148 I : 0 0
+    X149 I : 0 0
+    X150 I : 0 0
+    X151 I : 0 0
+    X152 I : 0 0
+    X153 I : 0 0
+    X154 I : 0 0
+    X155 I : 0 0
+    X156 I : 0 0
+    X157 I : 0 0
+    X158 I : 0 0
+    X159 I : 0 0
+    X160 I : 0 0
+    X161 I : 0 0
+    X162 I : 0 0
+    X163 I : 0 0
+    X164 I : 0 0
+    X165 I : 0 0
+    X166 I : 0 0
+    X167 I : 0 0
+    X168 I : 0 0
+    X169 I : 0 0
+    X170 I : 0 0
+    X171 I : 0 0
+    X172 I : 0 0
+    X173 I : 0 0
+    X174 I : 0 0
+    X175 I : 0 0
+    X176 I : 0 0
+    X177 I : 0 0
+    X178 I : 0 0
+    X179 I : 0 0
+    X180 I : 0 0
+    X181 I : 0 0
+    X182 I : 0 0
+    X183 I : 0 0
+    X184 I : 0 0
+    X185 I : 0 0
+    X186 I : 0 0
+    X187 I : 0 0
+    X188 I : 0 0
+    X189 I : 0 0
+    X190 I : 0 0
+    X191 I : 0 0
+    X192 I : 0 0
+    X193 I : 0 0
+    X194 I : 0 0
+    X195 I : 0 0
+    X196 I : 0 0
+    X197 I : 0 0
+    X198 I : 0 0
+    X199 I : 0 0
+    X200 I : 0 0
+    X201 I : 0 0
+    X202 I : 0 0
+    X203 I : 0 0
+    X204 I : 0 0
+    X205 I : 0 0
+    X206 I : 0 0
+    X207 I : 0 0
+    X208 I : 0 0
+    X209 I : 0 0
+    X210 I : 0 0
+    X211 I : 0 0
+    X212 I : 0 0
+    X213 I : 0 0
+    X214 I : 0 0
+    X215 I : 0 0
+    X216 I : 0 0
+    X217 I : 0 0
+    X218 I : 0 0
+    X219 I : 0 0
+    X220 I : 0 0
+    X221 I : 0 0
+    X222 I : 0 0
+    X223 I : 0 0
+    X224 I : 0 0
+    X225 I : 0 0
+    X226 I : 0 0
+    X227 I : 0 0
+    X228 I : 0 0
+    X229 I : 0 0
+    X230 I : 0 0
+    X231 I : 0 0
+    X232 I : 0 0
+    X233 I : 0 0
+    X234 I : 0 0
+    X235 I : 0 0
+    X236 I : 0 0
+    X237 I : 0 0
+    X238 I : 0 0
+    X239 I : 0 0
+    X240 I : 0 0
+    X241 I : 0 0
+    X242 I : 0 0
+    X243 I : 0 0
+    X244 I : 0 0
+    X245 I : 0 0
+    X246 I : 0 0
+    X247 I : 0 0
+    X248 I : 0 0
+    X249 I : 0 0
+    X250 I : 0 0
+    X251 I : 0 0
+    X252 I : 0 0
+    X253 I : 0 0
+    X254 I : 0 0
+    X255 I : 0 0
+NetDegree : 128 s2
+    X256 I : 0 0
+    X257 I : 0 0
+    X258 I : 0 0
+    X259 I : 0 0
+    X260 I : 0 0
+    X261 I : 0 0
+    X262 I : 0 0
+    X263 I : 0 0
+    X264 I : 0 0
+    X265 I : 0 0
+    X266 I : 0 0
+    X267 I : 0 0
+    X268 I : 0 0
+    X269 I : 0 0
+    X270 I : 0 0
+    X271 I : 0 0
+    X272 I : 0 0
+    X273 I : 0 0
+    X274 I : 0 0
+    X275 I : 0 0
+    X276 I : 0 0
+    X277 I : 0 0
+    X278 I : 0 0
+    X279 I : 0 0
+    X280 I : 0 0
+    X281 I : 0 0
+    X282 I : 0 0
+    X283 I : 0 0
+    X284 I : 0 0
+    X285 I : 0 0
+    X286 I : 0 0
+    X287 I : 0 0
+    X288 I : 0 0
+    X289 I : 0 0
+    X290 I : 0 0
+    X291 I : 0 0
+    X292 I : 0 0
+    X293 I : 0 0
+    X294 I : 0 0
+    X295 I : 0 0
+    X296 I : 0 0
+    X297 I : 0 0
+    X298 I : 0 0
+    X299 I : 0 0
+    X300 I : 0 0
+    X301 I : 0 0
+    X302 I : 0 0
+    X303 I : 0 0
+    X304 I : 0 0
+    X305 I : 0 0
+    X306 I : 0 0
+    X307 I : 0 0
+    X308 I : 0 0
+    X309 I : 0 0
+    X310 I : 0 0
+    X311 I : 0 0
+    X312 I : 0 0
+    X313 I : 0 0
+    X314 I : 0 0
+    X315 I : 0 0
+    X316 I : 0 0
+    X317 I : 0 0
+    X318 I : 0 0
+    X319 I : 0 0
+    X320 I : 0 0
+    X321 I : 0 0
+    X322 I : 0 0
+    X323 I : 0 0
+    X324 I : 0 0
+    X325 I : 0 0
+    X326 I : 0 0
+    X327 I : 0 0
+    X328 I : 0 0
+    X329 I : 0 0
+    X330 I : 0 0
+    X331 I : 0 0
+    X332 I : 0 0
+    X333 I : 0 0
+    X334 I : 0 0
+    X335 I : 0 0
+    X336 I : 0 0
+    X337 I : 0 0
+    X338 I : 0 0
+    X339 I : 0 0
+    X340 I : 0 0
+    X341 I : 0 0
+    X342 I : 0 0
+    X343 I : 0 0
+    X344 I : 0 0
+    X345 I : 0 0
+    X346 I : 0 0
+    X347 I : 0 0
+    X348 I : 0 0
+    X349 I : 0 0
+    X350 I : 0 0
+    X351 I : 0 0
+    X352 I : 0 0
+    X353 I : 0 0
+    X354 I : 0 0
+    X355 I : 0 0
+    X356 I : 0 0
+    X357 I : 0 0
+    X358 I : 0 0
+    X359 I : 0 0
+    X360 I : 0 0
+    X361 I : 0 0
+    X362 I : 0 0
+    X363 I : 0 0
+    X364 I : 0 0
+    X365 I : 0 0
+    X366 I : 0 0
+    X367 I : 0 0
+    X368 I : 0 0
+    X369 I : 0 0
+    X370 I : 0 0
+    X371 I : 0 0
+    X372 I : 0 0
+    X373 I : 0 0
+    X374 I : 0 0
+    X375 I : 0 0
+    X376 I : 0 0
+    X377 I : 0 0
+    X378 I : 0 0
+    X379 I : 0 0
+    X380 I : 0 0
+    X381 I : 0 0
+    X382 I : 0 0
+    X383 I : 0 0
+NetDegree : 128 s3
+    X384 I : 0 0
+    X385 I : 0 0
+    X386 I : 0 0
+    X387 I : 0 0
+    X388 I : 0 0
+    X389 I : 0 0
+    X390 I : 0 0
+    X391 I : 0 0
+    X392 I : 0 0
+    X393 I : 0 0
+    X394 I : 0 0
+    X395 I : 0 0
+    X396 I : 0 0
+    X397 I : 0 0
+    X398 I : 0 0
+    X399 I : 0 0
+    X400 I : 0 0
+    X401 I : 0 0
+    X402 I : 0 0
+    X403 I : 0 0
+    X404 I : 0 0
+    X405 I : 0 0
+    X406 I : 0 0
+    X407 I : 0 0
+    X408 I : 0 0
+    X409 I : 0 0
+    X410 I : 0 0
+    X411 I : 0 0
+    X412 I : 0 0
+    X413 I : 0 0
+    X414 I : 0 0
+    X415 I : 0 0
+    X416 I : 0 0
+    X417 I : 0 0
+    X418 I : 0 0
+    X419 I : 0 0
+    X420 I : 0 0
+    X421 I : 0 0
+    X422 I : 0 0
+    X423 I : 0 0
+    X424 I : 0 0
+    X425 I : 0 0
+    X426 I : 0 0
+    X427 I : 0 0
+    X428 I : 0 0
+    X429 I : 0 0
+    X430 I : 0 0
+    X431 I : 0 0
+    X432 I : 0 0
+    X433 I : 0 0
+    X434 I : 0 0
+    X435 I : 0 0
+    X436 I : 0 0
+    X437 I : 0 0
+    X438 I : 0 0
+    X439 I : 0 0
+    X440 I : 0 0
+    X441 I : 0 0
+    X442 I : 0 0
+    X443 I : 0 0
+    X444 I : 0 0
+    X445 I : 0 0
+    X446 I : 0 0
+    X447 I : 0 0
+    X448 I : 0 0
+    X449 I : 0 0
+    X450 I : 0 0
+    X451 I : 0 0
+    X452 I : 0 0
+    X453 I : 0 0
+    X454 I : 0 0
+    X455 I : 0 0
+    X456 I : 0 0
+    X457 I : 0 0
+    X458 I : 0 0
+    X459 I : 0 0
+    X460 I : 0 0
+    X461 I : 0 0
+    X462 I : 0 0
+    X463 I : 0 0
+    X464 I : 0 0
+    X465 I : 0 0
+    X466 I : 0 0
+    X467 I : 0 0
+    X468 I : 0 0
+    X469 I : 0 0
+    X470 I : 0 0
+    X471 I : 0 0
+    X472 I : 0 0
+    X473 I : 0 0
+    X474 I : 0 0
+    X475 I : 0 0
+    X476 I : 0 0
+    X477 I : 0 0
+    X478 I : 0 0
+    X479 I : 0 0
+    X480 I : 0 0
+    X481 I : 0 0
+    X482 I : 0 0
+    X483 I : 0 0
+    X484 I : 0 0
+    X485 I : 0 0
+    X486 I : 0 0
+    X487 I : 0 0
+    X488 I : 0 0
+    X489 I : 0 0
+    X490 I : 0 0
+    X491 I : 0 0
+    X492 I : 0 0
+    X493 I : 0 0
+    X494 I : 0 0
+    X495 I : 0 0
+    X496 I : 0 0
+    X497 I : 0 0
+    X498 I : 0 0
+    X499 I : 0 0
+    X500 I : 0 0
+    X501 I : 0 0
+    X502 I : 0 0
+    X503 I : 0 0
+    X504 I : 0 0
+    X505 I : 0 0
+    X506 I : 0 0
+    X507 I : 0 0
+    X508 I : 0 0
+    X509 I : 0 0
+    X510 I : 0 0
+    X511 I : 0 0
+NetDegree : 128 s4
+    X512 I : 0 0
+    X513 I : 0 0
+    X514 I : 0 0
+    X515 I : 0 0
+    X516 I : 0 0
+    X517 I : 0 0
+    X518 I : 0 0
+    X519 I : 0 0
+    X520 I : 0 0
+    X521 I : 0 0
+    X522 I : 0 0
+    X523 I : 0 0
+    X524 I : 0 0
+    X525 I : 0 0
+    X526 I : 0 0
+    X527 I : 0 0
+    X528 I : 0 0
+    X529 I : 0 0
+    X530 I : 0 0
+    X531 I : 0 0
+    X532 I : 0 0
+    X533 I : 0 0
+    X534 I : 0 0
+    X535 I : 0 0
+    X536 I : 0 0
+    X537 I : 0 0
+    X538 I : 0 0
+    X539 I : 0 0
+    X540 I : 0 0
+    X541 I : 0 0
+    X542 I : 0 0
+    X543 I : 0 0
+    X544 I : 0 0
+    X545 I : 0 0
+    X546 I : 0 0
+    X547 I : 0 0
+    X548 I : 0 0
+    X549 I : 0 0
+    X550 I : 0 0
+    X551 I : 0 0
+    X552 I : 0 0
+    X553 I : 0 0
+    X554 I : 0 0
+    X555 I : 0 0
+    X556 I : 0 0
+    X557 I : 0 0
+    X558 I : 0 0
+    X559 I : 0 0
+    X560 I : 0 0
+    X561 I : 0 0
+    X562 I : 0 0
+    X563 I : 0 0
+    X564 I : 0 0
+    X565 I : 0 0
+    X566 I : 0 0
+    X567 I : 0 0
+    X568 I : 0 0
+    X569 I : 0 0
+    X570 I : 0 0
+    X571 I : 0 0
+    X572 I : 0 0
+    X573 I : 0 0
+    X574 I : 0 0
+    X575 I : 0 0
+    X576 I : 0 0
+    X577 I : 0 0
+    X578 I : 0 0
+    X579 I : 0 0
+    X580 I : 0 0
+    X581 I : 0 0
+    X582 I : 0 0
+    X583 I : 0 0
+    X584 I : 0 0
+    X585 I : 0 0
+    X586 I : 0 0
+    X587 I : 0 0
+    X588 I : 0 0
+    X589 I : 0 0
+    X590 I : 0 0
+    X591 I : 0 0
+    X592 I : 0 0
+    X593 I : 0 0
+    X594 I : 0 0
+    X595 I : 0 0
+    X596 I : 0 0
+    X597 I : 0 0
+    X598 I : 0 0
+    X599 I : 0 0
+    X600 I : 0 0
+    X601 I : 0 0
+    X602 I : 0 0
+    X603 I : 0 0
+    X604 I : 0 0
+    X605 I : 0 0
+    X606 I : 0 0
+    X607 I : 0 0
+    X608 I : 0 0
+    X609 I : 0 0
+    X610 I : 0 0
+    X611 I : 0 0
+    X612 I : 0 0
+    X613 I : 0 0
+    X614 I : 0 0
+    X615 I : 0 0
+    X616 I : 0 0
+    X617 I : 0 0
+    X618 I : 0 0
+    X619 I : 0 0
+    X620 I : 0 0
+    X621 I : 0 0
+    X622 I : 0 0
+    X623 I : 0 0
+    X624 I : 0 0
+    X625 I : 0 0
+    X626 I : 0 0
+    X627 I : 0 0
+    X628 I : 0 0
+    X629 I : 0 0
+    X630 I : 0 0
+    X631 I : 0 0
+    X632 I : 0 0
+    X633 I : 0 0
+    X634 I : 0 0
+    X635 I : 0 0
+    X636 I : 0 0
+    X637 I : 0 0
+    X638 I : 0 0
+    X639 I : 0 0
+NetDegree : 128 s5
+    X640 I : 0 0
+    X641 I : 0 0
+    X642 I : 0 0
+    X643 I : 0 0
+    X644 I : 0 0
+    X645 I : 0 0
+    X646 I : 0 0
+    X647 I : 0 0
+    X648 I : 0 0
+    X649 I : 0 0
+    X650 I : 0 0
+    X651 I : 0 0
+    X652 I : 0 0
+    X653 I : 0 0
+    X654 I : 0 0
+    X655 I : 0 0
+    X656 I : 0 0
+    X657 I : 0 0
+    X658 I : 0 0
+    X659 I : 0 0
+    X660 I : 0 0
+    X661 I : 0 0
+    X662 I : 0 0
+    X663 I : 0 0
+    X664 I : 0 0
+    X665 I : 0 0
+    X666 I : 0 0
+    X667 I : 0 0
+    X668 I : 0 0
+    X669 I : 0 0
+    X670 I : 0 0
+    X671 I : 0 0
+    X672 I : 0 0
+    X673 I : 0 0
+    X674 I : 0 0
+    X675 I : 0 0
+    X676 I : 0 0
+    X677 I : 0 0
+    X678 I : 0 0
+    X679 I : 0 0
+    X680 I : 0 0
+    X681 I : 0 0
+    X682 I : 0 0
+    X683 I : 0 0
+    X684 I : 0 0
+    X685 I : 0 0
+    X686 I : 0 0
+    X687 I : 0 0
+    X688 I : 0 0
+    X689 I : 0 0
+    X690 I : 0 0
+    X691 I : 0 0
+    X692 I : 0 0
+    X693 I : 0 0
+    X694 I : 0 0
+    X695 I : 0 0
+    X696 I : 0 0
+    X697 I : 0 0
+    X698 I : 0 0
+    X699 I : 0 0
+    X700 I : 0 0
+    X701 I : 0 0
+    X702 I : 0 0
+    X703 I : 0 0
+    X704 I : 0 0
+    X705 I : 0 0
+    X706 I : 0 0
+    X707 I : 0 0
+    X708 I : 0 0
+    X709 I : 0 0
+    X710 I : 0 0
+    X711 I : 0 0
+    X712 I : 0 0
+    X713 I : 0 0
+    X714 I : 0 0
+    X715 I : 0 0
+    X716 I : 0 0
+    X717 I : 0 0
+    X718 I : 0 0
+    X719 I : 0 0
+    X720 I : 0 0
+    X721 I : 0 0
+    X722 I : 0 0
+    X723 I : 0 0
+    X724 I : 0 0
+    X725 I : 0 0
+    X726 I : 0 0
+    X727 I : 0 0
+    X728 I : 0 0
+    X729 I : 0 0
+    X730 I : 0 0
+    X731 I : 0 0
+    X732 I : 0 0
+    X733 I : 0 0
+    X734 I : 0 0
+    X735 I : 0 0
+    X736 I : 0 0
+    X737 I : 0 0
+    X738 I : 0 0
+    X739 I : 0 0
+    X740 I : 0 0
+    X741 I : 0 0
+    X742 I : 0 0
+    X743 I : 0 0
+    X744 I : 0 0
+    X745 I : 0 0
+    X746 I : 0 0
+    X747 I : 0 0
+    X748 I : 0 0
+    X749 I : 0 0
+    X750 I : 0 0
+    X751 I : 0 0
+    X752 I : 0 0
+    X753 I : 0 0
+    X754 I : 0 0
+    X755 I : 0 0
+    X756 I : 0 0
+    X757 I : 0 0
+    X758 I : 0 0
+    X759 I : 0 0
+    X760 I : 0 0
+    X761 I : 0 0
+    X762 I : 0 0
+    X763 I : 0 0
+    X764 I : 0 0
+    X765 I : 0 0
+    X766 I : 0 0
+    X767 I : 0 0
+NetDegree : 128 s6
+    X768 I : 0 0
+    X769 I : 0 0
+    X770 I : 0 0
+    X771 I : 0 0
+    X772 I : 0 0
+    X773 I : 0 0
+    X774 I : 0 0
+    X775 I : 0 0
+    X776 I : 0 0
+    X777 I : 0 0
+    X778 I : 0 0
+    X779 I : 0 0
+    X780 I : 0 0
+    X781 I : 0 0
+    X782 I : 0 0
+    X783 I : 0 0
+    X784 I : 0 0
+    X785 I : 0 0
+    X786 I : 0 0
+    X787 I : 0 0
+    X788 I : 0 0
+    X789 I : 0 0
+    X790 I : 0 0
+    X791 I : 0 0
+    X792 I : 0 0
+    X793 I : 0 0
+    X794 I : 0 0
+    X795 I : 0 0
+    X796 I : 0 0
+    X797 I : 0 0
+    X798 I : 0 0
+    X799 I : 0 0
+    X800 I : 0 0
+    X801 I : 0 0
+    X802 I : 0 0
+    X803 I : 0 0
+    X804 I : 0 0
+    X805 I : 0 0
+    X806 I : 0 0
+    X807 I : 0 0
+    X808 I : 0 0
+    X809 I : 0 0
+    X810 I : 0 0
+    X811 I : 0 0
+    X812 I : 0 0
+    X813 I : 0 0
+    X814 I : 0 0
+    X815 I : 0 0
+    X816 I : 0 0
+    X817 I : 0 0
+    X818 I : 0 0
+    X819 I : 0 0
+    X820 I : 0 0
+    X821 I : 0 0
+    X822 I : 0 0
+    X823 I : 0 0
+    X824 I : 0 0
+    X825 I : 0 0
+    X826 I : 0 0
+    X827 I : 0 0
+    X828 I : 0 0
+    X829 I : 0 0
+    X830 I : 0 0
+    X831 I : 0 0
+    X832 I : 0 0
+    X833 I : 0 0
+    X834 I : 0 0
+    X835 I : 0 0
+    X836 I : 0 0
+    X837 I : 0 0
+    X838 I : 0 0
+    X839 I : 0 0
+    X840 I : 0 0
+    X841 I : 0 0
+    X842 I : 0 0
+    X843 I : 0 0
+    X844 I : 0 0
+    X845 I : 0 0
+    X846 I : 0 0
+    X847 I : 0 0
+    X848 I : 0 0
+    X849 I : 0 0
+    X850 I : 0 0
+    X851 I : 0 0
+    X852 I : 0 0
+    X853 I : 0 0
+    X854 I : 0 0
+    X855 I : 0 0
+    X856 I : 0 0
+    X857 I : 0 0
+    X858 I : 0 0
+    X859 I : 0 0
+    X860 I : 0 0
+    X861 I : 0 0
+    X862 I : 0 0
+    X863 I : 0 0
+    X864 I : 0 0
+    X865 I : 0 0
+    X866 I : 0 0
+    X867 I : 0 0
+    X868 I : 0 0
+    X869 I : 0 0
+    X870 I : 0 0
+    X871 I : 0 0
+    X872 I : 0 0
+    X873 I : 0 0
+    X874 I : 0 0
+    X875 I : 0 0
+    X876 I : 0 0
+    X877 I : 0 0
+    X878 I : 0 0
+    X879 I : 0 0
+    X880 I : 0 0
+    X881 I : 0 0
+    X882 I : 0 0
+    X883 I : 0 0
+    X884 I : 0 0
+    X885 I : 0 0
+    X886 I : 0 0
+    X887 I : 0 0
+    X888 I : 0 0
+    X889 I : 0 0
+    X890 I : 0 0
+    X891 I : 0 0
+    X892 I : 0 0
+    X893 I : 0 0
+    X894 I : 0 0
+    X895 I : 0 0
+NetDegree : 1 z0
+    X768 I : 0 0
+NetDegree : 1 z1
+    X769 I : 0 0
+NetDegree : 1 z10
+    X778 I : 0 0
+NetDegree : 1 z100
+    X868 I : 0 0
+NetDegree : 1 z101
+    X869 I : 0 0
+NetDegree : 1 z102
+    X870 I : 0 0
+NetDegree : 1 z103
+    X871 I : 0 0
+NetDegree : 1 z104
+    X872 I : 0 0
+NetDegree : 1 z105
+    X873 I : 0 0
+NetDegree : 1 z106
+    X874 I : 0 0
+NetDegree : 1 z107
+    X875 I : 0 0
+NetDegree : 1 z108
+    X876 I : 0 0
+NetDegree : 1 z109
+    X877 I : 0 0
+NetDegree : 1 z11
+    X779 I : 0 0
+NetDegree : 1 z110
+    X878 I : 0 0
+NetDegree : 1 z111
+    X879 I : 0 0
+NetDegree : 1 z112
+    X880 I : 0 0
+NetDegree : 1 z113
+    X881 I : 0 0
+NetDegree : 1 z114
+    X882 I : 0 0
+NetDegree : 1 z115
+    X883 I : 0 0
+NetDegree : 1 z116
+    X884 I : 0 0
+NetDegree : 1 z117
+    X885 I : 0 0
+NetDegree : 1 z118
+    X886 I : 0 0
+NetDegree : 1 z119
+    X887 I : 0 0
+NetDegree : 1 z12
+    X780 I : 0 0
+NetDegree : 1 z120
+    X888 I : 0 0
+NetDegree : 1 z121
+    X889 I : 0 0
+NetDegree : 1 z122
+    X890 I : 0 0
+NetDegree : 1 z123
+    X891 I : 0 0
+NetDegree : 1 z124
+    X892 I : 0 0
+NetDegree : 1 z125
+    X893 I : 0 0
+NetDegree : 1 z126
+    X894 I : 0 0
+NetDegree : 1 z127
+    X895 I : 0 0
+NetDegree : 1 z13
+    X781 I : 0 0
+NetDegree : 1 z14
+    X782 I : 0 0
+NetDegree : 1 z15
+    X783 I : 0 0
+NetDegree : 1 z16
+    X784 I : 0 0
+NetDegree : 1 z17
+    X785 I : 0 0
+NetDegree : 1 z18
+    X786 I : 0 0
+NetDegree : 1 z19
+    X787 I : 0 0
+NetDegree : 1 z2
+    X770 I : 0 0
+NetDegree : 1 z20
+    X788 I : 0 0
+NetDegree : 1 z21
+    X789 I : 0 0
+NetDegree : 1 z22
+    X790 I : 0 0
+NetDegree : 1 z23
+    X791 I : 0 0
+NetDegree : 1 z24
+    X792 I : 0 0
+NetDegree : 1 z25
+    X793 I : 0 0
+NetDegree : 1 z26
+    X794 I : 0 0
+NetDegree : 1 z27
+    X795 I : 0 0
+NetDegree : 1 z28
+    X796 I : 0 0
+NetDegree : 1 z29
+    X797 I : 0 0
+NetDegree : 1 z3
+    X771 I : 0 0
+NetDegree : 1 z30
+    X798 I : 0 0
+NetDegree : 1 z31
+    X799 I : 0 0
+NetDegree : 1 z32
+    X800 I : 0 0
+NetDegree : 1 z33
+    X801 I : 0 0
+NetDegree : 1 z34
+    X802 I : 0 0
+NetDegree : 1 z35
+    X803 I : 0 0
+NetDegree : 1 z36
+    X804 I : 0 0
+NetDegree : 1 z37
+    X805 I : 0 0
+NetDegree : 1 z38
+    X806 I : 0 0
+NetDegree : 1 z39
+    X807 I : 0 0
+NetDegree : 1 z4
+    X772 I : 0 0
+NetDegree : 1 z40
+    X808 I : 0 0
+NetDegree : 1 z41
+    X809 I : 0 0
+NetDegree : 1 z42
+    X810 I : 0 0
+NetDegree : 1 z43
+    X811 I : 0 0
+NetDegree : 1 z44
+    X812 I : 0 0
+NetDegree : 1 z45
+    X813 I : 0 0
+NetDegree : 1 z46
+    X814 I : 0 0
+NetDegree : 1 z47
+    X815 I : 0 0
+NetDegree : 1 z48
+    X816 I : 0 0
+NetDegree : 1 z49
+    X817 I : 0 0
+NetDegree : 1 z5
+    X773 I : 0 0
+NetDegree : 1 z50
+    X818 I : 0 0
+NetDegree : 1 z51
+    X819 I : 0 0
+NetDegree : 1 z52
+    X820 I : 0 0
+NetDegree : 1 z53
+    X821 I : 0 0
+NetDegree : 1 z54
+    X822 I : 0 0
+NetDegree : 1 z55
+    X823 I : 0 0
+NetDegree : 1 z56
+    X824 I : 0 0
+NetDegree : 1 z57
+    X825 I : 0 0
+NetDegree : 1 z58
+    X826 I : 0 0
+NetDegree : 1 z59
+    X827 I : 0 0
+NetDegree : 1 z6
+    X774 I : 0 0
+NetDegree : 1 z60
+    X828 I : 0 0
+NetDegree : 1 z61
+    X829 I : 0 0
+NetDegree : 1 z62
+    X830 I : 0 0
+NetDegree : 1 z63
+    X831 I : 0 0
+NetDegree : 1 z64
+    X832 I : 0 0
+NetDegree : 1 z65
+    X833 I : 0 0
+NetDegree : 1 z66
+    X834 I : 0 0
+NetDegree : 1 z67
+    X835 I : 0 0
+NetDegree : 1 z68
+    X836 I : 0 0
+NetDegree : 1 z69
+    X837 I : 0 0
+NetDegree : 1 z7
+    X775 I : 0 0
+NetDegree : 1 z70
+    X838 I : 0 0
+NetDegree : 1 z71
+    X839 I : 0 0
+NetDegree : 1 z72
+    X840 I : 0 0
+NetDegree : 1 z73
+    X841 I : 0 0
+NetDegree : 1 z74
+    X842 I : 0 0
+NetDegree : 1 z75
+    X843 I : 0 0
+NetDegree : 1 z76
+    X844 I : 0 0
+NetDegree : 1 z77
+    X845 I : 0 0
+NetDegree : 1 z78
+    X846 I : 0 0
+NetDegree : 1 z79
+    X847 I : 0 0
+NetDegree : 1 z8
+    X776 I : 0 0
+NetDegree : 1 z80
+    X848 I : 0 0
+NetDegree : 1 z81
+    X849 I : 0 0
+NetDegree : 1 z82
+    X850 I : 0 0
+NetDegree : 1 z83
+    X851 I : 0 0
+NetDegree : 1 z84
+    X852 I : 0 0
+NetDegree : 1 z85
+    X853 I : 0 0
+NetDegree : 1 z86
+    X854 I : 0 0
+NetDegree : 1 z87
+    X855 I : 0 0
+NetDegree : 1 z88
+    X856 I : 0 0
+NetDegree : 1 z89
+    X857 I : 0 0
+NetDegree : 1 z9
+    X777 I : 0 0
+NetDegree : 1 z90
+    X858 I : 0 0
+NetDegree : 1 z91
+    X859 I : 0 0
+NetDegree : 1 z92
+    X860 I : 0 0
+NetDegree : 1 z93
+    X861 I : 0 0
+NetDegree : 1 z94
+    X862 I : 0 0
+NetDegree : 1 z95
+    X863 I : 0 0
+NetDegree : 1 z96
+    X864 I : 0 0
+NetDegree : 1 z97
+    X865 I : 0 0
+NetDegree : 1 z98
+    X866 I : 0 0
+NetDegree : 1 z99
+    X867 I : 0 0
