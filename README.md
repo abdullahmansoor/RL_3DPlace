@@ -24,6 +24,7 @@ poetry install
 
 
 🏃Running the Project
+
 1. Run Default Placement Flow
 poetry run python src/rl_3dplace/DHARL_flow.py
 
@@ -42,22 +43,22 @@ muxshifter64
 muxshifter128
 picorv32a
 
-Project Structure
+🏃 Project Structure:
 src/rl_3dplace/ – Main directory containing the placement script.
 src/PDLibs - Legacy code mainly for bookshelf format support
-data/benchmarks/ – Directory containing supported benchmark designs.
+data/benchmarks/ – Directory containing supported benchmark designs
 data/pagn_models/ - Graph ML models for the above designs. Some models with large files can't be uploaded on github.com
 data/rlagent_models/ - RL Agent Policy models
 pyproject.toml – Poetry dependency configuration.
-README.md – Project documentation.
+README.md – Project documentation
 
 
-Contribution
+🏃 Contribution:
 We welcome contributions! To contribute:
 
 Fork the repository.
 -Create a new branch (feature-xyz).
 -Commit changes and submit a pull request.
 
-License
+🏃 License
 This project is licensed under the MIT License.
