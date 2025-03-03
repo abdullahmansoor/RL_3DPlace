@@ -12,7 +12,7 @@ logging.basicConfig(
 )
 
 from designgines.PLimportUcla import importUcla
-from PLSummarizer import SummarizePlace
+#from PLSummarizer import SummarizePlace
 from design_engines.placement_helpers import change_divide_ratio
 from designgines.PLGridSpec import BinnedGrid
 
@@ -176,6 +176,7 @@ def RunDM():
     logger.info("dm loaded")
     nl1 = dm.binnedLayout
 
+    '''
     summarizer = SummarizePlace(
         nl1.netlist,
         con,
@@ -183,7 +184,7 @@ def RunDM():
         {},
         ''
     )
-
+    '''
     #summarizer.draw_cv2_image(newLayout.netlist)
 
 def main():

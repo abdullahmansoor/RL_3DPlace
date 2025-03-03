@@ -26,7 +26,7 @@ logging.basicConfig(
 
 # Add PDLibs to sys.path
 sys.path.append(str(Path(__file__).resolve().parent.parent / "PDLibs"))
-from PLSummarizer import SummarizePlace
+#from PLSummarizer import SummarizePlace
 import runConfigs.PLconfig_grid as PLconfig_grid
 from designgines.PLimportUcla import importUcla
 from dataModel.PLConstData import ConfigData

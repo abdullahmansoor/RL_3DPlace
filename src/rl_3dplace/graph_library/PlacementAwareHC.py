@@ -1,5 +1,5 @@
 import scipy.cluster.hierarchy as shc
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 import numpy as np
 import logging
 logger = logging.getLogger(__name__)

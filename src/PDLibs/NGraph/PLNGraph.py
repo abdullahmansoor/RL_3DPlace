@@ -1,7 +1,7 @@
 import os
 import sys
 import networkx as nx
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 import numpy as np
 
 from designgines.PLLocationConversion import GridLocation, BinLocation, PlaneLocation, Bin2Grid, ThreeD2Grid, ThreeDLocation
@@ -130,14 +130,14 @@ class NGraph(object):
         print(self.properties_matrix)
         '''
         self.properties_matrix = self.distance_matrix
-        
+    '''
     def save_graph_drawing(self, name="netlist_graph"):
         nx.draw_spectral(self.graph, with_labels = True)
         plt.title("Netlist Graph Drawing")
         file_name = name + "_graph.png" 
         plt.savefig(file_name)
         plt.close()
-
+    '''
 
 def check_3DBinLayout(designName, inputDir):
     from design_manager.PLdm import design_manager

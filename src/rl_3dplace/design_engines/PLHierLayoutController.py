@@ -10,7 +10,7 @@ import psutil
 
 
 from designgines.PLimportUcla import importUcla
-from PLSummarizer import SummarizePlace
+#from PLSummarizer import SummarizePlace
 from dataModel.PLConstData import ConfigData
 from dataModel.PLLayoutData import LayoutData
 from design_engines.PLPAHierParametricFolding import PAHierParametricFolding
@@ -258,7 +258,7 @@ def RunHier3DConversion(layoutData, foldingParams, inputPlacementFile):
 
     nl1 = dm.binnedLayout
     origLayout = dm.origLayout
-    
+    '''
     summarizer = SummarizePlace(
         nl1.netlist,
         con,
@@ -266,7 +266,9 @@ def RunHier3DConversion(layoutData, foldingParams, inputPlacementFile):
         {},
         ''
     )
-
+    '''
+    summarizer=None
+    
     logger.info("Initializing Hier Layout Controller")
     controller = HierLayoutController(
         origLayout,

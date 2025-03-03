@@ -16,8 +16,8 @@ from designgines.PLGeometricLib import Point, BBox
 from designgines.PLLocationConversion import PlaneLocation, GridLocation, BinLocation, ThreeDLocation, Bin2Grid, ThreeD2Grid
 from designgines.PLLocationConversion import Grid2Plane, Plane2Grid
 
-from spektral.data import Graph
-from spektral.data import DisjointLoader
+#from spektral.data import Graph
+#from spektral.data import DisjointLoader
 
 import runConfigs.PLconfig_grid as PLconfig_grid
 
@@ -615,6 +615,7 @@ class Netlist(object):
         self.adjacency_matrix = self.g_object.adjacency_matrix
         self.properties_matrix = self.g_object.properties_matrix
 
+    '''
     def create_dataset_example(self, hvz_sequences):
         test=False
         self.create_graph()
@@ -628,7 +629,6 @@ class Netlist(object):
         a = self.adjacency_matrix
         g = Graph( x=x, a=a, e=None,y=[456] )
         self.rcm = list(cuthill_mckee_ordering(self.graph))
-        '''
         ds = [g]
         design_name = PLconfig_grid.designName
         dsr = CircuitDataset2(design_name, ds, False, path="/home/mansoor4/CircuitAttributePrediction/dataset")
@@ -636,21 +636,21 @@ class Netlist(object):
         loader = DisjointLoader(dsr, batch_size=1)
         inputs, target = loader.__next__()
         self.inputs = inputs
-        '''
+    '''
  
     def update_graph(self):
         self.g_object.update_graph()
         self.adjacency_matrix = self.g_object.adjacency_matrix
         self.properties_matrix = self.g_object.properties_matrix
-        x = np.matrix(self.properties_matrix.toarray()) # for spektral
-        a = self.adjacency_matrix
-        g = Graph( x=x, a=a, e=None,y=[456] )
-        ds = [g]
-        design_name = PLconfig_grid.designName
-        dsr = CircuitDataset2(design_name, ds, False, path="/home/mansoor4/CircuitAttributePrediction/dataset")
-        loader = DisjointLoader(dsr, batch_size=1)
-        inputs, target = loader.__next__()
-        self.inputs = inputs
+        #x = np.matrix(self.properties_matrix.toarray()) # for spektral
+        #a = self.adjacency_matrix
+        #g = Graph( x=x, a=a, e=None,y=[456] )
+        #ds = [g]
+        #design_name = PLconfig_grid.designName
+        #dsr = CircuitDataset2(design_name, ds, False, path="/home/mansoor4/CircuitAttributePrediction/dataset")
+        #loader = DisjointLoader(dsr, batch_size=1)
+        #inputs, target = loader.__next__()
+        #self.inputs = inputs
         #self.inputs = ds
 
     def __str__(self):
