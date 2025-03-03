@@ -31,7 +31,7 @@ poetry run python src/rl_3dplace/DHARL_flow.py
 
 2. Run Placement for a Specific Design
    
-poetry run python src/rl_3dplace/DHARL_flow.py -designName <designName>
+poetry run python src/rl_3dplace/DHARL_flow.py -designName \<designName\>
 
 Available Benchmarks
 The project supports the following benchmark designs:
