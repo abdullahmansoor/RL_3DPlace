@@ -101,10 +101,6 @@ class DHARLflow(object):
             inputPlacementFile=inputPlacementFile
         )
         self.twl2d = self.layout.netlist.twl_pahc_2d(self.layout.avg_sites_per_row, 1)[0]
-        #generate features using GCN
-        #if self.designName == "picorv32a":
-        #    self.gcnFeatures = [0 , 1, 2, 3, 4]
-        #else:
         embeddings, embedding_columns = DHARLflow.GetGCNEmbeddings(self.layout)
         cellCode = self.GetCellCode()
 
@@ -112,20 +108,25 @@ class DHARLflow(object):
         self.columns = embedding_columns  + [ 'twl2d' , 'cellCode']
         data = embeddings + [self.twl2d, cellCode]
         df = pd.DataFrame([data], columns=self.columns)
-        fn = "embedding_dump.csv"
-        df.to_csv(fn)
-        fp = os.path.abspath(fn)
-        print(fp)
+        #fn = "embedding_dump.csv"
+        #df.to_csv(fn)
+        #fp = os.path.abspath(fn)
+        #print(fp)
         return df
         
-    def GetRLAction(self, df):
+    def GetRLAction(self, sInputPlacementFile):
+        df_features = self.GetLayoutFeatures(sInputPlacementFile)
+        print("df_features=",df_features)
 
         # Load saved model
         model_path = PLconfig_grid.rl_model_path
+        print("model_path=",model_path)
         model = h2o.load_model(model_path)
+        print("Model loaded")
 
         # Load input data for prediction
-        input_data = h2o.H2OFrame(df)
+        input_data = h2o.H2OFrame(df_features)
+        print("input_data=",input_data)
 
         # Make predictions
         predictions = model.predict(input_data)
@@ -138,21 +139,16 @@ class DHARLflow(object):
     def RunSingle(self, sInputPlacementFile):
         start_time = time.time()  # Start time tracking
 
-        df_features = self.GetLayoutFeatures(sInputPlacementFile)
-        
-        end_time = time.time()  # End time tracking
-        elapsed_time = end_time - start_time
-
-        print(f"Embedding Execution Time: {elapsed_time:.2f} seconds")
-
         layoutData = self.layoutData
         ag = self.ag
         inputDir = os.path.abspath(PLconfig_grid.inputDir)
 
-        start_time = time.time()  # Start time tracking
-
-        #action = self.GetRLAction(df_features)
-        action = 209
+        try:
+            action = self.GetRLAction(sInputPlacementFile)
+            print(f"action Code = {action}")
+        except Exception as e:
+            action = 209
+            print(f"Faced Exception! action Code = {action}")
 
         end_time = time.time()  # End time tracking
         elapsed_time = end_time - start_time
@@ -191,10 +187,13 @@ class DHARLflow(object):
         
 def Run(args):
     ag = PLconfig_grid.ag
-    designName = PLconfig_grid.designName
+    if args.sDesignName:
+        designName = args.sDesignName
+    else:
+        designName = PLconfig_grid.designName
     inputDir = PLconfig_grid.inputDir
     confData = ConfigData()
-    layoutData = LayoutData(confData)
+    layoutData = LayoutData(confData, designName=designName)
 
     runObj = DHARLflow(ag, layoutData , designName, inputDir)
     if not args.sInputPlacement:
@@ -210,7 +209,11 @@ def main():
 
     parser.add_argument("-inputPlacement", action="store", 
                         dest="sInputPlacement",
-                        help="folder of input UCLA design files",
+                        help="Placement file for evaluation",
+                        required=False, type=str)
+    parser.add_argument("-designName", action="store", 
+                        dest="sDesignName",
+                        help="Name of design for DHCARL flow",
                         required=False, type=str)
 
     args = parser.parse_args()

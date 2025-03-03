@@ -1,5 +1,5 @@
 [project]
-name = "rl-3dplace"
+name = "rl_3dplace"
 version = "0.1.0"
 description = "M3D IC placement flow using Reinforcement learning and hierarchical clustering"
 authors = [
@@ -9,9 +9,20 @@ license = {text = "MIT"}
 readme = "README.md"
 requires-python = ">=3.9"
 dependencies = [
+    "pandas (>=2.2.3,<3.0.0)",
+    "tqdm (>=4.67.1,<5.0.0)",
+    "h2o (>=3.46.0.6,<4.0.0.0)",
+    "psutil (>=7.0.0,<8.0.0)",
+    "sqlalchemy (>=2.0.38,<3.0.0)",
+    "opencv-python (>=4.11.0.86,<5.0.0.0)"
 ]
 
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+black = "^25.1.0"
+

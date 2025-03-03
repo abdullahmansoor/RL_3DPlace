@@ -36,16 +36,16 @@ class importUcla(object):
         self.total_sites = None
         self.avg_sites_per_row = None
         print("***************Reading Nodes file***************")
-        self.readNodefile(self.data['path']+"/"+self.data['name']+".nodes")
+        self.readNodefile(self.data['path'] / f"{self.data['name']}.nodes")
         print("***************Reading Nets file***************")
-        self.readNetsFile(self.data['path']+"/"+self.data['name']+".nets")
+        self.readNetsFile(self.data['path'] / f"{self.data['name']}.nets")
         print("***************Reading Placement file***************")
         if self.inputPlacementFile:
             self.readPlFile(self.inputPlacementFile)
         else:
-            self.readPlFile(self.data['path']+"/"+self.data['name']+".pl")
+            self.readPlFile(self.data['path'] / f"{self.data['name']}.pl")
         print("***************Reading Grid definition file***************")
-        self.readSclFile(self.data['path']+"/"+self.data['name']+".scl")
+        self.readSclFile(self.data['path'] / f"{self.data['name']}.scl")
         #self.data['netlist'].create_graph()
         #Graph initialization moved to PLLayout updateParameters function
         self.updateNodesWithoutTerminals()
