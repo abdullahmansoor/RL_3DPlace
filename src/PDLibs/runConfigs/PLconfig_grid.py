@@ -11,10 +11,7 @@ RLAGENT_MODELS_PATH = ROOT_DIR / "data" / "rlagent_models"
 print(ROOT_DIR)
 
 
-#designName = 'superblue1'
 #designName='rlcase1'
-#designName='muxshifter2'
-#designName='muxshifter3'
 designName='muxshifter4'
 #designName='muxshifter8'
 #designName='muxshifter16'
@@ -22,7 +19,6 @@ designName='muxshifter4'
 #designName='muxshifter32'
 #designName='muxshifter64'
 #designName='muxshifter128'
-#designName = '3node'
 #designName='picorv32a'
 
 integration_mode = '2d'

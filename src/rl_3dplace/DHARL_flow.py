@@ -147,7 +147,9 @@ class DHARLflow(object):
             action = self.GetRLAction(sInputPlacementFile)
             print(f"action Code = {action}")
         except Exception as e:
-            action = 209
+            #using experimental values since some large model files can't be uploaded on github
+            if self.designName == "picorv32a": action = 141
+            elif self.designName == "muxshifter128": action = 209
             print(f"Faced Exception! action Code = {action}")
 
         end_time = time.time()  # End time tracking
@@ -181,9 +183,9 @@ class DHARLflow(object):
             print(f"PA HC failed due to exception {e}")
             twl = 99999999
 
-        twlDelta = twl - self.twl2d
+        #twlDelta = twl - self.twl2d
 
-        print(f"twlDelt={twlDelta}, new_cost={twl}, twl2d={self.twl2d}")
+        #print(f"twlDelt={twlDelta}, new_cost={twl}, twl2d={self.twl2d}")
         
 def Run(args):
     ag = PLconfig_grid.ag

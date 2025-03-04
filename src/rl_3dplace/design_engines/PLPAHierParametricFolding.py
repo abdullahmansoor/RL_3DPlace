@@ -8,6 +8,7 @@ import itertools
 import math
 
 from design_engines.placement_helpers import change_divide_ratio
+import runConfigs.PLconfig_grid as PLconfig_grid
 
 
 def myround(x):
@@ -80,9 +81,10 @@ class PAHierParametricFolding(object):
         xDivisors = divisors(numColumns)
         yDivisors = divisors(numRows)
 
+        sXDivisors = xDivisors[:-1] if PLconfig_grid.designName == "picorv32a" else xDivisors
         #create all possible combinations
         windowSizes = list(itertools.product(
-            xDivisors,
+            sXDivisors,
             yDivisors[:-1]
             )
         )
