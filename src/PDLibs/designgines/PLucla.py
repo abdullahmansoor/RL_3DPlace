@@ -230,7 +230,7 @@ class Netlist(object):
 
     def twl(self, avg_sites_per_row, divide_factor_x, number_of_layers):
         debug = False
-        self.check_placement()
+        #self.check_placement()
         twl=0
         twl_z = 0
         twl_xy = 0

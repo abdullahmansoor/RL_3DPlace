@@ -50,15 +50,16 @@ class LayoutData(object):
         if self.designName == 'rlcase1':
             self.number_of_nodes = 18
             self.netlist_mode = 1
-            self.rl_model_path = ""
             self.gin_model_path = GRAPH_MODELS_PATH / "RLCASE1GFEB15_GINEncoder_ed30_encoder_model.pth"
             self.gsage_model_path = GRAPH_MODELS_PATH / "RLCASE1GFEB15_GraphSAGE_ed30_encoder_model.pth"
+            self.rl_model_path = RLAGENT_MODELS_PATH / "StackedEnsemble_BestOfFamily_4_AutoML_1_20250305_32129"
+
         elif self.designName == 'muxshifter4':
             self.number_of_nodes = 8
             self.netlist_mode = 1
-            self.rl_model_path = ""
             self.gin_model_path = GRAPH_MODELS_PATH / "MUX4GDEC3_GINEncoder_ed30_encoder_model.pth"
             self.gsage_model_path = GRAPH_MODELS_PATH / "MUX4GDEC3_GraphSAGE_encoder_model.pth"
+            self.rl_model_path = RLAGENT_MODELS_PATH / "StackedEnsemble_BestOfFamily_4_AutoML_1_20250305_32129"
         elif designName == 'muxshifter8':
             self.number_of_nodes = 24
             self.netlist_mode = 0

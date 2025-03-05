@@ -1,0 +1,345 @@
+UCLA nets 1.0
+# Created  :  Mar 14 2020
+# User     :  Mansoor, Abdullah,  (abdullahmansoor@gmail.com)
+NumNets : 84
+NumPins : 0
+NetDegree : 2 d0
+    X00 I : 0 0
+    X014 I : 0 0
+NetDegree : 3 d1
+    X00 I : 0 0
+    X01 I : 0 0
+    X015 I : 0 0
+NetDegree : 2 d10
+    X09 I : 0 0
+    X010 I : 0 0
+NetDegree : 2 d11
+    X010 I : 0 0
+    X011 I : 0 0
+NetDegree : 2 d12
+    X011 I : 0 0
+    X012 I : 0 0
+NetDegree : 2 d13
+    X012 I : 0 0
+    X013 I : 0 0
+NetDegree : 2 d14
+    X013 I : 0 0
+    X014 I : 0 0
+NetDegree : 1 d15
+    X015 I : 0 0
+NetDegree : 2 d2
+    X01 I : 0 0
+    X02 I : 0 0
+NetDegree : 2 d3
+    X02 I : 0 0
+    X03 I : 0 0
+NetDegree : 2 d4
+    X03 I : 0 0
+    X04 I : 0 0
+NetDegree : 2 d5
+    X04 I : 0 0
+    X05 I : 0 0
+NetDegree : 2 d6
+    X05 I : 0 0
+    X06 I : 0 0
+NetDegree : 2 d7
+    X06 I : 0 0
+    X07 I : 0 0
+NetDegree : 2 d8
+    X07 I : 0 0
+    X08 I : 0 0
+NetDegree : 2 d9
+    X08 I : 0 0
+    X09 I : 0 0
+NetDegree : 3 o0l0
+    X00 I : 0 0
+    X10 I : 0 0
+    X113 I : 0 0
+NetDegree : 3 o0l1
+    X10 I : 0 0
+    X20 I : 0 0
+    X212 I : 0 0
+NetDegree : 3 o0l2
+    X20 I : 0 0
+    X30 I : 0 0
+    X311 I : 0 0
+NetDegree : 4 o10l0
+    X010 I : 0 0
+    X17 I : 0 0
+    X110 I : 0 0
+    X35 I : 0 0
+NetDegree : 3 o10l1
+    X110 I : 0 0
+    X26 I : 0 0
+    X210 I : 0 0
+NetDegree : 2 o10l2
+    X210 I : 0 0
+    X310 I : 0 0
+NetDegree : 4 o11l0
+    X011 I : 0 0
+    X18 I : 0 0
+    X111 I : 0 0
+    X36 I : 0 0
+NetDegree : 3 o11l1
+    X111 I : 0 0
+    X27 I : 0 0
+    X211 I : 0 0
+NetDegree : 2 o11l2
+    X211 I : 0 0
+    X311 I : 0 0
+NetDegree : 4 o12l0
+    X012 I : 0 0
+    X19 I : 0 0
+    X112 I : 0 0
+    X37 I : 0 0
+NetDegree : 3 o12l1
+    X112 I : 0 0
+    X28 I : 0 0
+    X212 I : 0 0
+NetDegree : 2 o12l2
+    X212 I : 0 0
+    X312 I : 0 0
+NetDegree : 4 o13l0
+    X013 I : 0 0
+    X110 I : 0 0
+    X113 I : 0 0
+    X38 I : 0 0
+NetDegree : 3 o13l1
+    X113 I : 0 0
+    X29 I : 0 0
+    X213 I : 0 0
+NetDegree : 2 o13l2
+    X213 I : 0 0
+    X313 I : 0 0
+NetDegree : 4 o14l0
+    X014 I : 0 0
+    X111 I : 0 0
+    X114 I : 0 0
+    X39 I : 0 0
+NetDegree : 3 o14l1
+    X114 I : 0 0
+    X210 I : 0 0
+    X214 I : 0 0
+NetDegree : 2 o14l2
+    X214 I : 0 0
+    X314 I : 0 0
+NetDegree : 3 o15l0
+    X015 I : 0 0
+    X112 I : 0 0
+    X115 I : 0 0
+NetDegree : 3 o15l1
+    X115 I : 0 0
+    X211 I : 0 0
+    X215 I : 0 0
+NetDegree : 3 o15l2
+    X215 I : 0 0
+    X310 I : 0 0
+    X315 I : 0 0
+NetDegree : 3 o1l0
+    X01 I : 0 0
+    X11 I : 0 0
+    X114 I : 0 0
+NetDegree : 3 o1l1
+    X11 I : 0 0
+    X21 I : 0 0
+    X213 I : 0 0
+NetDegree : 3 o1l2
+    X21 I : 0 0
+    X31 I : 0 0
+    X312 I : 0 0
+NetDegree : 3 o2l0
+    X02 I : 0 0
+    X12 I : 0 0
+    X115 I : 0 0
+NetDegree : 3 o2l1
+    X12 I : 0 0
+    X22 I : 0 0
+    X214 I : 0 0
+NetDegree : 3 o2l2
+    X22 I : 0 0
+    X32 I : 0 0
+    X313 I : 0 0
+NetDegree : 3 o3l0
+    X03 I : 0 0
+    X10 I : 0 0
+    X13 I : 0 0
+NetDegree : 3 o3l1
+    X13 I : 0 0
+    X23 I : 0 0
+    X215 I : 0 0
+NetDegree : 3 o3l2
+    X23 I : 0 0
+    X33 I : 0 0
+    X314 I : 0 0
+NetDegree : 3 o4l0
+    X04 I : 0 0
+    X11 I : 0 0
+    X14 I : 0 0
+NetDegree : 3 o4l1
+    X14 I : 0 0
+    X20 I : 0 0
+    X24 I : 0 0
+NetDegree : 3 o4l2
+    X24 I : 0 0
+    X34 I : 0 0
+    X315 I : 0 0
+NetDegree : 4 o5l0
+    X05 I : 0 0
+    X12 I : 0 0
+    X15 I : 0 0
+    X30 I : 0 0
+NetDegree : 3 o5l1
+    X15 I : 0 0
+    X21 I : 0 0
+    X25 I : 0 0
+NetDegree : 2 o5l2
+    X25 I : 0 0
+    X35 I : 0 0
+NetDegree : 4 o6l0
+    X06 I : 0 0
+    X13 I : 0 0
+    X16 I : 0 0
+    X31 I : 0 0
+NetDegree : 3 o6l1
+    X16 I : 0 0
+    X22 I : 0 0
+    X26 I : 0 0
+NetDegree : 2 o6l2
+    X26 I : 0 0
+    X36 I : 0 0
+NetDegree : 4 o7l0
+    X07 I : 0 0
+    X14 I : 0 0
+    X17 I : 0 0
+    X32 I : 0 0
+NetDegree : 3 o7l1
+    X17 I : 0 0
+    X23 I : 0 0
+    X27 I : 0 0
+NetDegree : 2 o7l2
+    X27 I : 0 0
+    X37 I : 0 0
+NetDegree : 4 o8l0
+    X08 I : 0 0
+    X15 I : 0 0
+    X18 I : 0 0
+    X33 I : 0 0
+NetDegree : 3 o8l1
+    X18 I : 0 0
+    X24 I : 0 0
+    X28 I : 0 0
+NetDegree : 2 o8l2
+    X28 I : 0 0
+    X38 I : 0 0
+NetDegree : 4 o9l0
+    X09 I : 0 0
+    X16 I : 0 0
+    X19 I : 0 0
+    X34 I : 0 0
+NetDegree : 3 o9l1
+    X19 I : 0 0
+    X25 I : 0 0
+    X29 I : 0 0
+NetDegree : 2 o9l2
+    X29 I : 0 0
+    X39 I : 0 0
+NetDegree : 16 s0
+    X00 I : 0 0
+    X01 I : 0 0
+    X02 I : 0 0
+    X03 I : 0 0
+    X04 I : 0 0
+    X05 I : 0 0
+    X06 I : 0 0
+    X07 I : 0 0
+    X08 I : 0 0
+    X09 I : 0 0
+    X010 I : 0 0
+    X011 I : 0 0
+    X012 I : 0 0
+    X013 I : 0 0
+    X014 I : 0 0
+    X015 I : 0 0
+NetDegree : 16 s1
+    X10 I : 0 0
+    X11 I : 0 0
+    X12 I : 0 0
+    X13 I : 0 0
+    X14 I : 0 0
+    X15 I : 0 0
+    X16 I : 0 0
+    X17 I : 0 0
+    X18 I : 0 0
+    X19 I : 0 0
+    X110 I : 0 0
+    X111 I : 0 0
+    X112 I : 0 0
+    X113 I : 0 0
+    X114 I : 0 0
+    X115 I : 0 0
+NetDegree : 16 s2
+    X20 I : 0 0
+    X21 I : 0 0
+    X22 I : 0 0
+    X23 I : 0 0
+    X24 I : 0 0
+    X25 I : 0 0
+    X26 I : 0 0
+    X27 I : 0 0
+    X28 I : 0 0
+    X29 I : 0 0
+    X210 I : 0 0
+    X211 I : 0 0
+    X212 I : 0 0
+    X213 I : 0 0
+    X214 I : 0 0
+    X215 I : 0 0
+NetDegree : 16 s3
+    X30 I : 0 0
+    X31 I : 0 0
+    X32 I : 0 0
+    X33 I : 0 0
+    X34 I : 0 0
+    X35 I : 0 0
+    X36 I : 0 0
+    X37 I : 0 0
+    X38 I : 0 0
+    X39 I : 0 0
+    X310 I : 0 0
+    X311 I : 0 0
+    X312 I : 0 0
+    X313 I : 0 0
+    X314 I : 0 0
+    X315 I : 0 0
+NetDegree : 1 z0
+    X30 I : 0 0
+NetDegree : 1 z1
+    X31 I : 0 0
+NetDegree : 1 z10
+    X310 I : 0 0
+NetDegree : 1 z11
+    X311 I : 0 0
+NetDegree : 1 z12
+    X312 I : 0 0
+NetDegree : 1 z13
+    X313 I : 0 0
+NetDegree : 1 z14
+    X314 I : 0 0
+NetDegree : 1 z15
+    X315 I : 0 0
+NetDegree : 1 z2
+    X32 I : 0 0
+NetDegree : 1 z3
+    X33 I : 0 0
+NetDegree : 1 z4
+    X34 I : 0 0
+NetDegree : 1 z5
+    X35 I : 0 0
+NetDegree : 1 z6
+    X36 I : 0 0
+NetDegree : 1 z7
+    X37 I : 0 0
+NetDegree : 1 z8
+    X38 I : 0 0
+NetDegree : 1 z9
+    X39 I : 0 0

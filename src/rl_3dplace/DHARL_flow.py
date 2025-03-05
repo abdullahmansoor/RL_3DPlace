@@ -93,6 +93,10 @@ class DHARLflow(object):
             return 1
         elif self.designName == "muxshifter128":
             return 2
+        elif self.designName == "muxshifter4":
+            return 0
+        elif self.designName == "rlcase1":
+            return 1
     
     def GetLayoutFeatures(self, inputPlacementFile):
         self.layout = importUcla(
@@ -100,6 +104,7 @@ class DHARLflow(object):
             path=self.layoutData.inputDir,
             inputPlacementFile=inputPlacementFile
         )
+        #self.layout.netlist.change_location_type()
         self.twl2d = self.layout.netlist.twl_pahc_2d(self.layout.avg_sites_per_row, 1)[0]
         embeddings, embedding_columns = DHARLflow.GetGCNEmbeddings(self.layout)
         cellCode = self.GetCellCode()
@@ -116,24 +121,23 @@ class DHARLflow(object):
         
     def GetRLAction(self, sInputPlacementFile):
         df_features = self.GetLayoutFeatures(sInputPlacementFile)
-        print("df_features=",df_features)
+        #print("df_features=",df_features)
 
         # Load saved model
-        model_path = PLconfig_grid.rl_model_path
-        print("model_path=",model_path)
+        model_path = f"{PLconfig_grid.rl_model_path}"
         model = h2o.load_model(model_path)
-        print("Model loaded")
+        logger.info("Model loaded")
 
         # Load input data for prediction
         input_data = h2o.H2OFrame(df_features)
-        print("input_data=",input_data)
+        #print("input_data=",input_data)
 
         # Make predictions
         predictions = model.predict(input_data)
         predictions = predictions.as_data_frame()
         predictions = int(predictions['predict'][0])
         # Display predictions
-        print(predictions)
+        logger.info(predictions)
         return predictions
 
     def RunSingle(self, sInputPlacementFile):
@@ -145,17 +149,17 @@ class DHARLflow(object):
 
         try:
             action = self.GetRLAction(sInputPlacementFile)
-            print(f"action Code = {action}")
+            logger.info(f"action Code = {action}")
         except Exception as e:
             #using experimental values since some large model files can't be uploaded on github
             if self.designName == "picorv32a": action = 141
-            elif self.designName == "muxshifter128": action = 209
-            print(f"Faced Exception! action Code = {action}")
-
+            #elif self.designName == "muxshifter128": action = 209
+            else: action=209
+            logger.info(f"Faced Exception! action Code = {action}")
         end_time = time.time()  # End time tracking
         elapsed_time = end_time - start_time
 
-        print(f"RL Policy Execution Time: {elapsed_time:.2f} seconds")
+        logger.info(f"RL Policy Execution Time: {elapsed_time:.2f} seconds")
 
         numberOfCuts, direction, pattern, windowSizeCode = ag.DecodeAction(action)
         logger.info(f"#########\n"
@@ -177,15 +181,20 @@ class DHARLflow(object):
                 foldingParams,
                 sInputPlacementFile
             )
-            twl = nl1.netlist.twl(nl1.avg_sites_per_row, foldingParams.bin_size_x, 2)[0]
-            #twl = nl1.netlist.twl(nl1.avg_sites_per_row, foldingParams.divider_x, 2)[0]
+
+            nl1.netlist.change_location_type()
+            cf = nl1.netlist.calculate_cost_function(nl1.avg_sites_per_row, foldingParams.bin_size_x, 2)
+            self.layout.netlist.change_location_type()
+            last_cf = self.layout.netlist.calculate_cost_function(
+                self.layout.avg_sites_per_row, 1, 1
+            )
+            logger.info(f"Grid Coordinates new cf={cf}, last_cf={last_cf}, delta cf = {cf-last_cf}")
+            
         except Exception as e:
-            print(f"PA HC failed due to exception {e}")
+            logger.info(f"PA HC failed due to exception {e}")
             twl = 99999999
 
-        #twlDelta = twl - self.twl2d
 
-        #print(f"twlDelt={twlDelta}, new_cost={twl}, twl2d={self.twl2d}")
         
 def Run(args):
     ag = PLconfig_grid.ag
