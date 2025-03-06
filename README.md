@@ -24,7 +24,6 @@ Then, install dependencies:
 poetry install
 ```
 
-
 ## 🏃Running the Project
 
 1. Run Default Placement Flow
@@ -64,11 +63,10 @@ RL_3DPlace/
 
 
 ## 🤝 Contribution:
-
 We welcome contributions! To contribute:
-Fork the repository.
--Create a new branch (feature-xyz).
--Commit changes and submit a pull request.
+- Fork the repository.
+- Create a new branch (feature-xyz).
+- Commit changes and submit a pull request.
 
 ## 📜 License
 This project is licensed under the MIT License.
