@@ -44,19 +44,19 @@ elif designName == 'muxshifter8':
     netlist_mode = 0
     gin_model_path = GRAPH_MODELS_PATH / "MUX8GDEC2_GINEncoder_ed30_encoder_model.pth"
     gsage_model_path = GRAPH_MODELS_PATH / "MUX8GDEC2_GraphSAGE_ed30_encoder_model.pth"
-    rl_model_path = RLAGENT_MODELS_PATH / "XGBoost_grid_1_AutoML_1_20250203_111743_model_8"
+    rl_model_path = RLAGENT_MODELS_PATH / "XGBoost_grid_1_AutoML_1_20250306_02444_model_2"
 elif designName == 'muxshifter16':
     number_of_nodes = 64
     netlist_mode = 0
-    gin_model_path = GRAPH_MODELS_PATH / "/home/mansoor4/CircuitAttributePrediction/supervisedLearning/gcnModels/MUX16GDEC3_GINEncoder_ed30_encoder_model.pth"
+    gin_model_path = GRAPH_MODELS_PATH / "MUX16GDEC3_GINEncoder_ed30_encoder_model.pth"
     gsage_model_path = GRAPH_MODELS_PATH / "MUX16GDEC3_GraphSAGE_ed30_encoder_model.pth"
-    rl_model_path = RLAGENT_MODELS_PATH / "XGBoost_grid_1_AutoML_1_20250203_111743_model_8"
+    rl_model_path = RLAGENT_MODELS_PATH / "XGBoost_grid_1_AutoML_1_20250306_02444_model_2"
 elif designName == 'muxshifter16b':
     number_of_nodes = 64
     netlist_mode = 0
     gin_model_path = GRAPH_MODELS_PATH / "MUX16BGDEC3_GINEncoder_ed30_encoder_model.pth"
     gsage_model_path = GRAPH_MODELS_PATH / "MUX16BGDEC3_GraphSAGE_ed30_encoder_model.pth"
-    rl_model_path = RLAGENT_MODELS_PATH / "XGBoost_grid_1_AutoML_1_20250203_111743_model_8"
+    rl_model_path = RLAGENT_MODELS_PATH / "XGBoost_grid_1_AutoML_1_20250306_02444_model_2"
 elif designName == 'muxshifter32':
     number_of_nodes = 160
     netlist_mode = 0

@@ -63,21 +63,21 @@ class LayoutData(object):
         elif designName == 'muxshifter8':
             self.number_of_nodes = 24
             self.netlist_mode = 0
-            self.rl_model_path = RLAGENT_MODELS_PATH / "XGBoost_grid_1_AutoML_1_20250203_111743_model_8"
             self.gin_model_path = GRAPH_MODELS_PATH / "MUX8GDEC2_GINEncoder_ed30_encoder_model.pth"
             self.gsage_model_path = GRAPH_MODELS_PATH / "MUX8GDEC2_GraphSAGE_ed30_encoder_model.pth"
+            self.rl_model_path = RLAGENT_MODELS_PATH / "XGBoost_grid_1_AutoML_1_20250306_02444_model_2"
         elif designName == 'muxshifter16':
             self.number_of_nodes = 64
             self.netlist_mode = 0
-            self.rl_model_path = RLAGENT_MODELS_PATH / "XGBoost_grid_1_AutoML_1_20250203_111743_model_8"
             self.gin_model_path = GRAPH_MODELS_PATH / "MUX16GDEC3_GINEncoder_ed30_encoder_model.pth"
             self.gsage_model_path = GRAPH_MODELS_PATH / "MUX16GDEC3_GraphSAGE_ed30_encoder_model.pth"
+            self.rl_model_path = RLAGENT_MODELS_PATH / "XGBoost_grid_1_AutoML_1_20250306_02444_model_2"
         elif self.designName == 'muxshifter16b':
             self.number_of_nodes = 64
             self.netlist_mode = 0
-            self.rl_model_path = RLAGENT_MODELS_PATH / "XGBoost_grid_1_AutoML_1_20250203_111743_model_8"
             self.gin_model_path = GRAPH_MODELS_PATH / "MUX16BGDEC3_GINEncoder_ed30_encoder_model.pth"
             self.gsage_model_path = GRAPH_MODELS_PATH / "MUX16BGDEC3_GraphSAGE_ed30_encoder_model.pth"
+            self.rl_model_path = RLAGENT_MODELS_PATH / "XGBoost_grid_1_AutoML_1_20250306_02444_model_2"
         elif self.designName == 'muxshifter32':
             self.number_of_nodes = 160
             self.netlist_mode = 0

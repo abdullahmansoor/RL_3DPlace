@@ -156,6 +156,7 @@ class DHARLflow(object):
             #elif self.designName == "muxshifter128": action = 209
             else: action=209
             logger.info(f"Faced Exception! action Code = {action}")
+        logger.info(f"action Code = {action}")
         end_time = time.time()  # End time tracking
         elapsed_time = end_time - start_time
 
