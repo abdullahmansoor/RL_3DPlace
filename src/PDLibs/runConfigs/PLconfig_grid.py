@@ -73,8 +73,11 @@ elif designName == 'muxshifter64':
 elif designName == 'muxshifter128':
     number_of_nodes = 896
     netlist_mode = 0
-    gin_model_path = GRAPH_MODELS_PATH / "MUX128GDEC2_GINEncoder_ed30_encoder_model.pth"
-    gsage_model_path = GRAPH_MODELS_PATH / "gcnModels/MUX128GDEC2_GraphSAGE_ed30_encoder_model.pth"
+    #gin_model_path = GRAPH_MODELS_PATH / "MUX128GDEC2_GINEncoder_ed30_encoder_model.pth"
+    gin_model_path = "/scratch/mansoor4/RLAgentDS/gModel/MUXSHIFTER128JUN12_GINEncoder_ed30_encoder_model.pth"
+    #gsage_model_path = GRAPH_MODELS_PATH / "gcnModels/MUX128GDEC2_GraphSAGE_ed30_encoder_model.pth"
+    gsage_model_path = "/scratch/mansoor4/RLAgentDS/gModel/MUXSHIFTER128JUN12_GraphSAGE_ed30_encoder_model.pth"
+    
     rl_model_path = RLAGENT_MODELS_PATH / "XGBoost_grid_1_AutoML_1_20250218_192931_model_8"
 
 elif designName == 'picorv32a':

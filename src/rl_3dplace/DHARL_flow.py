@@ -50,13 +50,14 @@ class DHARLflow(object):
 
     @staticmethod
     def GetGCNEmbeddings(layout):
-        input_dim = layout.netlist.numNodes
-        hidden_dim = input_dim*3
-        n_layers = 1
-        embedding_dim = 30
 
         data = layout.netlist.get_torch_data()
 
+        #input_dim = layout.netlist.numNodes
+        input_dim = data.x.shape[1]
+        hidden_dim = input_dim*3
+        n_layers = 1
+        embedding_dim = 30
         gin_model_path = PLconfig_grid.gin_model_path
 
         encoder = InitializeEncoderModel("GINEncoder", input_dim, hidden_dim, n_layers, embedding_dim)

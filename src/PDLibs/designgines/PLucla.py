@@ -595,7 +595,8 @@ class Netlist(object):
         self.create_graph()
 
         a = self.adjacency_matrix
-        x = self.g_object.distance_matrix
+        #x = self.g_object.distance_matrix
+        x = self.g_object.get_landmark_distance_matrix()
         row, col = np.nonzero(a.todense())
 
         # Step 2: Create edge_index tensor

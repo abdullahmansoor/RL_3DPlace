@@ -82,26 +82,27 @@ class LayoutData(object):
             self.number_of_nodes = 160
             self.netlist_mode = 0
             self.rl_model_path = RLAGENT_MODELS_PATH / "XGBoost_grid_1_AutoML_1_20250218_192931_model_8"
-            self.gin_model_path = GRAPH_MODELS_PATH / "MUX32GDEC3_GINEncoder_ed30_encoder_model.pth"
-            self.gsage_model_path = GRAPH_MODELS_PATH / "MUX32GDEC3_GraphSAGE_ed30_encoder_model.pth"
+            self.gin_model_path = GRAPH_MODELS_PATH / "MUXSHIFTER32JUN12_GINEncoder_ed30_encoder_model.pth"
+            self.gsage_model_path = GRAPH_MODELS_PATH / "MUXSHIFTER32JUN12_GraphSAGE_ed30_encoder_model.pth"
         elif self.designName == 'muxshifter64':
             self.number_of_nodes = 384
             self.netlist_mode = 0
             self.rl_model_path = RLAGENT_MODELS_PATH / "XGBoost_grid_1_AutoML_1_20250218_192931_model_8"
-            self.gin_model_path = GRAPH_MODELS_PATH / "MUX64GDEC3_GINEncoder_ed30_encoder_model.pth"
-            self.gsage_model_path = GRAPH_MODELS_PATH / "MUX64GDEC3_GraphSAGE_ed30_encoder_model.pth"
+            self.gin_model_path = GRAPH_MODELS_PATH / "MUXSHIFTER64JUN12_GINEncoder_ed30_encoder_model.pth"
+            self.gsage_model_path = GRAPH_MODELS_PATH / "MUXSHIFTER64JUN12_GraphSAGE_ed30_encoder_model.pth"
         elif designName == 'muxshifter128':
             self.number_of_nodes = 896
             self.netlist_mode = 0
             self.rl_model_path = RLAGENT_MODELS_PATH / "XGBoost_grid_1_AutoML_1_20250218_192931_model_8"
-            self.gin_model_path = GRAPH_MODELS_PATH / "MUX128GDEC2_GINEncoder_ed30_encoder_model.pth"
-            self.gsage_model_path = GRAPH_MODELS_PATH / "MUX128GDEC2_GraphSAGE_ed30_encoder_model.pth"
+            self.gin_model_path = GRAPH_MODELS_PATH / "MUXSHIFTER128JUN12_GINEncoder_ed30_encoder_model.pth"
+            #"MUX128GDEC2_GINEncoder_ed30_encoder_model.pth"
+            self.gsage_model_path = GRAPH_MODELS_PATH / "MUXSHIFTER128JUN12_GraphSAGE_ed30_encoder_model.pth"
         elif designName == 'picorv32a':
             self.number_of_nodes = 28967
             self.netlist_mode = 0
             self.rl_model_path = RLAGENT_MODELS_PATH / "XGBoost_grid_1_AutoML_1_2025006_172801_model_7"
-            self.gin_model_path = GRAPH_MODELS_PATH / "PICORV32AGJAN1_4_GINEncoder_ed30_encoder_model.pth"
-            self.gsage_model_path = GRAPH_MODELS_PATH / "PICORV32AGJAN1_4_GraphSAGEEncoder_ed30_encoder_model.pth"
+            self.gin_model_path = GRAPH_MODELS_PATH / "picorv32aJUN12_GINEncoder_ed30_encoder_model.pth"
+            self.gsage_model_path = GRAPH_MODELS_PATH / "picorv32aJUN12_GraphSAGEEncoder_ed30_encoder_model.pth"
         self.grid_definition = Grid()
         self.scl_file_path = self.inputDir / f"{self.designName}.scl"
         self.grid_definition.readSclFile(self.scl_file_path)
