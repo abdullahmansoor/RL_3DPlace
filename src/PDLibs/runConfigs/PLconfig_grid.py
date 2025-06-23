@@ -20,6 +20,8 @@ designName='muxshifter4'
 #designName='muxshifter64'
 #designName='muxshifter128'
 #designName='picorv32a'
+#designName='tate'
+#designName='jpeg'
 
 integration_mode = '2d'
 placement_type = '2d'
@@ -80,8 +82,15 @@ elif designName == 'muxshifter128':
     
     rl_model_path = RLAGENT_MODELS_PATH / "XGBoost_grid_1_AutoML_1_20250218_192931_model_8"
 
-elif designName == 'picorv32a':
-    number_of_nodes = 28967
+elif designName == 'jpeg':
+    number_of_nodes = 524673
+    netlist_mode = 0
+    rl_model_path = RLAGENT_MODELS_PATH / "XGBoost_grid_1_AutoML_1_2025006_172801_model_7"
+    gin_model_path = GRAPH_MODELS_PATH / "PICORV32AGJAN1_4_GINEncoder_ed30_encoder_model.pth"
+    gsage_model_path = GRAPH_MODELS_PATH / "PICORV32AGJAN1_4_GraphSAGEEncoder_ed30_encoder_model.pth"
+
+elif designName == 'tate':
+    number_of_nodes = 236673
     netlist_mode = 0
     rl_model_path = RLAGENT_MODELS_PATH / "XGBoost_grid_1_AutoML_1_2025006_172801_model_7"
     gin_model_path = GRAPH_MODELS_PATH / "PICORV32AGJAN1_4_GINEncoder_ed30_encoder_model.pth"

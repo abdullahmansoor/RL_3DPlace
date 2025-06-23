@@ -103,6 +103,21 @@ class LayoutData(object):
             self.rl_model_path = RLAGENT_MODELS_PATH / "XGBoost_grid_1_AutoML_1_2025006_172801_model_7"
             self.gin_model_path = GRAPH_MODELS_PATH / "picorv32aJUN12_GINEncoder_ed30_encoder_model.pth"
             self.gsage_model_path = GRAPH_MODELS_PATH / "picorv32aJUN12_GraphSAGEEncoder_ed30_encoder_model.pth"
+
+        elif designName == 'jpeg':
+            self.number_of_nodes = 524673
+            self.netlist_mode = 0
+            self.rl_model_path = RLAGENT_MODELS_PATH / "XGBoost_grid_1_AutoML_1_2025006_172801_model_7"
+            self.gin_model_path = GRAPH_MODELS_PATH / "PICORV32AGJAN1_4_GINEncoder_ed30_encoder_model.pth"
+            self.gsage_model_path = GRAPH_MODELS_PATH / "PICORV32AGJAN1_4_GraphSAGEEncoder_ed30_encoder_model.pth"
+
+        elif designName == 'tate':
+            self.number_of_nodes = 236673
+            self.netlist_mode = 0
+            self.rl_model_path = RLAGENT_MODELS_PATH / "XGBoost_grid_1_AutoML_1_2025006_172801_model_7"
+            self.gin_model_path = GRAPH_MODELS_PATH / "PICORV32AGJAN1_4_GINEncoder_ed30_encoder_model.pth"
+            self.gsage_model_path = GRAPH_MODELS_PATH / "PICORV32AGJAN1_4_GraphSAGEEncoder_ed30_encoder_model.pth"
+
         self.grid_definition = Grid()
         self.scl_file_path = self.inputDir / f"{self.designName}.scl"
         self.grid_definition.readSclFile(self.scl_file_path)

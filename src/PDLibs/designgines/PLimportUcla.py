@@ -2,6 +2,9 @@ import time
 import json
 import sys
 import os
+from pathlib import Path
+
+sys.path.append(str(Path(__file__).resolve().parent.parent.parent / "PDLibs"))
 
 from designgines.PLucla import Netlist
 from designgines.PLucla import Node
@@ -600,13 +603,27 @@ def sim_to_pldm(inputDir, designName, input_file):
     print(i1)
 	
 def ucla_to_pldm(inputDir, designName):
-    i1= importUcla(name=designName, path=inputDir)
+    from dataModel.PLConstData import ConfigData
+    from dataModel.PLLayoutData import LayoutData
+    confData = ConfigData()
+    layoutData = LayoutData(confData, designName=designName)
+
+    i1 = importUcla(
+        name=layoutData.designName,
+        path=layoutData.inputDir,
+        #inputPlacementFile=inputPlacementFile
+    )
     items = i1.netlist.twl(1432, 1, 1)
     print(items[0])
-    g1 = NGraph(i1.netlist)
+    #g1 = NGraph(i1.netlist)
 
 def main():
     import argparse
+
+    # Add PDLibs to sys.path
+    sys.path.append(str(Path(__file__).resolve().parent.parent.parent / "rl_3dplace"))
+    
+
     parser = argparse.ArgumentParser()
 
     parser.add_argument("-name", action="store", dest="designName",
@@ -631,14 +648,14 @@ def main():
 
     spice_file = None
     if args.spice_file:
-            spice_file = os.path.abspath(inputDir + "/" + args.spice_file)
-            sim_to_pldm(inputDir, designName, spice_file)
+        spice_file = os.path.abspath(inputDir + "/" + args.spice_file)
+        sim_to_pldm(inputDir, designName, spice_file)
     else:
-            ucla_to_pldm(inputDir, designName)
+        ucla_to_pldm(inputDir, designName)
 
     if args.graph:
-            create_graph_ucla(inputDir, designName)
+        create_graph_ucla(inputDir, designName)
 
 
 if __name__ == "__main__":
-	main()
+    main()
