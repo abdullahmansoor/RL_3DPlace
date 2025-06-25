@@ -1,0 +1,11 @@
+[project]
+name = "bookshelf_io"
+version = "0.1.0"
+description = "Utilities for parsing Bookshelf format netlists and grid files."
+requires-python = ">=3.10"
+authors = [{name = "Abdullah Mansoor"}]
+readme = "README.md"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
