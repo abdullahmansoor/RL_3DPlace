@@ -108,15 +108,15 @@ class LayoutData(object):
             self.number_of_nodes = 524673
             self.netlist_mode = 0
             self.rl_model_path = RLAGENT_MODELS_PATH / "XGBoost_grid_1_AutoML_1_2025006_172801_model_7"
-            self.gin_model_path = GRAPH_MODELS_PATH / "PICORV32AGJAN1_4_GINEncoder_ed30_encoder_model.pth"
-            self.gsage_model_path = GRAPH_MODELS_PATH / "PICORV32AGJAN1_4_GraphSAGEEncoder_ed30_encoder_model.pth"
+            self.gin_model_path = GRAPH_MODELS_PATH / "JPEGJUN12_GINEncoder_ed30_encoder_model.pth"
+            self.gsage_model_path = GRAPH_MODELS_PATH / "JPEGJUN12_GraphSAGEEncoder_ed30_encoder_model.pth"
 
         elif designName == 'tate':
             self.number_of_nodes = 236673
             self.netlist_mode = 0
             self.rl_model_path = RLAGENT_MODELS_PATH / "XGBoost_grid_1_AutoML_1_2025006_172801_model_7"
-            self.gin_model_path = GRAPH_MODELS_PATH / "PICORV32AGJAN1_4_GINEncoder_ed30_encoder_model.pth"
-            self.gsage_model_path = GRAPH_MODELS_PATH / "PICORV32AGJAN1_4_GraphSAGEEncoder_ed30_encoder_model.pth"
+            self.gin_model_path = GRAPH_MODELS_PATH / "TATEJUN12_GINEncoder_ed30_encoder_model.pth"
+            self.gsage_model_path = GRAPH_MODELS_PATH / "TATEJUN12_GraphSAGEEncoder_ed30_encoder_model.pth"
 
         self.grid_definition = Grid()
         self.scl_file_path = self.inputDir / f"{self.designName}.scl"
@@ -128,7 +128,7 @@ class LayoutData(object):
         state_method = constData.state_method
 
 
-        self.ag = ParametricActionsGen()
+        self.ag = ParametricActionsGen(mode="paHC")
         self.ag.GenerateActions()
 
 

@@ -45,7 +45,7 @@ class design_manager_cluster(object):
         self.origLayout = None
         self.design_summary = None
         self.cell_bin_mapping = {}
-
+        self.imported_design = None
         self.logger = logging.getLogger(__name__)
         logging.basicConfig(
             level=logging.INFO,
@@ -62,7 +62,10 @@ class design_manager_cluster(object):
             inputPlacementFile=self.inputPlacementFile
         )
 
+        logger.info("design loaded")
+
         # Create a binned grid specification
+        #imported_design_orig = imported_design.shallow_copy()
         imported_design_orig = copy.deepcopy(imported_design)
         #print(f"{imported_design_orig.gridDefinition}")
 
@@ -80,6 +83,8 @@ class design_manager_cluster(object):
             self.bin_size_y
         )
 
+        logger.info("binning layout now")
+
         # Create a binned layout
         self.binned_layout = placement_layout(
             grid_spec=binned_grid,
@@ -93,8 +98,12 @@ class design_manager_cluster(object):
             single_cell_height=single_cell_height
         )
 
+        logger.info("binned layout created")
+        
         self.binned_layout.initialize()
         self.binnedLayout = self.binned_layout
+
+        logger.info("binned layout initialized")
 
         self.verify()
 

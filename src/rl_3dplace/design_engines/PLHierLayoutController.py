@@ -7,18 +7,34 @@ import sqlite3
 import logging
 import time
 import psutil
+from pathlib import Path
 
 
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.CRITICAL)
+handler = logging.StreamHandler()
+formatter = logging.Formatter('%(asctime)s - %(levelname)s -  [%(pathname)s:%(lineno)d] %(message)s')
+handler.setFormatter(formatter)
+logger.addHandler(handler)
+# Reset config (Python 3.8+)
+logging.basicConfig(level=logging.CRITICAL, force=True)
+
+
+# Add PDLibs to sys.path
+sys.path.append(str(Path(__file__).resolve().parent.parent.parent / "PDLibs"))
 from designgines.PLimportUcla import importUcla
 #from PLSummarizer import SummarizePlace
+
+
+# Add PDLibs to sys.path
+sys.path.append(str(Path(__file__).resolve().parent.parent.parent / "rl_3dplace"))
+
 from dataModel.PLConstData import ConfigData
 from dataModel.PLLayoutData import LayoutData
 from design_engines.PLPAHierParametricFolding import PAHierParametricFolding
 from design_admin.PLdm_clustering import design_manager_cluster
 from graph_library.PlacementAwareHC import create_placement_aware_hierarchical_clusters
 
-logger = logging.getLogger(__name__)
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s -  [%(pathname)s:%(lineno)d] %(message)s')
 
 
 class HierLayoutController(object):
@@ -240,7 +256,7 @@ class HierLayoutController(object):
 
         return
 
-def RunHier3DConversion(layoutData, foldingParams, inputPlacementFile):
+def RunHier3DConversion(layoutData, foldingParams, inputPlacementFile, outputPlacementFile=None):
     con  = sqlite3.connect("/tmp/test.db")
 
     logger.info(layoutData.inputDir)
@@ -288,12 +304,37 @@ def RunHier3DConversion(layoutData, foldingParams, inputPlacementFile):
 
     logger.info("Finished Hierarchical clusters!")
 
-    return newLayout, summarizer, dm
+    if outputPlacementFile:
+        #outputPlacementFile = os.path.join(layoutData.inputDir, f"{layoutData.designName}_3d.pl")
+        newLayout.netlist.writePlFile(outputPlacementFile)
+        print(f"outputPlacementFile={outputPlacementFile}")
 
-def Run():
+    #cleanup memory
+    del controller, newLayout, nl1
+    import gc
+    gc.collect()
+
+    #return imported_design instance of importUcla for wl calculation using lazy netlist loading
+    return origLayout.layout
+
+def Run(args):
     import runConfigs.PLconfig_grid as PLconfig_grid
+
+    if args.sDesignName:
+        designName = args.sDesignName
+    else:
+        designName = PLconfig_grid.designName
+
+    if args.sInputPlacementFile:
+        inputPlacementFile = args.sInputPlacementFile
+    else:
+        inputPlacementFile = os.path.join(layoutData.inputDir, f"{layoutData.designName}.pl")
+
+    confData = ConfigData()
+    layoutData = LayoutData(confData, designName=designName)
+
     ag = PLconfig_grid.ag
-    action = 135
+    action = args.actionCode
     numberOfCuts, direction, pattern, windowSizeCode = ag.DecodeAction(action)
     logger.info(f"#########\n"
                 f"numberOfCuts={numberOfCuts}\n"
@@ -301,12 +342,6 @@ def Run():
                 f"pattern={pattern}\n"
                 f"windowSizeCode={windowSizeCode} \n\n\n\n"
                 )
-
-    confData = ConfigData(
-    ) #This is dumy class.AMTODO fix things. 
-
-    layoutData = LayoutData(confData)
-
     logger.info("Creating folding params")
 
     foldingParams = PAHierParametricFolding(
@@ -316,25 +351,32 @@ def Run():
         windowSizeCode
     )
 
-    inputPlacementFile = os.path.join(layoutData.inputDir, f"{layoutData.designName}.pl")
+    outputPlacementFile = os.path.join("/tmp/", f"{layoutData.designName}_3d.pl")
     
     logger.info("running 2d to 3d using HC")
-    newLayout, summarizer, dm = RunHier3DConversion(layoutData, foldingParams, inputPlacementFile)
+    imported_design = RunHier3DConversion(layoutData, foldingParams, inputPlacementFile, outputPlacementFile)
 
-    nl1 = newLayout
+    #EvaluatePlacement(imported_design, foldingParams.bin_size_x, outputPlacementFile)
     
-    twl = nl1.netlist.twl(nl1.avg_sites_per_row, foldingParams.bin_size_x, 2)[0]
-    last_cost = dm.origLayout.layout.netlist.twl_pahc_2d(dm.origLayout.layout.avg_sites_per_row, 1)[0]
-    twlDelta = twl - last_cost
-    #twlDelta = twl = last_cost = 0
-    logger.info(f"Plane Locations twlDelt={twlDelta}, new_cost={twl}, last_cost={last_cost}")
+def EvaluatePlacement(imported_design, bin_size_x, outputPlacementFile):
 
+    nl1 = imported_design
+    nl1.readNetsFile(f"{nl1.path}/{nl1.name}.nets")
+    twoD_twl = nl1.netlist.twl_pahc_2d(nl1.avg_sites_per_row, 1)[0]
+
+    nl1.readPlFile(outputPlacementFile)
+    threeD_twl = nl1.netlist.twl(nl1.avg_sites_per_row, bin_size_x, 2)[0]
+
+    twlDelta = threeD_twl - twoD_twl
+    #twlDelta = twl = last_cost = 0
+    print(f"Plane Locations twlDelt={twlDelta}, new_cost={threeD_twl}, last_cost={twoD_twl}")
+
+    '''
     nl1.netlist.change_location_type()
     dm.origLayout.layout.netlist.change_location_type()
-    twl = nl1.netlist.twl(nl1.avg_sites_per_row, foldingParams.bin_size_x, 2)[0]
+    twl = nl1.netlist.twl(nl1.avg_sites_per_row, bin_size_x, 2)[0]
     last_cost = dm.origLayout.layout.netlist.twl_pahc_2d(dm.origLayout.layout.avg_sites_per_row, 1)[0]
     twlDelta = twl - last_cost
-    #twlDelta = twl = last_cost = 0
     logger.info(f"Grid Locations twlDelt={twlDelta}, new_cost={twl}, last_cost={last_cost}")
 
     cf = nl1.netlist.calculate_cost_function(nl1.avg_sites_per_row, foldingParams.bin_size_x, 2)
@@ -342,30 +384,34 @@ def Run():
         dm.origLayout.layout.avg_sites_per_row, 1, 1
     )
     logger.info(f"Grid Location new cf={cf}, last_cf={last_cf}, delta cf = {cf-last_cf}")
-    
-    logger.info("drawing images")
+
+    #logger.info("drawing images")
     #episode=0
     #summarizer.draw_image(newLayout, episode)
     #summarizer.draw_cv2_image(newLayout.netlist)
     #self.logger.info(newLayout.nodes)
     #for k,v in newLayout.netlist.nodes.items():        
     #    self.logger.info(type(v.point_lb))
-
+    '''
+    
 def main():
+
     parser = argparse.ArgumentParser()    
     
-    parser.add_argument("-exportName", action="store", dest="exportName",
-                        help="design name",
-                        required=False, type=str)    
-    
-    parser.add_argument("-exportDir", action="store", dest="exportDir",
-                        help="folder of UCLA design files",
-                        required=False, type=str)    
+    parser.add_argument("-designName", action="store", 
+                        dest="sDesignName",
+                        help="Name of design for DHCARL flow",
+                        required=False, type=str)
 
     parser.add_argument("-inputPlacementFile", action="store", 
                         dest="sInputPlacementFile",
                         help="folder of input UCLA design files",
                         required=False, type=str)
+
+    parser.add_argument("-actionCode", action="store", 
+                        dest="actionCode",
+                        help="the actionCode to use for HC",
+                        required=True, type=int)
 
     args = parser.parse_args()
 
@@ -376,7 +422,7 @@ def main():
     start_time = time.time()  # Start time tracking
 
     # Run the function
-    Run()
+    Run(args)
 
     # Measure final memory usage
     mem_after = process.memory_info().rss / (1024 * 1024)  # Convert to MB

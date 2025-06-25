@@ -127,19 +127,21 @@ class NGraph(object):
         self.distance_matrix = None
         self.landmarks = compute_landmark_count(self.netlist.numNodes)
         self.landmarks_out = PLconfig_grid.inputDir / f"{PLconfig_grid.designName}_{self.landmark_count_mode}{self.landmarks}_landmark.npz"
+        print("NGraph is               being initialiiiiiiiiiiiiiiiiiiiiized")
         self.initialize()
+        print("NGraph init done!")
 
     def initialize(self):
         self.update_graph_props()
-        self.update_adjacency_matrix()
-        self.update_attributes_matrix()
+        #self.update_adjacency_matrix()
+        #self.update_attributes_matrix()
         #print('properties_matrix', self.properties_matrix.shape, 'ajdacency_matrix', self.adjacency_matrix.shape)
         #disabling saving garph due to sbatch
         #self.save_graph_drawing()
 
     def update_graph(self):
         self.update_graph_props()
-        self.update_adjacency_matrix()
+        #self.update_adjacency_matrix()
         #self.update_attributes_matrix()
 
     def update_graph_props(self):
@@ -168,11 +170,11 @@ class NGraph(object):
                 raise ValueError("The location type is not supported {}".format(type(node_object.point_lb)))
             attributes = {
                 'name': node_object.name,
-                'width': node_object.width,
-                'height': node_object.height,
-                'hierarchy': node_object.hierarchy,
-                'movable': node_object.movable,
-                'terminalType': node_object.terminalType,
+                #'width': node_object.width,
+                #'height': node_object.height,
+                #'hierarchy': node_object.hierarchy,
+                #'movable': node_object.movable,
+                #'terminalType': node_object.terminalType,
                 #attributes['pins'] = node_object.pin
                 'point_lb_x': x,
                 'point_lb_y': y
@@ -199,20 +201,24 @@ class NGraph(object):
         #print(self.attributes_content_list, len(self.attributes_content_list), len(self.graph.nodes))
 
         # Compute distance matrix
-        distance_matrix = []
-        for x1, y1 in self.attributes_content_list:
-            row = []
-            for x2, y2 in self.attributes_content_list:
-                manhattan_distance = y2-y1 + x2-x1
-                row.append(manhattan_distance)
-            distance_matrix.append(row)
+        #distance_matrix = []
+        #for x1, y1 in self.attributes_content_list:
+        #    row = []
+        #    for x2, y2 in self.attributes_content_list:
+        #        manhattan_distance = y2-y1 + x2-x1
+        #        row.append(manhattan_distance)
+        #    distance_matrix.append(row)
 
         # Convert to a NumPy array if needed
-        self.distance_matrix = np.array(distance_matrix)
+        #self.distance_matrix = np.array(distance_matrix)
 
         for edge_object in self.netlist.edges.values():
             self.graph.add_edge(edge_object.v1.name, edge_object.v2.name)
 
+        del self.netlist
+        import gc
+        gc.collect()
+        
     def setup_landmarks(self):
         G = self.graph
         print(f"Graph loaded: {G.number_of_nodes()} nodes, {G.number_of_edges()} edges")
@@ -272,6 +278,7 @@ def Run(args):
         path=layoutData.inputDir,
         #inputPlacementFile=inputPlacementFile
     )
+    layout.readNetsFile(f"{layoutData.inputDir}/{layoutData.designName}.nets")
 
     #layout.netlist.create_graph()
     g1 = NGraph(layout.netlist, args.landmark_count_mode)

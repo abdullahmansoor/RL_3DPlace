@@ -35,7 +35,7 @@ class Netlist(object):
         self.placement1_array = None
         self.placement2_array = None
         self.numNodesWOTerminals = None
-
+        self.dimensions = "plane_location"
         self.features = {
             'area' : None,
             'area1' : None,
@@ -226,7 +226,8 @@ class Netlist(object):
             if not hasattr(location, 'z'):
                 location.z=0
             locations.add((location.x, location.y, location.z))
-        assert(self.numNodes == len(locations)), f"numer of unique nodes {self.numNodes} and locations mismatch, {len(locations)}, {locations}"
+        assert(self.numNodes == len(locations)), f"numer of unique nodes {self.numNodes} and locations mismatch, {len(locations)}"
+        print("checking placementt completed")
 
     def twl(self, avg_sites_per_row, divide_factor_x, number_of_layers):
         debug = False
@@ -654,6 +655,67 @@ class Netlist(object):
         #self.inputs = inputs
         #self.inputs = ds
 
+    def writePlFile(self, filename):
+        fh = open(filename, 'w')
+        for node, nodeObj in self.nodes.items():
+            if self.dimensions == 'bin_location':
+                if isinstance(nodeObj.point_lb, BinLocation):
+                    b1 = nodeObj.point_lb.bin_number
+                    r1 = nodeObj.point_lb.yrow
+                    c1 = nodeObj.point_lb.xcolumn
+                    name = nodeObj.name
+                    line = "\t" + name + "\t" + str(b1) + "\t" + str(r1) + "\t" + str(c1) + '\t:\tN\n'
+                else:
+                    raise ValueError("Write BinLocation Placement file is not supported. Exiting!")
+                fh.write(line)
+            elif self.dimensions == 'grid_location':
+                line = ''
+                if isinstance(nodeObj.point_lb, GridLocation):
+                    y = nodeObj.point_lb.ygrid
+                    x = nodeObj.point_lb.xgrid
+                    name = nodeObj.name
+                    line = "\t" + name + "\t" + str(x) + "\t" + str(y) + '\t:\tN\n'
+                else:
+                    raise ValueError('Write GridLocation Placement file is not supported. Exiting!')
+                fh.write(line)
+            elif self.dimensions == 'plane_location':
+                if isinstance(nodeObj.point_lb, PlaneLocation):
+                    y = nodeObj.point_lb.y
+                    x = nodeObj.point_lb.x
+                    z = nodeObj.point_lb.z
+                    name = nodeObj.name
+                    line = "\t" + name + "\t" + str(x) + "\t" + str(y)  + "\t" + str(z) + '\t:\tN\n'
+                elif isinstance(nodeObj.point_lb, GridLocation):
+                    g2p_location =  Grid2Plane(nodeObj.point_lb)
+                    plane_location = g2p_location.plane_location
+                    y = plane_location.y
+                    x = plane_location.x
+                    z = plane_location.z
+                    name = nodeObj.name
+                    line = "\t" + name + "\t" + str(x) + "\t" + str(y)  + "\t" + str(z) + '\t:\tN\n'
+                elif isinstance(nodeObj.point_lb, BinLocation):
+                    b2p_location  = Bin2Plane(nodeObj.point_lb)
+                    plane_location = b2p_location.plane_location
+                    y = plane_location.y
+                    x = plane_location.x
+                    z = plane_location.z
+                    name = nodeObj.name
+                    line = "\t" + name + "\t" + str(x) + "\t" + str(y)  + "\t" + str(z) + '\t:\tN\n'
+                elif isinstance(nodeObj.point_lb, ThreeDLocation):
+                    b2p_location  = ThreeD2Plane(nodeObj.point_lb)
+                    plane_location = b2p_location.plane_location
+                    y = plane_location.y
+                    x = plane_location.x
+                    z = plane_location.z
+                    name = nodeObj.name
+                    line = "\t" + name + "\t" + str(x) + "\t" + str(y)  + "\t" + str(z) + '\t:\tN\n'
+                else:
+                    raise ValueError("Write PlaneLocation Placement file is not supported. Exiting!")
+                fh.write(line)
+            else:
+                raise ValueError('dimensions=%s is not supported. Exiting!' % self.dimensions)
+        fh.close()
+        
     def __str__(self):
         str1="{ \"nodes\" : {\n "
         for key,cell in self.data['nodes'].items():
@@ -713,158 +775,88 @@ class Pin(object):
 		return "[\"{}\" , \"{}\" , \"{}\" , {} , {} ],".format(self.net, self.node, self.direction, self.xOffset, self.yOffset)
 
 class Net(object):
-	def __init__(self, **kwargs):
-		self.data = { 'name' : None, 'pins' : [], 'nodes' : [] ,'degree' : None}
-		self.data['name'] = kwargs['name']
-		self.data['degree'] = kwargs['degree']
-		self.data['pins'] = kwargs['pins'] if 'pins' in kwargs else []
-		self.data['nodes'] = kwargs['nodes'] if 'nodes' in kwargs else []
-		
-	@property
-	def name(self):
-		return self.data['name']
-	@property
-	def pins(self):
-		return self.data['pins']
-	@property
-	def nodes(self):
-		return self.data['pins']
-	@property
-	def degree(self):
-		return self.data['degree']
-
-	@name.setter
-	def name(self, v1):
-		self.data['name']=v1
-	@pins.setter
-	def pins(self, v1):
-		self.data['pins']=v1
-	@degree.setter
-	def degree(self, v1):
-		self.data['degree']=v1				
-
-	def addpin(self,v1):
-		self.data['pins'].append(v1)
-		self.addNode(v1.node)
-		
-	def addNode(self,v1):
-		self.data['nodes'].append(v1)
-
-	def __str__(self):
-		str1=""
-		for pin in self.pins:
-			str1+= "{}".format(pin)
-		return "\"{}\" : [ {}, {{ \"pins\" : [{}] }} ] ,\n".format(self.name, self.degree, str1[:-1])
-
-			
-class Edge(object):
-	def __init__(self, **kwargs):
-		self.data = { 'v1' : None, 'v2': None, 'name' : None, 'netName' : None, 'location' : None} 
-		self.data['v1'] = kwargs['v1']
-		self.data['v2'] = kwargs['v2']
-		self.data['name'] = kwargs['name']
-		self.data['netName'] = kwargs['netName']
-		self.data['location'] = kwargs['location'] if 'location' in kwargs else None
-	@property
-	def v1(self):
-		return self.data['v1']
-	@property
-	def v2(self):
-		return self.data['v2']
-	@property
-	def name(self):
-		return self.data['name']
-	@property
-	def netName(self):
-		return self.data['netName']
-	@property
-	def location(self):
-		return self.data['location']
-
-	@v1.setter
-	def v1(self, vx):
-		self.data['v1']=vx
-	@v2.setter
-	def v2(self, vx):
-		self.data['v2']=vx
-	@name.setter
-	def name(self, vx):
-		self.data['name']=vx
-	@netName.setter
-	def netName(self, vx):
-		self.data['netName']=vx
-	@location.setter
-	def location(self, vx):
-		self.data['location']=vx
-		
-	def __str__(self):
-		return "\"{}\" : [ \"{}\", \"{}\", \"{}\", \"{}\" ],\n".format(self.name, self.v1.name, self.v2.name,  self.netName, self.location)
-
-class Node(object):
     def __init__(self, **kwargs):
-        self.data = { 'name' : None, 'width' : None, 'height' : None, 'hierarchy' : None, 'movable' : None, 'terminalType' : None, 'pins' : [], 'point_lb' : Point(0,0)}
-        self.data['name'] = kwargs['name'] 
-        self.data['width'] = kwargs['width']
-        self.data['height'] = kwargs['height']
-        self.data['movable'] = kwargs['movable'] if 'movable' in kwargs else True
-        self.data['terminalType'] = kwargs['terminalType'] if 'terminalType' in kwargs else None
-        self.data['hierarchy'] = kwargs['hierarchy'] if 'hierarchy' in kwargs else None
+        self.data = { 'name' : None, 'pins' : [], 'nodes' : [] ,'degree' : None}
+        self.data['name'] = kwargs['name']
+        self.data['degree'] = kwargs['degree']
         self.data['pins'] = kwargs['pins'] if 'pins' in kwargs else []
-        self.data['point_lb'] = kwargs['point_lb'] if 'point_lb' in kwargs else Point(0,0)
-        self.bbox = None
-        self.color = 'blue'
-        self.cluster = None #AM 3/9/2024 to support hierarchical clustering
-        self.update_bbox()
+        self.data['nodes'] = kwargs['nodes'] if 'nodes' in kwargs else []
 
     @property
     def name(self):
-            return self.data['name']
-    @property
-    def width(self):
-            return self.data['width']
-    @property
-    def height(self):
-            return self.data['height']
-    @property
-    def movable(self):
-            return self.data['movable']
-    @property
-    def terminalType(self):
-            return self.data['terminalType']
-    @property
-    def hierarchy(self):
-            return self.data['hierarchy']
+        return self.data['name']
     @property
     def pins(self):
-            return self.data['pins']
+        return self.data['pins']
     @property
-    def point_lb(self):
-            return self.data['point_lb']
+    def nodes(self):
+        return self.data['pins']
+    @property
+    def degree(self):
+        return self.data['degree']
 
     @name.setter
     def name(self, v1):
-            self.data['name']=v1
-    @width.setter
-    def width(self, v1):
-            self.data['width']=v1
-    @height.setter
-    def height(self, v1):
-            self.data['height']=v1
-    @movable.setter
-    def movable(self, v1):
-            self.data['movable']=v1
-    @terminalType.setter
-    def terminalType(self,v1):
-            self.data['terminalType']=v1
-    @hierarchy.setter
-    def hierarchy(self, v1):
-            self.data['hierarchy']=v1
+        self.data['name']=v1
     @pins.setter
     def pins(self, v1):
-            self.data['pins']=v1
+        self.data['pins']=v1
+    @degree.setter
+    def degree(self, v1):
+        self.data['degree']=v1				
+
+    def addpin(self,v1):
+        self.data['pins'].append(v1)
+        self.addNode(v1.node)
+
+    def addNode(self,v1):
+        self.data['nodes'].append(v1)
+
+    def __str__(self):
+        str1=""
+        for pin in self.pins:
+            str1+= "{}".format(pin)
+        return "\"{}\" : [ {}, {{ \"pins\" : [{}] }} ] ,\n".format(self.name, self.degree, str1[:-1])
+		
+class Edge(object):
+    __slots__ = ['v1', 'v2', 'name', 'netName', 'location']
+    def __init__(self, **kwargs):
+        self.v1 = kwargs['v1']
+        self.v2 = kwargs['v2']
+        self.name = kwargs['name']
+        self.netName = kwargs['netName']
+        self.location = kwargs['location'] if 'location' in kwargs else None
+
+    def __str__(self):
+        return "\"{}\" : [ \"{}\", \"{}\", \"{}\", \"{}\" ],\n".format(self.name, self.v1.name, self.v2.name,  self.netName, self.location)
+
+class Node(object):
+    __slots__ = [
+        'name', 'width', 'height', 'movable',
+        '_point_lb', 'terminalType', 'hierarchy', 'pins',
+        'bbox', 'color', 'cluster'
+    ]    
+    def __init__(self, **kwargs):
+        self.name = kwargs['name'] 
+        self.width = kwargs['width']
+        self.height = kwargs['height']
+        self.movable = kwargs['movable'] if 'movable' in kwargs else True
+        self.terminalType = kwargs['terminalType'] if 'terminalType' in kwargs else None
+        self.hierarchy = kwargs['hierarchy'] if 'hierarchy' in kwargs else None
+        self.pins = kwargs['pins'] if 'pins' in kwargs else []
+        self._point_lb = kwargs['point_lb'] if 'point_lb' in kwargs else Point(0,0)
+        self.bbox = None
+        self.color = 'blue'
+        self.cluster = None #AM 3/9/2024 to support hierarchical clustering
+        #self.update_bbox()
+
+    @property
+    def point_lb(self):
+        return self._point_lb
+
     @point_lb.setter
     def point_lb(self, v1):
-        self.data['point_lb']=v1
+        self._point_lb=v1
         self.update_bbox()
 
     @property
@@ -875,7 +867,7 @@ class Node(object):
                 return True
 
     def addpin(self, v1):
-        self.data['pins'].append(v1)
+        self.pins.append(v1)
 
     def update_bbox(self):
         if isinstance(self.point_lb, PlaneLocation) or isinstance(self.point_lb, Point):

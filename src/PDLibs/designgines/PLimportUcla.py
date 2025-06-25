@@ -2,7 +2,9 @@ import time
 import json
 import sys
 import os
+import copy
 from pathlib import Path
+import psutil
 
 sys.path.append(str(Path(__file__).resolve().parent.parent.parent / "PDLibs"))
 
@@ -16,7 +18,6 @@ from designgines.PLGridSpec import Row
 from designgines.PLLocationConversion import PlaneLocation, BinLocation, Bin2Plane
 from designgines.PLLocationConversion import GridLocation, Grid2Plane
 from designgines.PLLocationConversion import ThreeDLocation, ThreeD2Plane
-from NGraph.PLNGraph import NGraph
 
 from mystrings import string
 
@@ -40,8 +41,8 @@ class importUcla(object):
         self.avg_sites_per_row = None
         print("***************Reading Nodes file***************")
         self.readNodefile(self.data['path'] / f"{self.data['name']}.nodes")
-        print("***************Reading Nets file***************")
-        self.readNetsFile(self.data['path'] / f"{self.data['name']}.nets")
+        #print("***************Reading Nets file***************")
+        #self.readNetsFile(self.data['path'] / f"{self.data['name']}.nets")
         print("***************Reading Placement file***************")
         if self.inputPlacementFile:
             self.readPlFile(self.inputPlacementFile)
@@ -49,8 +50,6 @@ class importUcla(object):
             self.readPlFile(self.data['path'] / f"{self.data['name']}.pl")
         print("***************Reading Grid definition file***************")
         self.readSclFile(self.data['path'] / f"{self.data['name']}.scl")
-        #self.data['netlist'].create_graph()
-        #Graph initialization moved to PLLayout updateParameters function
         self.updateNodesWithoutTerminals()
 
     @property
@@ -258,7 +257,30 @@ class importUcla(object):
         self.numRows = self.g1.numRows
         self.total_sites = self.g1.total_sites
         self.avg_sites_per_row = self.g1.avg_sites_per_row
+    
+    def shallow_copy(self):
+        new_layout = copy.copy(self)  # Shallow copy of layout object (not netlist yet)
 
+        # Shallow copy gridSpec and other attributes (if not deeply modified)
+        new_layout.gridDefinition = copy.deepcopy(self.gridDefinition)
+
+        # Manually copy nodes and only their mutable fields
+        new_netlist = copy.copy(self.netlist)
+        new_netlist.nodes = {}
+
+        for name, node in self.netlist.nodes.items():
+            new_node = copy.copy(node)
+            new_node.point_lb = copy.deepcopy(node.point_lb)
+            new_node.point_ub = copy.deepcopy(node.point_ub)
+            new_node.movable = node.movable
+            new_node.width = node.width
+            new_node.height = node.height
+            new_node.cluster = None  # reset clustering if needed
+            new_netlist.nodes[name] = new_node
+
+        new_layout.netlist = new_netlist
+        return new_layout
+    
     def __str__(self):
         msg = ''
         msg += "numLayers={}\n".format(self.g1.number_of_layers)
@@ -296,65 +318,7 @@ class exportUcla(object):
         pass
 
     def writePlFile(self, filename):
-        fh = open(filename, 'w')
-        for node, nodeObj in self.netlist.nodes.items():
-            if self.dimensions == 'bin_location':
-                if isinstance(nodeObj.point_lb, BinLocation):
-                    b1 = nodeObj.point_lb.bin_number
-                    r1 = nodeObj.point_lb.yrow
-                    c1 = nodeObj.point_lb.xcolumn
-                    name = nodeObj.name
-                    line = "\t" + name + "\t" + str(b1) + "\t" + str(r1) + "\t" + str(c1) + '\t:\tN\n'
-                else:
-                    raise ValueError("Write BinLocation Placement file is not supported. Exiting!")
-                fh.write(line)
-            elif self.dimensions == 'grid_location':
-                line = ''
-                if isinstance(nodeObj.point_lb, GridLocation):
-                    y = nodeObj.point_lb.ygrid
-                    x = nodeObj.point_lb.xgrid
-                    name = nodeObj.name
-                    line = "\t" + name + "\t" + str(x) + "\t" + str(y) + '\t:\tN\n'
-                else:
-                    raise ValueError('Write GridLocation Placement file is not supported. Exiting!')
-                fh.write(line)
-            elif self.dimensions == 'plane_location':
-                if isinstance(nodeObj.point_lb, PlaneLocation):
-                    y = nodeObj.point_lb.y
-                    x = nodeObj.point_lb.x
-                    z = nodeObj.point_lb.z
-                    name = nodeObj.name
-                    line = "\t" + name + "\t" + str(x) + "\t" + str(y)  + "\t" + str(z) + '\t:\tN\n'
-                elif isinstance(nodeObj.point_lb, GridLocation):
-                    g2p_location =  Grid2Plane(nodeObj.point_lb)
-                    plane_location = g2p_location.plane_location
-                    y = plane_location.y
-                    x = plane_location.x
-                    z = plane_location.z
-                    name = nodeObj.name
-                    line = "\t" + name + "\t" + str(x) + "\t" + str(y)  + "\t" + str(z) + '\t:\tN\n'
-                elif isinstance(nodeObj.point_lb, BinLocation):
-                    b2p_location  = Bin2Plane(nodeObj.point_lb)
-                    plane_location = b2p_location.plane_location
-                    y = plane_location.y
-                    x = plane_location.x
-                    z = plane_location.z
-                    name = nodeObj.name
-                    line = "\t" + name + "\t" + str(x) + "\t" + str(y)  + "\t" + str(z) + '\t:\tN\n'
-                elif isinstance(nodeObj.point_lb, ThreeDLocation):
-                    b2p_location  = ThreeD2Plane(nodeObj.point_lb)
-                    plane_location = b2p_location.plane_location
-                    y = plane_location.y
-                    x = plane_location.x
-                    z = plane_location.z
-                    name = nodeObj.name
-                    line = "\t" + name + "\t" + str(x) + "\t" + str(y)  + "\t" + str(z) + '\t:\tN\n'
-                else:
-                    raise ValueError("Write PlaneLocation Placement file is not supported. Exiting!")
-                fh.write(line)
-            else:
-                raise ValueError('dimensions=%s is not supported. Exiting!' % self.dimensions)
-        fh.close()
+        self.netlist.writePlFile(filename)
 
     def writeNodefile(self, filename):
             pass
@@ -615,7 +579,6 @@ def ucla_to_pldm(inputDir, designName):
     )
     items = i1.netlist.twl(1432, 1, 1)
     print(items[0])
-    #g1 = NGraph(i1.netlist)
 
 def main():
     import argparse
@@ -658,4 +621,22 @@ def main():
 
 
 if __name__ == "__main__":
+    process = psutil.Process(os.getpid())
+
+    # Measure initial memory usage
+    mem_before = process.memory_info().rss / (1024 * 1024)  # Convert to MB
+    start_time = time.time()  # Start time tracking
+
+    # Run the function
     main()
+
+    # Measure final memory usage
+    mem_after = process.memory_info().rss / (1024 * 1024)  # Convert to MB
+    end_time = time.time()  # End time tracking
+
+    # Compute results
+    elapsed_time = end_time - start_time
+    mem_used = mem_after - mem_before
+
+    print(f"Execution Time: {elapsed_time:.2f} seconds")
+    print(f"Memory Used: {mem_used:.2f} MB")

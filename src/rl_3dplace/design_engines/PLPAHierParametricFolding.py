@@ -24,6 +24,20 @@ def myround(x):
         val = round(x)
     return val
 
+
+def log_scaled_steps(n, steps=8):
+    return [int(round(n ** (i / steps))) for i in range(1, steps)]
+
+def fractional_root_candidates(n, k_start=1.5, k_stop=5.0, step=0.25, min_val=2):
+    roots = []
+    k = k_start
+    while k <= k_stop:
+        r = int(round(n ** (1 / k)))
+        if r > min_val and r < n:
+            roots.append(r)
+        k += step
+    return sorted(set(roots))
+
 class PAHierParametricFolding(object):
     def __init__(self, numberOfCuts, direction, pattern, windowSizeCode):
         self.numberOfCuts = numberOfCuts
@@ -79,15 +93,24 @@ class PAHierParametricFolding(object):
 
         #find divisors of the given dimension
         xDivisors = divisors(numColumns)
-        yDivisors = divisors(numRows)
+        #xDivisors = list(reversed(log_scaled_steps(numColumns)))
 
-        sXDivisors = xDivisors[:-1] if PLconfig_grid.designName == "picorv32a" else xDivisors
+        yDivisors = divisors(numRows)
+        #yDivisors = list(reversed(log_scaled_steps(numRows)))
+        
+        print(f"divisors for {numColumns} are {xDivisors} using from sympy import divisors")
+        print(f"divisors for {numRows} are {yDivisors} using from sympy import divisors")
+
+        sXDivisors = xDivisors[:-1] if PLconfig_grid.designName in [ "picorv32a" , "tate", "jpeg"] else xDivisors
+        print(f"sXDivisors={sXDivisors}, xDivisors={xDivisors}")
         #create all possible combinations
         windowSizes = list(itertools.product(
             sXDivisors,
             yDivisors[:-1]
             )
         )
+
+        print(f"windowSizes={windowSizes}")
 
         # Sorting logic
         sortedWindowSizes = sorted(
@@ -97,6 +120,7 @@ class PAHierParametricFolding(object):
 
         maxIndex = len(sortedWindowSizes) - 1
         index = self.windowSizeCode
+        print(f"windowSizeCode={index}, the max window sizes={maxIndex}")
         if index > maxIndex:
             raise ValueError(f"windowSizeCode={index} exceeds the maxIndex={maxIndex}")
 

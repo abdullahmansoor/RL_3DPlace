@@ -20,7 +20,7 @@ import psutil
 
 logger = logging.getLogger(__name__)
 logging.basicConfig(
-    level=logging.INFO,
+    level=logging.DEBUG,
     format='%(asctime)s - %(levelname)s -  [%(pathname)s:%(lineno)d] %(message)s'
 )
 

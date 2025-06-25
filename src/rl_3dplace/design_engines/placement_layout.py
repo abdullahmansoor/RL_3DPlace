@@ -56,7 +56,7 @@ class placement_layout:
                           for _ in range(num_bins_x * num_bins_y)],
         }
         self.cell_bin_mapping = {}
-        self.netlist.create_graph()
+        #self.netlist.create_graph()
 
     def _update_matrix(self):
         """Update the matrix based on the current netlist."""
