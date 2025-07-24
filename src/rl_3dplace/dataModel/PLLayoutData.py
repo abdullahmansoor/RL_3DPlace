@@ -3,6 +3,7 @@ import os
 import random
 import sys
 from pathlib import Path
+import numpy as np
 
 from designgines.PLGridSpec import Grid
 from designgines.PLActionsGen import ParametricActionsGen
@@ -23,8 +24,8 @@ class LayoutData(object):
         #designName='rlcase1',
         #designName='muxshifter2'
         #designName='muxshifter3'
-        designName = "muxshifter4",
-        #designName='muxshifter8',
+        #designName = "muxshifter4",
+        designName='muxshifter8',
         #designName='muxshifter16',
         #designName='muxshifter16b',
         #designName='muxshifter32',
@@ -46,77 +47,68 @@ class LayoutData(object):
         self.dataset_file = None
         self.modelPath = None
         self.inputDir =  BENCHMARKS_PATH / designName
-
-        if self.designName == 'rlcase1':
-            self.number_of_nodes = 18
-            self.netlist_mode = 1
-            self.gin_model_path = GRAPH_MODELS_PATH / "RLCASE1GFEB15_GINEncoder_ed30_encoder_model.pth"
-            self.gsage_model_path = GRAPH_MODELS_PATH / "RLCASE1GFEB15_GraphSAGE_ed30_encoder_model.pth"
-            self.rl_model_path = RLAGENT_MODELS_PATH / "StackedEnsemble_BestOfFamily_4_AutoML_1_20250305_32129"
-
-        elif self.designName == 'muxshifter4':
-            self.number_of_nodes = 8
-            self.netlist_mode = 1
-            self.gin_model_path = GRAPH_MODELS_PATH / "MUX4GDEC3_GINEncoder_ed30_encoder_model.pth"
-            self.gsage_model_path = GRAPH_MODELS_PATH / "MUX4GDEC3_GraphSAGE_encoder_model.pth"
-            self.rl_model_path = RLAGENT_MODELS_PATH / "StackedEnsemble_BestOfFamily_4_AutoML_1_20250305_32129"
-        elif designName == 'muxshifter8':
+        
+        self.design_selector = DesignSelector(designName)
+        self.category = self.design_selector.get_category()
+        self.scheme = "scheme4"
+        
+        if designName == 'muxshifter8':
             self.number_of_nodes = 24
             self.netlist_mode = 0
-            self.gin_model_path = GRAPH_MODELS_PATH / "MUX8GDEC2_GINEncoder_ed30_encoder_model.pth"
-            self.gsage_model_path = GRAPH_MODELS_PATH / "MUX8GDEC2_GraphSAGE_ed30_encoder_model.pth"
-            self.rl_model_path = RLAGENT_MODELS_PATH / "XGBoost_grid_1_AutoML_1_20250306_02444_model_2"
+            self.gin_model_path = GRAPH_MODELS_PATH / "MUXSHIFTER8JUN12_GINEncoder_ed30_encoder_model.pth"
+            self.gsage_model_path = GRAPH_MODELS_PATH / "MUXSHIFTER8JUN12_GraphSAGE_ed30_encoder_model.pth"
+            self.rl_model_path = RLAGENT_MODELS_PATH / "XGBoost_grid_1_AutoML_1_20250708_30730_model_2"
         elif designName == 'muxshifter16':
             self.number_of_nodes = 64
             self.netlist_mode = 0
-            self.gin_model_path = GRAPH_MODELS_PATH / "MUX16GDEC3_GINEncoder_ed30_encoder_model.pth"
-            self.gsage_model_path = GRAPH_MODELS_PATH / "MUX16GDEC3_GraphSAGE_ed30_encoder_model.pth"
-            self.rl_model_path = RLAGENT_MODELS_PATH / "XGBoost_grid_1_AutoML_1_20250306_02444_model_2"
+            self.gin_model_path = GRAPH_MODELS_PATH / "MUXSHIFTER16JUN12_GINEncoder_ed30_encoder_model.pth"
+            self.gsage_model_path = GRAPH_MODELS_PATH / "MUXSHIFTER16JUN12_GraphSAGE_ed30_encoder_model.pth"
+            self.rl_model_path = RLAGENT_MODELS_PATH / "XGBoost_grid_1_AutoML_1_20250708_30730_model_2"
         elif self.designName == 'muxshifter16b':
             self.number_of_nodes = 64
             self.netlist_mode = 0
-            self.gin_model_path = GRAPH_MODELS_PATH / "MUX16BGDEC3_GINEncoder_ed30_encoder_model.pth"
-            self.gsage_model_path = GRAPH_MODELS_PATH / "MUX16BGDEC3_GraphSAGE_ed30_encoder_model.pth"
-            self.rl_model_path = RLAGENT_MODELS_PATH / "XGBoost_grid_1_AutoML_1_20250306_02444_model_2"
+            self.gin_model_path = GRAPH_MODELS_PATH / "MUXSHIFTER16BJUN12_GINEncoder_ed30_encoder_model.pth"
+            self.gsage_model_path = GRAPH_MODELS_PATH / "MUXSHIFTER16BJUN12_GraphSAGE_ed30_encoder_model.pth"
+            self.rl_model_path = RLAGENT_MODELS_PATH / "XGBoost_grid_1_AutoML_1_20250708_30730_model_2"
         elif self.designName == 'muxshifter32':
             self.number_of_nodes = 160
             self.netlist_mode = 0
-            self.rl_model_path = RLAGENT_MODELS_PATH / "XGBoost_grid_1_AutoML_1_20250218_192931_model_8"
             self.gin_model_path = GRAPH_MODELS_PATH / "MUXSHIFTER32JUN12_GINEncoder_ed30_encoder_model.pth"
             self.gsage_model_path = GRAPH_MODELS_PATH / "MUXSHIFTER32JUN12_GraphSAGE_ed30_encoder_model.pth"
+            self.rl_model_path = RLAGENT_MODELS_PATH / "XGBoost_grid_1_AutoML_1_20250708_33407_model_8"
         elif self.designName == 'muxshifter64':
             self.number_of_nodes = 384
             self.netlist_mode = 0
-            self.rl_model_path = RLAGENT_MODELS_PATH / "XGBoost_grid_1_AutoML_1_20250218_192931_model_8"
             self.gin_model_path = GRAPH_MODELS_PATH / "MUXSHIFTER64JUN12_GINEncoder_ed30_encoder_model.pth"
             self.gsage_model_path = GRAPH_MODELS_PATH / "MUXSHIFTER64JUN12_GraphSAGE_ed30_encoder_model.pth"
+            self.rl_model_path = RLAGENT_MODELS_PATH / "XGBoost_grid_1_AutoML_1_20250708_33407_model_8"
         elif designName == 'muxshifter128':
             self.number_of_nodes = 896
             self.netlist_mode = 0
-            self.rl_model_path = RLAGENT_MODELS_PATH / "XGBoost_grid_1_AutoML_1_20250218_192931_model_8"
             self.gin_model_path = GRAPH_MODELS_PATH / "MUXSHIFTER128JUN12_GINEncoder_ed30_encoder_model.pth"
             #"MUX128GDEC2_GINEncoder_ed30_encoder_model.pth"
             self.gsage_model_path = GRAPH_MODELS_PATH / "MUXSHIFTER128JUN12_GraphSAGE_ed30_encoder_model.pth"
+            self.rl_model_path = RLAGENT_MODELS_PATH / "XGBoost_grid_1_AutoML_1_20250708_33407_model_8"
         elif designName == 'picorv32a':
             self.number_of_nodes = 28967
             self.netlist_mode = 0
-            self.rl_model_path = RLAGENT_MODELS_PATH / "XGBoost_grid_1_AutoML_1_2025006_172801_model_7"
             self.gin_model_path = GRAPH_MODELS_PATH / "picorv32aJUN12_GINEncoder_ed30_encoder_model.pth"
-            self.gsage_model_path = GRAPH_MODELS_PATH / "picorv32aJUN12_GraphSAGEEncoder_ed30_encoder_model.pth"
+            self.gsage_model_path = GRAPH_MODELS_PATH / "picorv32aJUN12_GraphSAGE_ed30_encoder_model.pth"
+            self.rl_model_path = RLAGENT_MODELS_PATH / "XGBoost_lr_search_selection_AutoML_1_20250708_34700_select_grid_model_1"
 
         elif designName == 'jpeg':
             self.number_of_nodes = 524673
             self.netlist_mode = 0
-            self.rl_model_path = RLAGENT_MODELS_PATH / "XGBoost_grid_1_AutoML_1_2025006_172801_model_7"
             self.gin_model_path = GRAPH_MODELS_PATH / "JPEGJUN12_GINEncoder_ed30_encoder_model.pth"
-            self.gsage_model_path = GRAPH_MODELS_PATH / "JPEGJUN12_GraphSAGEEncoder_ed30_encoder_model.pth"
+            self.gsage_model_path = GRAPH_MODELS_PATH / "JPEGJUN12_GraphSAGE_ed30_encoder_model.pth"
+            self.rl_model_path = RLAGENT_MODELS_PATH / "XGBoost_lr_search_selection_AutoML_1_20250708_34700_select_grid_model_1"
 
         elif designName == 'tate':
             self.number_of_nodes = 236673
             self.netlist_mode = 0
-            self.rl_model_path = RLAGENT_MODELS_PATH / "XGBoost_grid_1_AutoML_1_2025006_172801_model_7"
             self.gin_model_path = GRAPH_MODELS_PATH / "TATEJUN12_GINEncoder_ed30_encoder_model.pth"
-            self.gsage_model_path = GRAPH_MODELS_PATH / "TATEJUN12_GraphSAGEEncoder_ed30_encoder_model.pth"
+            self.gsage_model_path = GRAPH_MODELS_PATH / "TATEJUN12_GraphSAGE_ed30_encoder_model.pth"
+            self.rl_model_path = RLAGENT_MODELS_PATH / "XGBoost_lr_search_selection_AutoML_1_20250708_34700_select_grid_model_1"
 
         self.grid_definition = Grid()
         self.scl_file_path = self.inputDir / f"{self.designName}.scl"
@@ -128,7 +120,17 @@ class LayoutData(object):
         state_method = constData.state_method
 
 
-        self.ag = ParametricActionsGen(mode="paHC")
+        if self.scheme == "scheme5":
+            self.ag = ParametricActionsGen(
+                #cutValues=np.array([525, 360, 121, 60, 30, 20, 4, 5, 6, 7]),
+                cutValues=np.array([241, 120, 60, 30, 15, 7, 1]),
+                directions=np.array([0,1]),
+                patterns=np.array([0, 1, 2, 3, 4]),
+                windowSizeCodes=np.array([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]),
+                mode="paHC"
+            )
+        else:
+            self.ag = ParametricActionsGen(mode="paHC")
         self.ag.GenerateActions()
 
 
@@ -150,3 +152,32 @@ class LayoutData(object):
         PLconfig_grid.grid_definition = self.grid_definition
         PLconfig_grid.single_cell_height = self.single_cell_height
         PLconfig_grid.ag = self.ag
+
+from typing import Dict, List
+
+class DesignSelector:
+    DESIGN_MAP: Dict[str, List[str]] = {
+        'small': ['muxshifter8', 'muxshifter16', 'muxshifter16b'],
+        'medium': ['muxshifter32', 'muxshifter64', 'muxshifter128'],
+        'large': ['picorv32a', 'tate', 'jpeg']
+    }
+
+    def __init__(self, design_name: str):
+        self.design_name = design_name.lower()
+        self.category = self._resolve_category()
+
+    def _resolve_category(self) -> str:
+        for category, design_list in self.DESIGN_MAP.items():
+            if self.design_name in design_list:
+                return category
+        return 'unknown'
+
+    def get_category(self) -> str:
+        return self.category
+
+    @classmethod
+    def get_designs_for_category(cls, category: str) -> List[str]:
+        category = category.lower()
+        if category not in cls.DESIGN_MAP:
+            raise ValueError(f"Invalid category: {category}. Choose from {list(cls.DESIGN_MAP.keys())}")
+        return cls.DESIGN_MAP[category]

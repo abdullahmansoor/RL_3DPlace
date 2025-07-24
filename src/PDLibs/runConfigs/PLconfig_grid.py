@@ -12,8 +12,8 @@ print(ROOT_DIR)
 
 
 #designName='rlcase1'
-designName='muxshifter4'
-#designName='muxshifter8'
+#designName='muxshifter4'
+designName='muxshifter8'
 #designName='muxshifter16'
 #designName='muxshifter16b'
 #designName='muxshifter32'
@@ -29,19 +29,7 @@ layer_values = [ 0, 1 ]
 number_of_nodes = None
 netlist_mode = None
 inputDir = BENCHMARKS_PATH / designName
-if designName == 'rlcase1':
-    number_of_nodes = 18
-    netlist_mode = 1
-    gin_model_path = GRAPH_MODELS_PATH / "RLCASE1GFEB15_GINEncoder_ed30_encoder_model.pth"
-    gsage_model_path = GRAPH_MODELS_PATH / "RLCASE1GFEB15_GraphSAGE_ed30_encoder_model.pth"
-    rl_model_path = RLAGENT_MODELS_PATH / "StackedEnsemble_BestOfFamily_4_AutoML_1_20250305_32129"
-elif designName == 'muxshifter4':
-    number_of_nodes = 8
-    netlist_mode = 1
-    gin_model_path = GRAPH_MODELS_PATH / "MUX4GDEC3_GINEncoder_ed30_encoder_model.pth"
-    gsage_model_path = GRAPH_MODELS_PATH / "MUX4GDEC3_GraphSAGE_encoder_model.pth"
-    rl_model_path = RLAGENT_MODELS_PATH / "StackedEnsemble_BestOfFamily_4_AutoML_1_20250305_32129"
-elif designName == 'muxshifter8':
+if designName == 'muxshifter8':
     number_of_nodes = 24
     netlist_mode = 0
     gin_model_path = GRAPH_MODELS_PATH / "MUX8GDEC2_GINEncoder_ed30_encoder_model.pth"

@@ -594,11 +594,12 @@ class Netlist(object):
 
     def get_torch_data(self):
         self.create_graph()
-
-        a = self.adjacency_matrix
+        self.g_object.update_adjacency_matrix()
+        a = self.g_object.adjacency_matrix
         #x = self.g_object.distance_matrix
         x = self.g_object.get_landmark_distance_matrix()
-        row, col = np.nonzero(a.todense())
+        #row, col = np.nonzero(a.todense())
+        row, col = a.nonzero()
 
         # Step 2: Create edge_index tensor
         edge_index = torch.tensor([row, col], dtype=torch.long)

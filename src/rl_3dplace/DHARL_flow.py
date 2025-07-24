@@ -55,7 +55,8 @@ class DHARLflow(object):
 
         #input_dim = layout.netlist.numNodes
         input_dim = data.x.shape[1]
-        hidden_dim = input_dim*3
+        #hidden_dim = input_dim*3
+        hidden_dim = 512
         n_layers = 1
         embedding_dim = 30
         gin_model_path = PLconfig_grid.gin_model_path
@@ -82,6 +83,10 @@ class DHARLflow(object):
     def GetCellCode(self):
         if self.designName == "picorv32a":
             return 0
+        elif self.designName == "jpeg":
+            return 1
+        elif self.designName == "tate":
+            return 2
         elif self.designName == "muxshifter8":
             return 0
         elif self.designName == "muxshifter16":
@@ -91,9 +96,9 @@ class DHARLflow(object):
         elif self.designName == "muxshifter32":
             return 0
         elif self.designName == "muxshifter64":
-            return 1
-        elif self.designName == "muxshifter128":
             return 2
+        elif self.designName == "muxshifter128":
+            return 1
         elif self.designName == "muxshifter4":
             return 0
         elif self.designName == "rlcase1":
@@ -103,7 +108,8 @@ class DHARLflow(object):
         self.layout = importUcla(
             name=self.layoutData.designName,
             path=self.layoutData.inputDir,
-            inputPlacementFile=inputPlacementFile
+            inputPlacementFile=inputPlacementFile,
+            is_read_nets=True
         )
         #self.layout.netlist.change_location_type()
         self.twl2d = self.layout.netlist.twl_pahc_2d(self.layout.avg_sites_per_row, 1)[0]
@@ -153,10 +159,8 @@ class DHARLflow(object):
             logger.info(f"action Code = {action}")
         except Exception as e:
             #using experimental values since some large model files can't be uploaded on github
-            if self.designName == "picorv32a": action = 141
-            #elif self.designName == "muxshifter128": action = 209
-            else: action=209
             logger.info(f"Faced Exception! action Code = {action}")
+            raise ValueError("DHCARL failed")
         logger.info(f"action Code = {action}")
         end_time = time.time()  # End time tracking
         elapsed_time = end_time - start_time

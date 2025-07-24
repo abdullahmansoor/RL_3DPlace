@@ -74,6 +74,11 @@ class PAHierParametricFolding(object):
         transferredPattern = list(map(myround, ynew))
         return transferredPattern
 
+    def GetWindowSize(self, action):
+        #use windowSize to find x and y divide factors
+        bin_size_x = self.sortedWindowSizes[action][0] 
+        bin_size_y = self.sortedWindowSizes[action][1]
+        return bin_size_x, bin_size_y
 
     def SetWindowSizeCode(self, col_size, row_size):
         for i, dims in enumerate(self.sortedWindowSizes):
@@ -83,8 +88,14 @@ class PAHierParametricFolding(object):
                 self.bin_size_y = y
                 return
         raise ValueError("couldn't find dimensions")
-            
+
     def GetDivideFactors(self, layout_data):
+        if layout_data.scheme == "scheme4":
+            self.GetDivideFactors_scheme4(layout_data)
+        elif layout_data.scheme == "scheme5":
+            self.GetDivideFactors_scheme5(layout_data)
+
+    def GetDivideFactors_scheme4(self, layout_data):
 
         gridSpec = layout_data.grid_definition
         #create map of action decoder based on layout
@@ -117,6 +128,65 @@ class PAHierParametricFolding(object):
             windowSizes,
             key=lambda x: (-sum(x), -x[0])
         )
+
+        maxIndex = len(sortedWindowSizes) - 1
+        index = self.windowSizeCode
+        print(f"windowSizeCode={index}, the max window sizes={maxIndex}")
+        if index > maxIndex:
+            raise ValueError(f"windowSizeCode={index} exceeds the maxIndex={maxIndex}")
+
+        #use windowSize to find x and y divide factors
+        self.bin_size_x = sortedWindowSizes[index][0] 
+        self.bin_size_y = sortedWindowSizes[index][1]
+
+        #update divide ratio in constant file
+        change_divide_ratio(
+            layout_data,
+            self.bin_size_x,
+            self.bin_size_y
+        )
+
+        self.sortedWindowSizes = sortedWindowSizes
+
+    def GetDivideFactors_scheme5(self, layout_data):
+
+        gridSpec = layout_data.grid_definition
+        #create map of action decoder based on layout
+        numColumns = gridSpec.avg_sites_per_row
+        numRows = gridSpec.numRows
+
+        #find divisors of the given dimension
+        #xDivisors = divisors(numColumns)
+        #xDivisors = list(reversed(log_scaled_steps(numColumns)))
+        xDivisors = [numColumns, numColumns//2, numColumns//4]
+        
+        #yDivisors = divisors(numRows)
+        yDivisors = list(reversed(log_scaled_steps(numRows)))
+        yDivisors = log_scaled_steps(numRows)
+        yDivisors = [1, 2, 3, 4, 8, 16]
+        
+        #print(f"divisors for {numColumns} are {xDivisors} using from sympy import divisors")
+        print(f"divisors for {numRows} are {yDivisors} using from sympy import divisors")
+
+        #sXDivisors = xDivisors[:-1] if PLconfig_grid.designName in [ "picorv32a" , "tate", "jpeg"] else xDivisors
+        #print(f"sXDivisors={sXDivisors}, xDivisors={xDivisors}")
+        #create all possible combinations
+        windowSizes = list(itertools.product(
+            xDivisors,
+            yDivisors[:-1]
+            )
+        )
+
+        print(f"windowSizes={windowSizes}")
+
+        # Sorting logic
+        sortedWindowSizes = windowSizes
+        '''
+        sortedWindowSizes = sorted(
+            windowSizes,
+            key=lambda x: (-sum(x), -x[0])
+        )
+        '''
 
         maxIndex = len(sortedWindowSizes) - 1
         index = self.windowSizeCode

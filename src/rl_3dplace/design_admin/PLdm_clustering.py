@@ -27,7 +27,7 @@ class DummyLayout(object):
 
 
 class design_manager_cluster(object):
-    def __init__(self, bin_size_x, bin_size_y, layout_data, name=None, path=None, inputPlacementFile=None):
+    def __init__(self, bin_size_x, bin_size_y, layout_data, name=None, path=None, inputPlacementFile=None, is_read_nets=False):
 
         self.bin_size_x = bin_size_x
         self.bin_size_y = bin_size_y
@@ -39,7 +39,8 @@ class design_manager_cluster(object):
         if not self.path:
             self.path=layout_data.inputDir
         self.inputPlacementFile = inputPlacementFile
-
+        self.is_read_nets = is_read_nets
+        
         self.binned_layout = None
         self.binnedLayout = None #temporarily for backwoard compatbility
         self.origLayout = None
@@ -61,6 +62,8 @@ class design_manager_cluster(object):
             path=self.path,
             inputPlacementFile=self.inputPlacementFile
         )
+        if self.is_read_nets:
+            imported_design.readNetsFile(f"{self.layout_data.inputDir}/{self.layout_data.designName}.nets")
 
         logger.info("design loaded")
 

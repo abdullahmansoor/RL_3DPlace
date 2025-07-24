@@ -307,7 +307,7 @@ def RunHier3DConversion(layoutData, foldingParams, inputPlacementFile, outputPla
     if outputPlacementFile:
         #outputPlacementFile = os.path.join(layoutData.inputDir, f"{layoutData.designName}_3d.pl")
         newLayout.netlist.writePlFile(outputPlacementFile)
-        print(f"outputPlacementFile={outputPlacementFile}")
+        print(f"Created outputPlacementFile ={outputPlacementFile}")
 
     #cleanup memory
     del controller, newLayout, nl1
