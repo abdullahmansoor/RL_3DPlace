@@ -112,6 +112,7 @@ class DHARLflow(object):
             is_read_nets=True
         )
         #self.layout.netlist.change_location_type()
+        self.layout.readNetsFile(f"{self.layoutData.inputDir}/{self.layoutData.designName}.nets")
         self.twl2d = self.layout.netlist.twl_pahc_2d(self.layout.avg_sites_per_row, 1)[0]
         embeddings, embedding_columns = DHARLflow.GetGCNEmbeddings(self.layout)
         cellCode = self.GetCellCode()
@@ -180,21 +181,14 @@ class DHARLflow(object):
             pattern,
             windowSizeCode
         )
-
+        threed_placement_file = f"{self.layoutData.designName}_3d.pl"
         try:
-            nl1, summarizer, dm = RunHier3DConversion(
+            nl1 = RunHier3DConversion(
                 layoutData,
                 foldingParams,
-                sInputPlacementFile
+                sInputPlacementFile,
+                threed_placement_file
             )
-
-            nl1.netlist.change_location_type()
-            cf = nl1.netlist.calculate_cost_function(nl1.avg_sites_per_row, foldingParams.bin_size_x, 2)
-            self.layout.netlist.change_location_type()
-            last_cf = self.layout.netlist.calculate_cost_function(
-                self.layout.avg_sites_per_row, 1, 1
-            )
-            logger.info(f"Grid Coordinates new cf={cf}, last_cf={last_cf}, delta cf = {cf-last_cf}")
             
         except Exception as e:
             logger.info(f"PA HC failed due to exception {e}")

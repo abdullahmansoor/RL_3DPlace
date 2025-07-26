@@ -11,13 +11,13 @@ from pathlib import Path
 
 
 logger = logging.getLogger(__name__)
-logger.setLevel(logging.CRITICAL)
+logger.setLevel(logging.DEBUG)
 handler = logging.StreamHandler()
 formatter = logging.Formatter('%(asctime)s - %(levelname)s -  [%(pathname)s:%(lineno)d] %(message)s')
 handler.setFormatter(formatter)
 logger.addHandler(handler)
 # Reset config (Python 3.8+)
-logging.basicConfig(level=logging.CRITICAL, force=True)
+#logging.basicConfig(level=logging.CRITICAL, force=True)
 
 
 # Add PDLibs to sys.path
