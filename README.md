@@ -30,10 +30,15 @@ poetry install
 ```   
 poetry run python src/rl_3dplace/DHARL_flow.py
 ```
-3. Run Placement for a Specific Design
+2. Run Placement for a Specific Design
 ```   
 poetry run python src/rl_3dplace/DHARL_flow.py -designName \<designName\>
 ```
+3. Evaluate Placement cost function
+```
+poetry run  python src/rl_3dplace/design_engines/eval_placement_cost.py -designName <designName e.g muxshifter8> -inputPlacementFile <3d placement e.g. muxshifter8_3d.pl>
+```
+
 Available Benchmarks
 The project supports the following benchmark designs:
 - rlcase1
@@ -45,6 +50,8 @@ The project supports the following benchmark designs:
 - muxshifter64
 - muxshifter128
 - picorv32a
+- tate
+- jpeg
 
 ## 🏗️ Project Structure:
 ```
